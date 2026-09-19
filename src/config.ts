@@ -1,6 +1,7 @@
 import { TestConfig, FrameworkInfo } from "./util/frameworkTypes";
 
 import { potaFramework } from "./frameworks/pota";
+import { xReactivityFramework } from "./frameworks/xReactivity";
 import { alienFramework } from "./frameworks/alienSignals";
 import { angularFramework } from "./frameworks/angularSignals";
 import { mobxFramework } from "./frameworks/mobx";
@@ -19,6 +20,7 @@ import { tansuFramework } from "./frameworks/tansu";
 export const frameworkInfo: FrameworkInfo[] = [
   { framework: legendFramework, testPullCounts: false },
   { framework: potaFramework },
+  { framework: xReactivityFramework },
   { framework: alienFramework, testPullCounts: true },
   { framework: preactSignalFramework, testPullCounts: true },
   { framework: svelteFramework, testPullCounts: true },

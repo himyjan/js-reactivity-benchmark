@@ -12,7 +12,7 @@ pnpm check
 pnpm bench
 ```
 
-The default run builds a production ESM bundle with Vite, benchmarks 14 engines, and writes `results/latest.json`, `results/latest.csv`, and `results/latest.md`. Progress goes to stderr; the runner's stdout is CSV. To capture CSV without package-manager/build messages, use `node --expose-gc dist/index.js` after building.
+The default run builds a production ESM bundle with Vite, benchmarks 15 engines, and writes `results/latest.json`, `results/latest.csv`, and `results/latest.md`. Progress goes to stderr; the runner's stdout is CSV. To capture CSV without package-manager/build messages, use `node --expose-gc dist/index.js` after building.
 
 ```sh
 # Fast end-to-end correctness check, saved separately from the full snapshot
@@ -54,10 +54,13 @@ Run `pnpm run run --help` for identifiers. Filtered runs default to `results/fil
 | `tldraw`       | [tldraw state](https://tldraw.dev/sdk-features/signals)                            | Current `@tldraw/state` package, replacing Signia                                                |
 | `usignal`      | [uSignal](https://github.com/WebReflection/usignal)                                | Standalone signal engine                                                                         |
 | `vue`          | [Vue Reactivity](https://github.com/vuejs/core/tree/main/packages/reactivity)      | Shallow refs, computed values, deduplicated effect scheduling                                    |
+| `xreactivity`  | [Solid Signals](https://github.com/solidjs/solid/tree/main/packages/solid-signals) | Standalone Solid signal runtime, based on upstream's x-reactivity adapter                        |
 
 `legend` adds [Legend State](https://legendapp.com/open-source/state/v2/) as an experimental adapter for its latest stable release. It passes the adapter tests and small graph workloads, but timed out on larger unobserved dynamic/CellX graphs during this refresh. It is selectable explicitly and excluded from the default comparison. Prerelease v3 is not substituted for the stable npm release.
 
 The Pota adapter is based on [the original contribution](https://github.com/transitive-bullshit/js-reactivity-benchmark/commit/aeb921183b89207a3c562118714565559f81ac79), updated for the current signal-object API and benchmark cleanup lifecycle.
+
+The x-reactivity adapter is based on upstream's `@solidjs/signals` adapter and tracks the current release separately from Solid's full runtime.
 
 ### Selection decisions (September 2026)
 

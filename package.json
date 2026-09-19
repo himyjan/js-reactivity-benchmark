@@ -20,6 +20,7 @@
     "@angular/core": "22.1.7",
     "@legendapp/state": "2.1.15",
     "@preact/signals-core": "1.14.4",
+    "@solidjs/signals": "2.0.0-rc.0",
     "@tldraw/state": "5.4.2",
     "@vue/reactivity": "^3.5.43",
     "alien-signals": "3.2.1",

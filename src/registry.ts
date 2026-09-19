@@ -7,6 +7,7 @@ export const registry = {
   mol: ["$mol_wire", "mol_wire_lib"],
   oby: ["Oby", "oby"],
   pota: ["Pota", "pota"],
+  xreactivity: ["x-reactivity", "@solidjs/signals"],
   preact: ["Preact Signals", "@preact/signals-core"],
   polyfill: ["TC39 Signals Polyfill", "signal-polyfill"],
   solid: ["SolidJS", "solid-js"],
