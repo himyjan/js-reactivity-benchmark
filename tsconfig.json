@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "strict": true,
-    "target": "ESNext",
+    "target": "ES2023",
     "moduleResolution": "Bundler",
     "lib": ["ESNext", "DOM"],
     "types": ["@types/node"],
@@ -10,6 +10,8 @@
     "useDefineForClassFields": false,
     "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "noUnusedParameters": true,
+    "module": "ESNext",
+    "skipLibCheck": true
   }
 }

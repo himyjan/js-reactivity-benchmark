@@ -1,3 +1,5 @@
+import { batchWith } from "../util/batch";
+import { retain } from "../util/cleanup";
 import { ReactiveFramework } from "../util/reactiveFramework";
 import $ from "oby";
 
@@ -17,12 +19,12 @@ export const obyFramework: ReactiveFramework = {
     };
   },
   effect: (fn) => {
-    fn();
-    return $.effect(fn);
+    return $.effect(fn, { sync: "init" });
   },
-  withBatch: (fn) => {
-    fn();
-    $.tick();
-  },
-  withBuild: (fn) => $.root(fn),
+  withBatch: batchWith(() => $.tick()),
+  withBuild: (fn) =>
+    $.root((dispose) => {
+      retain(dispose);
+      return fn();
+    }),
 };

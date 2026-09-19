@@ -54,47 +54,23 @@ export function runGraph(
   const leaves = layers[layers.length - 1];
   const skipCount = Math.round(leaves.length * (1 - readFraction));
   const readLeaves = removeElems(leaves, skipCount, rand);
-  const frameworkName = framework.name.toLowerCase();
-  // const start = Date.now();
-  let sum = 0;
-
-  if (frameworkName === "s-js" || frameworkName === "solidjs") {
-    // [S.js freeze](https://github.com/adamhaile/S#sdatavalue) doesn't allow different values to be set during a single batch, so special case it.
-    for (let i = 0; i < iterations; i++) {
-      framework.withBatch(() => {
-        const sourceDex = i % sources.length;
-        sources[sourceDex].write(i + sourceDex);
-      });
-
-      for (const leaf of readLeaves) {
-        leaf.read();
-      }
-    }
-
-    sum = readLeaves.reduce((total, leaf) => leaf.read() + total, 0);
-  } else {
-    framework.withBatch(() => {
-      for (let i = 0; i < iterations; i++) {
-        // Useful for debugging edge cases for some frameworks that experience
-        // dramatic slow downs for certain test configurations. These are generally
-        // due to `computed` effects not being cached efficiently, and as the number
-        // of layers increases, the uncached `computed` effects are re-evaluated in
-        // an `O(n^2)` manner where `n` is the number of layers.
-        // if (i % 100 === 0) {
-        //   console.log("iteration:", i, "delta:", Date.now() - start);
-        // }
-
-        const sourceDex = i % sources.length;
-        sources[sourceDex].write(i + sourceDex);
-
-        for (const leaf of readLeaves) {
+  if (process.env.BENCH_UNOBSERVED !== "1") {
+    framework.withBuild(() => {
+      for (const leaf of readLeaves)
+        framework.effect(() => {
           leaf.read();
-        }
-      }
-
-      sum = readLeaves.reduce((total, leaf) => leaf.read() + total, 0);
+        });
     });
   }
+  // Every engine sees the same transaction boundary and reads after each write within that transaction.
+  for (let i = 0; i < iterations; i++) {
+    framework.withBatch(() => {
+      const sourceDex = i % sources.length;
+      sources[sourceDex].write(i + sourceDex);
+      for (const leaf of readLeaves) leaf.read();
+    });
+  }
+  const sum = readLeaves.reduce((total, leaf) => leaf.read() + total, 0);
 
   return sum;
 }

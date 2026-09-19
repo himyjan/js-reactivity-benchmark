@@ -1,0 +1,4913 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-09-19T09:15:34.431Z",
+  "finishedAt": "2026-09-19T09:20:51.783Z",
+  "profile": "full",
+  "stress": false,
+  "graphMode": "observed",
+  "repeats": 3,
+  "timeout": 120000,
+  "node": "v26.7.0",
+  "v8": "14.6.202.34-node.28",
+  "system": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "release": "25.3.0",
+    "cpu": "Apple M3 Pro",
+    "logicalCpus": 12,
+    "memoryBytes": 38654705664
+  },
+  "packages": {
+    "alien-signals": "3.2.1",
+    "@angular/core": "22.1.7",
+    "mobx": "7.0.3",
+    "mol_wire_lib": "1.0.1781",
+    "oby": "15.1.2",
+    "@preact/signals-core": "1.14.4",
+    "signal-polyfill": "0.2.2",
+    "solid-js": "1.9.15",
+    "svelte": "5.57.0",
+    "@amadeus-it-group/tansu": "2.0.0",
+    "@tldraw/state": "5.4.2",
+    "usignal": "0.10.0",
+    "@vue/reactivity": "3.5.43"
+  },
+  "tooling": {
+    "vite": "8.3.0",
+    "vitest": "5.0.1",
+    "typescript": "7.0.2"
+  },
+  "suites": [
+    "kairo",
+    "mol",
+    "s",
+    "dynamic",
+    "cellx"
+  ],
+  "status": "passed",
+  "results": [
+    {
+      "framework": "alien-signals",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        75.588708,
+        94.687709,
+        69.262
+      ],
+      "suite": "kairo",
+      "timeMs": 69.262
+    },
+    {
+      "framework": "alien-signals",
+      "test": "broadPropagation",
+      "samplesMs": [
+        152.483875,
+        149.484083,
+        150.59662500000002
+      ],
+      "suite": "kairo",
+      "timeMs": 149.4841
+    },
+    {
+      "framework": "alien-signals",
+      "test": "deepPropagation",
+      "samplesMs": [
+        54.57137499999999,
+        53.652916000000005,
+        54.14170899999999
+      ],
+      "suite": "kairo",
+      "timeMs": 53.6529
+    },
+    {
+      "framework": "alien-signals",
+      "test": "diamond",
+      "samplesMs": [
+        91.84145799999999,
+        87.13554199999999,
+        89.39529099999982
+      ],
+      "suite": "kairo",
+      "timeMs": 87.1355
+    },
+    {
+      "framework": "alien-signals",
+      "test": "mux",
+      "samplesMs": [
+        174.77824999999984,
+        159.87799999999993,
+        193.0864160000001
+      ],
+      "suite": "kairo",
+      "timeMs": 159.878
+    },
+    {
+      "framework": "alien-signals",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        14.139541999999892,
+        10.744667000000163,
+        10.72479199999998
+      ],
+      "suite": "kairo",
+      "timeMs": 10.7248
+    },
+    {
+      "framework": "alien-signals",
+      "test": "triangle",
+      "samplesMs": [
+        40.815458000000035,
+        34.302458000000115,
+        33.95749999999998
+      ],
+      "suite": "kairo",
+      "timeMs": 33.9575
+    },
+    {
+      "framework": "alien-signals",
+      "test": "unstable",
+      "samplesMs": [
+        37.79366600000003,
+        31.36866699999996,
+        31.952458999999862
+      ],
+      "suite": "kairo",
+      "timeMs": 31.3687
+    },
+    {
+      "framework": "alien-signals",
+      "test": "molBench",
+      "samplesMs": [
+        315.36924999999997,
+        310.413542,
+        303.822042
+      ],
+      "suite": "mol",
+      "timeMs": 303.822
+    },
+    {
+      "framework": "alien-signals",
+      "test": "createDataSignals",
+      "samplesMs": [
+        3.9068339999999964,
+        3.9774169999999955,
+        3.9351660000000095
+      ],
+      "suite": "s",
+      "timeMs": 3.9068
+    },
+    {
+      "framework": "alien-signals",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        2.671333000000004,
+        3.478958999999989,
+        2.680125000000004
+      ],
+      "suite": "s",
+      "timeMs": 2.6713
+    },
+    {
+      "framework": "alien-signals",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        15.973042000000007,
+        7.919915999999986,
+        7.842833000000013
+      ],
+      "suite": "s",
+      "timeMs": 7.8428
+    },
+    {
+      "framework": "alien-signals",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        6.835916000000026,
+        6.270499999999998,
+        6.795999999999992
+      ],
+      "suite": "s",
+      "timeMs": 6.2705
+    },
+    {
+      "framework": "alien-signals",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        6.184041999999977,
+        5.852249999999998,
+        5.895250000000004
+      ],
+      "suite": "s",
+      "timeMs": 5.8522
+    },
+    {
+      "framework": "alien-signals",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        5.094040999999976,
+        5.337208000000004,
+        5.165542000000016
+      ],
+      "suite": "s",
+      "timeMs": 5.094
+    },
+    {
+      "framework": "alien-signals",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        5.8930830000000185,
+        5.6143749999999955,
+        5.773582999999974
+      ],
+      "suite": "s",
+      "timeMs": 5.6144
+    },
+    {
+      "framework": "alien-signals",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        5.630124999999964,
+        5.105582999999967,
+        6.015083000000004
+      ],
+      "suite": "s",
+      "timeMs": 5.1056
+    },
+    {
+      "framework": "alien-signals",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        5.164832999999987,
+        4.52920899999998,
+        5.170833999999957
+      ],
+      "suite": "s",
+      "timeMs": 4.5292
+    },
+    {
+      "framework": "alien-signals",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        4.947333000000015,
+        3.952874999999949,
+        4.895999999999958
+      ],
+      "suite": "s",
+      "timeMs": 3.9529
+    },
+    {
+      "framework": "alien-signals",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        15.423375000000021,
+        16.654915999999957,
+        19.409583999999995
+      ],
+      "suite": "s",
+      "timeMs": 15.4234
+    },
+    {
+      "framework": "alien-signals",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        9.019749999999988,
+        10.315707999999972,
+        11.76483300000001
+      ],
+      "suite": "s",
+      "timeMs": 9.0197
+    },
+    {
+      "framework": "alien-signals",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        5.784791999999982,
+        5.738833,
+        5.713792000000012
+      ],
+      "suite": "s",
+      "timeMs": 5.7138
+    },
+    {
+      "framework": "alien-signals",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        3.5966250000000173,
+        3.466792000000055,
+        3.521417000000042
+      ],
+      "suite": "s",
+      "timeMs": 3.4668
+    },
+    {
+      "framework": "alien-signals",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        11.527249999999981,
+        11.517583000000059,
+        11.546082999999953
+      ],
+      "suite": "s",
+      "timeMs": 11.5176
+    },
+    {
+      "framework": "alien-signals",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        10.333875000000035,
+        10.179540999999972,
+        10.193666000000007
+      ],
+      "suite": "s",
+      "timeMs": 10.1795
+    },
+    {
+      "framework": "alien-signals",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        10.07179199999996,
+        10.738166999999976,
+        10.29216699999995
+      ],
+      "suite": "s",
+      "timeMs": 10.0718
+    },
+    {
+      "framework": "alien-signals",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        133.437458,
+        132.811666,
+        138.62337499999995
+      ],
+      "suite": "dynamic",
+      "timeMs": 132.8117
+    },
+    {
+      "framework": "alien-signals",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        117.30391700000007,
+        116.92137500000001,
+        117.70229100000006
+      ],
+      "suite": "dynamic",
+      "timeMs": 116.9214
+    },
+    {
+      "framework": "alien-signals",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        199.21066700000006,
+        200.57537500000012,
+        199.4732919999999
+      ],
+      "suite": "dynamic",
+      "timeMs": 199.2107
+    },
+    {
+      "framework": "alien-signals",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        380.81150000000025,
+        391.075875,
+        383.8378340000004
+      ],
+      "suite": "dynamic",
+      "timeMs": 380.8115
+    },
+    {
+      "framework": "alien-signals",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        88.5425839999998,
+        90.65708300000006,
+        90.19375000000036
+      ],
+      "suite": "dynamic",
+      "timeMs": 88.5426
+    },
+    {
+      "framework": "alien-signals",
+      "test": "cellx10",
+      "samplesMs": [
+        0.03062500000000057,
+        0.03970800000000452,
+        0.026208000000004006
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0262
+    },
+    {
+      "framework": "alien-signals",
+      "test": "cellx20",
+      "samplesMs": [
+        0.04233299999999929,
+        0.023707999999999174,
+        0.022792000000002588
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0228
+    },
+    {
+      "framework": "alien-signals",
+      "test": "cellx30",
+      "samplesMs": [
+        0.042124999999998636,
+        0.03166699999999878,
+        0.01999999999999602
+      ],
+      "suite": "cellx",
+      "timeMs": 0.02
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        170.26908300000002,
+        163.48658300000002,
+        163.82558300000005
+      ],
+      "suite": "kairo",
+      "timeMs": 163.4866
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "broadPropagation",
+      "samplesMs": [
+        484.4050420000001,
+        473.50137500000005,
+        472.7892079999999
+      ],
+      "suite": "kairo",
+      "timeMs": 472.7892
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "deepPropagation",
+      "samplesMs": [
+        141.4915420000002,
+        141.33899999999994,
+        141.11820800000032
+      ],
+      "suite": "kairo",
+      "timeMs": 141.1182
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "diamond",
+      "samplesMs": [
+        260.523291,
+        246.82975000000033,
+        261.08650000000034
+      ],
+      "suite": "kairo",
+      "timeMs": 246.8298
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "mux",
+      "samplesMs": [
+        479.04633300000023,
+        437.2265419999999,
+        418.0992500000002
+      ],
+      "suite": "kairo",
+      "timeMs": 418.0993
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        39.110209000000395,
+        38.37391600000046,
+        38.48874999999953
+      ],
+      "suite": "kairo",
+      "timeMs": 38.3739
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "triangle",
+      "samplesMs": [
+        117.97633300000052,
+        105.15295900000001,
+        103.84783400000015
+      ],
+      "suite": "kairo",
+      "timeMs": 103.8478
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "unstable",
+      "samplesMs": [
+        87.83220799999981,
+        83.57554100000016,
+        106.34254199999941
+      ],
+      "suite": "kairo",
+      "timeMs": 83.5755
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "molBench",
+      "samplesMs": [
+        319.3815,
+        311.88762500000007,
+        328.88204200000007
+      ],
+      "suite": "mol",
+      "timeMs": 311.8876
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "createDataSignals",
+      "samplesMs": [
+        29.101084,
+        23.483959,
+        26.014666000000005
+      ],
+      "suite": "s",
+      "timeMs": 23.484
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        10.679624999999987,
+        12.694375000000008,
+        7.284209000000004
+      ],
+      "suite": "s",
+      "timeMs": 7.2842
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        51.41120799999999,
+        66.27962499999995,
+        65.07695799999999
+      ],
+      "suite": "s",
+      "timeMs": 51.4112
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        50.41987500000005,
+        45.29945799999996,
+        172.62033300000007
+      ],
+      "suite": "s",
+      "timeMs": 45.2995
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        52.547916999999984,
+        47.108292000000006,
+        36.249000000000024
+      ],
+      "suite": "s",
+      "timeMs": 36.249
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        26.410417000000052,
+        35.96795799999995,
+        23.424666000000116
+      ],
+      "suite": "s",
+      "timeMs": 23.4247
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        31.88045800000009,
+        29.35287500000004,
+        26.14970900000003
+      ],
+      "suite": "s",
+      "timeMs": 26.1497
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        16.068665999999894,
+        21.34395900000004,
+        15.292167000000063
+      ],
+      "suite": "s",
+      "timeMs": 15.2922
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        12.551375000000007,
+        12.185834000000114,
+        19.537832999999864
+      ],
+      "suite": "s",
+      "timeMs": 12.1858
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        11.035583000000088,
+        14.437582999999904,
+        7.742541000000074
+      ],
+      "suite": "s",
+      "timeMs": 7.7425
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        26.89737500000001,
+        25.233791999999994,
+        21.719499999999925
+      ],
+      "suite": "s",
+      "timeMs": 21.7195
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        19.04291699999999,
+        12.446292000000085,
+        17.06470800000011
+      ],
+      "suite": "s",
+      "timeMs": 12.4463
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        9.158208000000059,
+        12.635457999999971,
+        9.835958000000119
+      ],
+      "suite": "s",
+      "timeMs": 9.1582
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        9.708999999999833,
+        6.4379999999998745,
+        8.331249999999955
+      ],
+      "suite": "s",
+      "timeMs": 6.438
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        24.432000000000016,
+        23.844916000000012,
+        23.72824999999989
+      ],
+      "suite": "s",
+      "timeMs": 23.7282
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        22.454625000000078,
+        22.145792000000256,
+        27.298957999999857
+      ],
+      "suite": "s",
+      "timeMs": 22.1458
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        18.347875000000386,
+        28.705207999999857,
+        22.795832999999675
+      ],
+      "suite": "s",
+      "timeMs": 18.3479
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        447.51408299999997,
+        438.35395800000015,
+        460.4168339999999
+      ],
+      "suite": "dynamic",
+      "timeMs": 438.354
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        331.50420799999984,
+        324.94095800000014,
+        319.0000420000001
+      ],
+      "suite": "dynamic",
+      "timeMs": 319
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        604.9694999999997,
+        591.0519169999998,
+        674.9412920000004
+      ],
+      "suite": "dynamic",
+      "timeMs": 591.0519
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        1039.3687920000002,
+        984.3280420000001,
+        971.9450419999994
+      ],
+      "suite": "dynamic",
+      "timeMs": 971.945
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        244.36004200000025,
+        246.62954200000058,
+        254.31525000000147
+      ],
+      "suite": "dynamic",
+      "timeMs": 244.36
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "cellx10",
+      "samplesMs": [
+        0.08133300000000077,
+        0.06879199999999486,
+        0.05145800000000378
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0515
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "cellx20",
+      "samplesMs": [
+        0.09600000000000364,
+        0.06654100000000085,
+        0.07737499999999642
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0665
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "cellx30",
+      "samplesMs": [
+        0.07195899999999966,
+        0.05612499999999443,
+        0.06454200000000299
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0561
+    },
+    {
+      "framework": "MobX",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        319.036459,
+        318.69891699999994,
+        327.90820800000006
+      ],
+      "suite": "kairo",
+      "timeMs": 318.6989
+    },
+    {
+      "framework": "MobX",
+      "test": "broadPropagation",
+      "samplesMs": [
+        874.853541,
+        799.3769579999998,
+        771.750916
+      ],
+      "suite": "kairo",
+      "timeMs": 771.7509
+    },
+    {
+      "framework": "MobX",
+      "test": "deepPropagation",
+      "samplesMs": [
+        282.98454200000015,
+        277.110917,
+        273.3232920000005
+      ],
+      "suite": "kairo",
+      "timeMs": 273.3233
+    },
+    {
+      "framework": "MobX",
+      "test": "diamond",
+      "samplesMs": [
+        370.5442920000005,
+        365.75174999999945,
+        364.6701670000002
+      ],
+      "suite": "kairo",
+      "timeMs": 364.6702
+    },
+    {
+      "framework": "MobX",
+      "test": "mux",
+      "samplesMs": [
+        394.4528330000003,
+        392.2763330000007,
+        384.9032079999997
+      ],
+      "suite": "kairo",
+      "timeMs": 384.9032
+    },
+    {
+      "framework": "MobX",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        27.774875000000065,
+        26.93708400000014,
+        26.927332999999635
+      ],
+      "suite": "kairo",
+      "timeMs": 26.9273
+    },
+    {
+      "framework": "MobX",
+      "test": "triangle",
+      "samplesMs": [
+        131.71749999999975,
+        125.81224999999995,
+        128.3787080000002
+      ],
+      "suite": "kairo",
+      "timeMs": 125.8122
+    },
+    {
+      "framework": "MobX",
+      "test": "unstable",
+      "samplesMs": [
+        65.41362500000014,
+        61.66783399999986,
+        61.84991600000012
+      ],
+      "suite": "kairo",
+      "timeMs": 61.6678
+    },
+    {
+      "framework": "MobX",
+      "test": "molBench",
+      "samplesMs": [
+        315.635958,
+        339.832208,
+        323.71062500000005
+      ],
+      "suite": "mol",
+      "timeMs": 315.636
+    },
+    {
+      "framework": "MobX",
+      "test": "createDataSignals",
+      "samplesMs": [
+        6.050208000000005,
+        6.451708999999994,
+        7.078582999999995
+      ],
+      "suite": "s",
+      "timeMs": 6.0502
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        26.694584000000006,
+        24.76412499999998,
+        22.803583000000003
+      ],
+      "suite": "s",
+      "timeMs": 22.8036
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        71.48262500000004,
+        76.06254099999995,
+        71.32329199999998
+      ],
+      "suite": "s",
+      "timeMs": 71.3233
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        28.161917000000017,
+        29.25587500000006,
+        50.54975000000002
+      ],
+      "suite": "s",
+      "timeMs": 28.1619
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        19.656292000000008,
+        21.359916,
+        22.900083999999993
+      ],
+      "suite": "s",
+      "timeMs": 19.6563
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        11.143000000000029,
+        9.201875000000086,
+        11.558415999999966
+      ],
+      "suite": "s",
+      "timeMs": 9.2019
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        42.98654099999999,
+        40.651792,
+        42.0311660000001
+      ],
+      "suite": "s",
+      "timeMs": 40.6518
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        39.73624999999993,
+        39.333041000000094,
+        39.75845800000002
+      ],
+      "suite": "s",
+      "timeMs": 39.333
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        39.46766699999989,
+        38.57954100000006,
+        39.12833300000011
+      ],
+      "suite": "s",
+      "timeMs": 38.5795
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        38.943874999999935,
+        37.566417,
+        38.31600000000003
+      ],
+      "suite": "s",
+      "timeMs": 37.5664
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        36.03366699999992,
+        37.414999999999964,
+        35.463708
+      ],
+      "suite": "s",
+      "timeMs": 35.4637
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        24.71791600000006,
+        20.312165999999934,
+        20.570250000000215
+      ],
+      "suite": "s",
+      "timeMs": 20.3122
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        12.1087500000001,
+        12.200000000000045,
+        12.054915999999821
+      ],
+      "suite": "s",
+      "timeMs": 12.0549
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        5.134583999999904,
+        5.667249999999967,
+        5.346708000000035
+      ],
+      "suite": "s",
+      "timeMs": 5.1346
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        32.432666000000154,
+        32.06754100000012,
+        32.06050000000005
+      ],
+      "suite": "s",
+      "timeMs": 32.0605
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        29.57516600000008,
+        29.444290999999794,
+        29.378333999999995
+      ],
+      "suite": "s",
+      "timeMs": 29.3783
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        27.582458999999744,
+        27.87304099999983,
+        27.6752919999999
+      ],
+      "suite": "s",
+      "timeMs": 27.5825
+    },
+    {
+      "framework": "MobX",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        499.91595799999993,
+        496.27420800000004,
+        523.1395000000002
+      ],
+      "suite": "dynamic",
+      "timeMs": 496.2742
+    },
+    {
+      "framework": "MobX",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        328.7038339999999,
+        329.46608300000025,
+        328.9560839999999
+      ],
+      "suite": "dynamic",
+      "timeMs": 328.7038
+    },
+    {
+      "framework": "MobX",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        481.20358300000044,
+        466.0279580000006,
+        460.132208
+      ],
+      "suite": "dynamic",
+      "timeMs": 460.1322
+    },
+    {
+      "framework": "MobX",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        663.1121659999999,
+        618.5820409999997,
+        619.2249579999998
+      ],
+      "suite": "dynamic",
+      "timeMs": 618.582
+    },
+    {
+      "framework": "MobX",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        266.9163749999989,
+        283.2815410000003,
+        249.16491599999972
+      ],
+      "suite": "dynamic",
+      "timeMs": 249.1649
+    },
+    {
+      "framework": "MobX",
+      "test": "cellx10",
+      "samplesMs": [
+        0.10466699999999918,
+        0.12770799999999838,
+        0.11325000000000074
+      ],
+      "suite": "cellx",
+      "timeMs": 0.1047
+    },
+    {
+      "framework": "MobX",
+      "test": "cellx20",
+      "samplesMs": [
+        0.1338750000000033,
+        0.13937500000000114,
+        0.09683299999998951
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0968
+    },
+    {
+      "framework": "MobX",
+      "test": "cellx30",
+      "samplesMs": [
+        0.1280840000000012,
+        0.09720899999999233,
+        0.30879199999999685
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0972
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        249.193041,
+        244.20679199999995,
+        234.68170899999996
+      ],
+      "suite": "kairo",
+      "timeMs": 234.6817
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "broadPropagation",
+      "samplesMs": [
+        744.7199580000001,
+        741.9269170000002,
+        725.8316250000003
+      ],
+      "suite": "kairo",
+      "timeMs": 725.8316
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "deepPropagation",
+      "samplesMs": [
+        212.3243749999997,
+        209.4029999999998,
+        210.29158300000017
+      ],
+      "suite": "kairo",
+      "timeMs": 209.403
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "diamond",
+      "samplesMs": [
+        320.5567920000003,
+        314.17787499999986,
+        313.5735420000001
+      ],
+      "suite": "kairo",
+      "timeMs": 313.5735
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "mux",
+      "samplesMs": [
+        511.54920800000036,
+        521.894542,
+        512.6134589999992
+      ],
+      "suite": "kairo",
+      "timeMs": 511.5492
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        71.73733399999946,
+        70.65412500000002,
+        69.92241699999977
+      ],
+      "suite": "kairo",
+      "timeMs": 69.9224
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "triangle",
+      "samplesMs": [
+        117.15937500000018,
+        113.33570799999961,
+        109.35875000000033
+      ],
+      "suite": "kairo",
+      "timeMs": 109.3588
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "unstable",
+      "samplesMs": [
+        169.86962500000027,
+        186.59095799999977,
+        168.5152079999998
+      ],
+      "suite": "kairo",
+      "timeMs": 168.5152
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "molBench",
+      "samplesMs": [
+        240.228334,
+        229.42729099999997,
+        231.81054099999994
+      ],
+      "suite": "mol",
+      "timeMs": 229.4273
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createDataSignals",
+      "samplesMs": [
+        13.295916999999989,
+        25.934208000000012,
+        14.679166999999978
+      ],
+      "suite": "s",
+      "timeMs": 13.2959
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        13.918166999999983,
+        17.09216699999999,
+        13.503750000000025
+      ],
+      "suite": "s",
+      "timeMs": 13.5038
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        64.47058299999998,
+        58.77674999999999,
+        56.07633299999998
+      ],
+      "suite": "s",
+      "timeMs": 56.0763
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        41.76299999999992,
+        58.56091700000002,
+        48.15433300000018
+      ],
+      "suite": "s",
+      "timeMs": 41.763
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        32.95716700000003,
+        49.22012500000005,
+        42.410499999999956
+      ],
+      "suite": "s",
+      "timeMs": 32.9572
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        27.406542000000172,
+        40.43120799999997,
+        38.205832999999984
+      ],
+      "suite": "s",
+      "timeMs": 27.4065
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        41.825582999999824,
+        48.275666,
+        44.004249999999956
+      ],
+      "suite": "s",
+      "timeMs": 41.8256
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        34.407208999999966,
+        33.45000000000027,
+        33.537417000000005
+      ],
+      "suite": "s",
+      "timeMs": 33.45
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        27.70566699999972,
+        24.62345899999991,
+        27.414582999999766
+      ],
+      "suite": "s",
+      "timeMs": 24.6235
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        23.240000000000236,
+        21.53558299999986,
+        24.155666999999994
+      ],
+      "suite": "s",
+      "timeMs": 21.5356
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        50.626624999999876,
+        49.40579200000002,
+        48.976958000000195
+      ],
+      "suite": "s",
+      "timeMs": 48.977
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        31.407374999999774,
+        28.338874999999916,
+        28.02712500000007
+      ],
+      "suite": "s",
+      "timeMs": 28.0271
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        17.884166999999707,
+        18.179208000000017,
+        18.109542000000147
+      ],
+      "suite": "s",
+      "timeMs": 17.8842
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        8.37979200000018,
+        8.36629099999982,
+        8.416499999999814
+      ],
+      "suite": "s",
+      "timeMs": 8.3663
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        44.35174999999981,
+        43.62479099999973,
+        43.21495899999991
+      ],
+      "suite": "s",
+      "timeMs": 43.215
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        43.86366599999974,
+        42.069792000000234,
+        42.17525000000023
+      ],
+      "suite": "s",
+      "timeMs": 42.0698
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        46.52629100000013,
+        48.76587500000005,
+        49.65808300000026
+      ],
+      "suite": "s",
+      "timeMs": 46.5263
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        467.626041,
+        445.0798329999999,
+        476.62458300000003
+      ],
+      "suite": "dynamic",
+      "timeMs": 445.0798
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        290.6609169999997,
+        265.68941600000016,
+        254.06004100000018
+      ],
+      "suite": "dynamic",
+      "timeMs": 254.06
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        409.72749999999996,
+        425.13099999999986,
+        415.35341699999935
+      ],
+      "suite": "dynamic",
+      "timeMs": 409.7275
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        541.3226250000007,
+        531.618958,
+        545.9466659999998
+      ],
+      "suite": "dynamic",
+      "timeMs": 531.619
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        225.07725000000028,
+        198.85762500000055,
+        198.06479200000012
+      ],
+      "suite": "dynamic",
+      "timeMs": 198.0648
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "cellx10",
+      "samplesMs": [
+        0.1613749999999996,
+        0.21258299999999508,
+        0.06541599999999903
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0654
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "cellx20",
+      "samplesMs": [
+        0.06383300000000247,
+        0.05183399999999949,
+        0.04954200000000242
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0495
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "cellx30",
+      "samplesMs": [
+        0.09041600000000471,
+        0.07216700000000742,
+        0.07037499999999852
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0704
+    },
+    {
+      "framework": "Oby",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        164.224,
+        158.230833,
+        163.068125
+      ],
+      "suite": "kairo",
+      "timeMs": 158.2308
+    },
+    {
+      "framework": "Oby",
+      "test": "broadPropagation",
+      "samplesMs": [
+        373.715875,
+        375.80341699999997,
+        376.21783400000004
+      ],
+      "suite": "kairo",
+      "timeMs": 373.7159
+    },
+    {
+      "framework": "Oby",
+      "test": "deepPropagation",
+      "samplesMs": [
+        147.74366599999985,
+        145.06883300000004,
+        144.2945420000001
+      ],
+      "suite": "kairo",
+      "timeMs": 144.2945
+    },
+    {
+      "framework": "Oby",
+      "test": "diamond",
+      "samplesMs": [
+        189.98862499999996,
+        191.4393339999997,
+        205.25420900000017
+      ],
+      "suite": "kairo",
+      "timeMs": 189.9886
+    },
+    {
+      "framework": "Oby",
+      "test": "mux",
+      "samplesMs": [
+        309.508875,
+        313.8577500000001,
+        310.931458
+      ],
+      "suite": "kairo",
+      "timeMs": 309.5089
+    },
+    {
+      "framework": "Oby",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        27.695791999999983,
+        25.90208399999983,
+        26.458458000000064
+      ],
+      "suite": "kairo",
+      "timeMs": 25.9021
+    },
+    {
+      "framework": "Oby",
+      "test": "triangle",
+      "samplesMs": [
+        92.35449999999992,
+        84.14562500000011,
+        84.11083400000007
+      ],
+      "suite": "kairo",
+      "timeMs": 84.1108
+    },
+    {
+      "framework": "Oby",
+      "test": "unstable",
+      "samplesMs": [
+        44.680207999999766,
+        41.59583299999986,
+        43.87341600000036
+      ],
+      "suite": "kairo",
+      "timeMs": 41.5958
+    },
+    {
+      "framework": "Oby",
+      "test": "molBench",
+      "samplesMs": [
+        380.940541,
+        361.938792,
+        360.39824999999996
+      ],
+      "suite": "mol",
+      "timeMs": 360.3982
+    },
+    {
+      "framework": "Oby",
+      "test": "createDataSignals",
+      "samplesMs": [
+        10.172709000000012,
+        8.613708000000003,
+        8.605707999999993
+      ],
+      "suite": "s",
+      "timeMs": 8.6057
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        58.58320800000001,
+        60.47800000000001,
+        27.330083000000002
+      ],
+      "suite": "s",
+      "timeMs": 27.3301
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        81.838167,
+        90.66754100000003,
+        85.21895799999993
+      ],
+      "suite": "s",
+      "timeMs": 81.8382
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        46.141624999999976,
+        80.71566700000005,
+        40.25729200000001
+      ],
+      "suite": "s",
+      "timeMs": 40.2573
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        28.679124999999885,
+        37.49262500000009,
+        28.639042000000018
+      ],
+      "suite": "s",
+      "timeMs": 28.639
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        11.488000000000056,
+        20.86866699999996,
+        11.126042000000098
+      ],
+      "suite": "s",
+      "timeMs": 11.126
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        67.7102080000002,
+        59.47812500000009,
+        53.55104099999994
+      ],
+      "suite": "s",
+      "timeMs": 53.551
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        37.5384590000001,
+        37.15616699999987,
+        32.94274999999993
+      ],
+      "suite": "s",
+      "timeMs": 32.9427
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        33.757500000000164,
+        49.33725000000004,
+        28.450333000000228
+      ],
+      "suite": "s",
+      "timeMs": 28.4503
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        31.309000000000196,
+        46.458292000000256,
+        28.71583399999963
+      ],
+      "suite": "s",
+      "timeMs": 28.7158
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        24.41574999999966,
+        26.101500000000215,
+        24.949291000000358
+      ],
+      "suite": "s",
+      "timeMs": 24.4157
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        18.427459,
+        15.442459000000326,
+        15.929250000000138
+      ],
+      "suite": "s",
+      "timeMs": 15.4425
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        9.674207999999908,
+        9.794750000000022,
+        9.7365420000001
+      ],
+      "suite": "s",
+      "timeMs": 9.6742
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        9.592709000000013,
+        8.416834000000108,
+        7.875084000000243
+      ],
+      "suite": "s",
+      "timeMs": 7.8751
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        28.851584000000003,
+        24.545916999999918,
+        24.180875000000015
+      ],
+      "suite": "s",
+      "timeMs": 24.1809
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        24.146834000000126,
+        24.509542000000238,
+        24.020540999999866
+      ],
+      "suite": "s",
+      "timeMs": 24.0205
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        23.366374999999607,
+        22.984541000000263,
+        23.045834000000013
+      ],
+      "suite": "s",
+      "timeMs": 22.9845
+    },
+    {
+      "framework": "Oby",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        324.16616700000003,
+        304.85858300000007,
+        357.25654199999997
+      ],
+      "suite": "dynamic",
+      "timeMs": 304.8586
+    },
+    {
+      "framework": "Oby",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        222.79212500000017,
+        231.45150000000012,
+        224.45600000000013
+      ],
+      "suite": "dynamic",
+      "timeMs": 222.7921
+    },
+    {
+      "framework": "Oby",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        412.6911250000003,
+        459.3082909999998,
+        445.37029200000006
+      ],
+      "suite": "dynamic",
+      "timeMs": 412.6911
+    },
+    {
+      "framework": "Oby",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        441.1690829999998,
+        430.4093750000002,
+        486.314292
+      ],
+      "suite": "dynamic",
+      "timeMs": 430.4094
+    },
+    {
+      "framework": "Oby",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        195.62795800000004,
+        209.85054199999922,
+        212.51800000000003
+      ],
+      "suite": "dynamic",
+      "timeMs": 195.628
+    },
+    {
+      "framework": "Oby",
+      "test": "cellx10",
+      "samplesMs": [
+        0.10541699999999565,
+        0.08879100000000051,
+        0.1097910000000013
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0888
+    },
+    {
+      "framework": "Oby",
+      "test": "cellx20",
+      "samplesMs": [
+        0.11187499999999773,
+        0.09008299999999281,
+        0.06708299999999667
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0671
+    },
+    {
+      "framework": "Oby",
+      "test": "cellx30",
+      "samplesMs": [
+        0.055083999999993694,
+        0.05325000000000557,
+        0.2111670000000032
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0533
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        94.88254099999999,
+        92.46908399999998,
+        90.893958
+      ],
+      "suite": "kairo",
+      "timeMs": 90.894
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "broadPropagation",
+      "samplesMs": [
+        182.96237499999995,
+        177.748375,
+        176.87187499999993
+      ],
+      "suite": "kairo",
+      "timeMs": 176.8719
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "deepPropagation",
+      "samplesMs": [
+        72.75625000000002,
+        70.52654199999995,
+        70.67637500000001
+      ],
+      "suite": "kairo",
+      "timeMs": 70.5265
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "diamond",
+      "samplesMs": [
+        121.08683399999995,
+        115.73170800000003,
+        114.66699999999992
+      ],
+      "suite": "kairo",
+      "timeMs": 114.667
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "mux",
+      "samplesMs": [
+        214.74125000000004,
+        222.64874999999984,
+        218.95629099999974
+      ],
+      "suite": "kairo",
+      "timeMs": 214.7413
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        13.842458000000079,
+        12.376250000000255,
+        12.457915999999841
+      ],
+      "suite": "kairo",
+      "timeMs": 12.3763
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "triangle",
+      "samplesMs": [
+        55.77445800000032,
+        49.61870899999985,
+        48.41658300000017
+      ],
+      "suite": "kairo",
+      "timeMs": 48.4166
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "unstable",
+      "samplesMs": [
+        27.37545799999998,
+        25.55749999999989,
+        25.35520899999983
+      ],
+      "suite": "kairo",
+      "timeMs": 25.3552
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "molBench",
+      "samplesMs": [
+        312.05429200000003,
+        300.528667,
+        304.953625
+      ],
+      "suite": "mol",
+      "timeMs": 300.5287
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "createDataSignals",
+      "samplesMs": [
+        6.022207999999999,
+        5.478915999999998,
+        5.594958000000005
+      ],
+      "suite": "s",
+      "timeMs": 5.4789
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        5.964165999999992,
+        5.291584,
+        4.471582999999995
+      ],
+      "suite": "s",
+      "timeMs": 4.4716
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        16.260000000000005,
+        14.733875000000012,
+        14.522667000000013
+      ],
+      "suite": "s",
+      "timeMs": 14.5227
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        9.437625000000025,
+        18.340833000000003,
+        9.386374999999987
+      ],
+      "suite": "s",
+      "timeMs": 9.3864
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        6.59250000000003,
+        6.724291999999991,
+        6.585624999999993
+      ],
+      "suite": "s",
+      "timeMs": 6.5856
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        8.267584,
+        7.180207999999993,
+        7.876916999999992
+      ],
+      "suite": "s",
+      "timeMs": 7.1802
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        14.427999999999997,
+        11.975582999999972,
+        11.810041000000012
+      ],
+      "suite": "s",
+      "timeMs": 11.81
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        10.398167,
+        10.575499999999977,
+        11.776665999999977
+      ],
+      "suite": "s",
+      "timeMs": 10.3982
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        10.3245,
+        9.989708000000007,
+        10.580667000000005
+      ],
+      "suite": "s",
+      "timeMs": 9.9897
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        8.908665999999982,
+        4.377624999999966,
+        8.61304100000001
+      ],
+      "suite": "s",
+      "timeMs": 4.3776
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        17.24620900000002,
+        17.804125,
+        16.78920800000003
+      ],
+      "suite": "s",
+      "timeMs": 16.7892
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        12.424958999999944,
+        9.815209000000095,
+        9.602750000000015
+      ],
+      "suite": "s",
+      "timeMs": 9.6028
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        6.194000000000074,
+        6.0952499999999645,
+        5.993833999999993
+      ],
+      "suite": "s",
+      "timeMs": 5.9938
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        4.366541999999981,
+        4.480792000000065,
+        4.4705000000000155
+      ],
+      "suite": "s",
+      "timeMs": 4.3665
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        12.838999999999942,
+        13.182000000000016,
+        14.41370900000004
+      ],
+      "suite": "s",
+      "timeMs": 12.839
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        10.910792000000015,
+        10.550916999999913,
+        10.459249999999997
+      ],
+      "suite": "s",
+      "timeMs": 10.4592
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        8.596874999999955,
+        8.582708000000025,
+        8.518500000000017
+      ],
+      "suite": "s",
+      "timeMs": 8.5185
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        193.13025000000002,
+        206.79566700000004,
+        197.08020899999997
+      ],
+      "suite": "dynamic",
+      "timeMs": 193.1303
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        172.03550000000007,
+        172.81216599999993,
+        165.69504200000006
+      ],
+      "suite": "dynamic",
+      "timeMs": 165.695
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        267.6275830000002,
+        264.2597499999997,
+        293.70729100000017
+      ],
+      "suite": "dynamic",
+      "timeMs": 264.2597
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        467.69450000000006,
+        437.83729200000016,
+        450.9536250000001
+      ],
+      "suite": "dynamic",
+      "timeMs": 437.8373
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        140.44866700000057,
+        136.12887499999943,
+        144.68020800000068
+      ],
+      "suite": "dynamic",
+      "timeMs": 136.1289
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "cellx10",
+      "samplesMs": [
+        0.05720900000000029,
+        0.05062499999999659,
+        0.06754099999999852
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0506
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "cellx20",
+      "samplesMs": [
+        0.06462499999999949,
+        0.052250000000000796,
+        0.037624999999998465
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0376
+    },
+    {
+      "framework": "Preact Signals",
+      "test": "cellx30",
+      "samplesMs": [
+        0.0433749999999975,
+        0.025666000000001077,
+        0.02549999999999386
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0255
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        300.749042,
+        255.55429200000003,
+        247.99487499999998
+      ],
+      "suite": "kairo",
+      "timeMs": 247.9949
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "broadPropagation",
+      "samplesMs": [
+        914.397167,
+        907.6388750000001,
+        893.969458
+      ],
+      "suite": "kairo",
+      "timeMs": 893.9695
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "deepPropagation",
+      "samplesMs": [
+        237.98958399999992,
+        239.27124999999978,
+        237.71775000000025
+      ],
+      "suite": "kairo",
+      "timeMs": 237.7178
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "diamond",
+      "samplesMs": [
+        419.3522499999999,
+        415.7106249999997,
+        416.112083
+      ],
+      "suite": "kairo",
+      "timeMs": 415.7106
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "mux",
+      "samplesMs": [
+        666.2145419999997,
+        661.8904579999999,
+        678.4845829999995
+      ],
+      "suite": "kairo",
+      "timeMs": 661.8905
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        140.59279199999946,
+        145.21654200000012,
+        142.08537500000057
+      ],
+      "suite": "kairo",
+      "timeMs": 140.5928
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "triangle",
+      "samplesMs": [
+        190.30504200000087,
+        184.39395799999875,
+        185.22799999999916
+      ],
+      "suite": "kairo",
+      "timeMs": 184.394
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "unstable",
+      "samplesMs": [
+        480.565333999999,
+        510.2469579999997,
+        486.6040830000002
+      ],
+      "suite": "kairo",
+      "timeMs": 480.5653
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "molBench",
+      "samplesMs": [
+        343.216375,
+        348.22183300000006,
+        328.6910419999999
+      ],
+      "suite": "mol",
+      "timeMs": 328.691
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "createDataSignals",
+      "samplesMs": [
+        16.201125000000005,
+        12.413167000000001,
+        12.77345799999999
+      ],
+      "suite": "s",
+      "timeMs": 12.4132
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        14.652749999999997,
+        14.675042000000019,
+        13.852208000000019
+      ],
+      "suite": "s",
+      "timeMs": 13.8522
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        37.75012499999997,
+        41.11520900000005,
+        37.19954200000001
+      ],
+      "suite": "s",
+      "timeMs": 37.1995
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        28.558750000000032,
+        33.37483299999997,
+        28.955375000000004
+      ],
+      "suite": "s",
+      "timeMs": 28.5588
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        20.841166000000044,
+        22.288749999999936,
+        25.729791999999975
+      ],
+      "suite": "s",
+      "timeMs": 20.8412
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        14.915332999999919,
+        18.111083000000008,
+        14.178625000000011
+      ],
+      "suite": "s",
+      "timeMs": 14.1786
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        31.854959000000008,
+        32.460583999999926,
+        31.976957999999968
+      ],
+      "suite": "s",
+      "timeMs": 31.855
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        27.86016600000005,
+        26.700290999999993,
+        26.81162500000005
+      ],
+      "suite": "s",
+      "timeMs": 26.7003
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        24.300291000000016,
+        24.217374999999947,
+        24.383707999999842
+      ],
+      "suite": "s",
+      "timeMs": 24.2174
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        21.505584,
+        22.89145899999994,
+        21.71245799999997
+      ],
+      "suite": "s",
+      "timeMs": 21.5056
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        38.85845900000004,
+        44.477750000000015,
+        39.56637500000011
+      ],
+      "suite": "s",
+      "timeMs": 38.8585
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        30.55445899999995,
+        22.924790999999914,
+        26.12245800000005
+      ],
+      "suite": "s",
+      "timeMs": 22.9248
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        17.192000000000007,
+        18.496124999999893,
+        17.748499999999922
+      ],
+      "suite": "s",
+      "timeMs": 17.192
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        10.568041999999878,
+        8.458417000000054,
+        10.007166999999981
+      ],
+      "suite": "s",
+      "timeMs": 8.4584
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        37.8879579999998,
+        35.78079200000002,
+        35.28579100000002
+      ],
+      "suite": "s",
+      "timeMs": 35.2858
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        30.214874999999893,
+        31.197708000000148,
+        35.7326250000001
+      ],
+      "suite": "s",
+      "timeMs": 30.2149
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        25.291791999999987,
+        28.174541999999747,
+        27.74191699999983
+      ],
+      "suite": "s",
+      "timeMs": 25.2918
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        1290.304041,
+        1283.558833,
+        1276.6427919999996
+      ],
+      "suite": "dynamic",
+      "timeMs": 1276.6428
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        496.7923329999994,
+        507.06408399999964,
+        509.78020800000013
+      ],
+      "suite": "dynamic",
+      "timeMs": 496.7923
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        9132.112083999997,
+        10915.002874999998,
+        9322.387000000002
+      ],
+      "suite": "dynamic",
+      "timeMs": 9132.1121
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        6742.185292000002,
+        6641.645916999994,
+        7200.973709000013
+      ],
+      "suite": "dynamic",
+      "timeMs": 6641.6459
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        497.6041660000046,
+        382.7661669999943,
+        377.15425000000687
+      ],
+      "suite": "dynamic",
+      "timeMs": 377.1543
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "cellx10",
+      "samplesMs": [
+        0.08516700000000554,
+        0.08216600000000085,
+        0.0759169999999969
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0759
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "cellx20",
+      "samplesMs": [
+        0.11191700000000537,
+        0.1007499999999979,
+        0.07891699999999702
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0789
+    },
+    {
+      "framework": "TC39 Signals Polyfill",
+      "test": "cellx30",
+      "samplesMs": [
+        0.09479200000000532,
+        0.06487500000000068,
+        0.1145829999999961
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0649
+    },
+    {
+      "framework": "SolidJS",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        338.492917,
+        766.817125,
+        442.58529099999987
+      ],
+      "suite": "kairo",
+      "timeMs": 338.4929
+    },
+    {
+      "framework": "SolidJS",
+      "test": "broadPropagation",
+      "samplesMs": [
+        793.324959,
+        751.0147919999999,
+        729.8324170000001
+      ],
+      "suite": "kairo",
+      "timeMs": 729.8324
+    },
+    {
+      "framework": "SolidJS",
+      "test": "deepPropagation",
+      "samplesMs": [
+        300.4191659999997,
+        314.0210420000003,
+        330.34020800000053
+      ],
+      "suite": "kairo",
+      "timeMs": 300.4192
+    },
+    {
+      "framework": "SolidJS",
+      "test": "diamond",
+      "samplesMs": [
+        432.0472499999996,
+        442.5174999999999,
+        420.9081669999996
+      ],
+      "suite": "kairo",
+      "timeMs": 420.9082
+    },
+    {
+      "framework": "SolidJS",
+      "test": "mux",
+      "samplesMs": [
+        426.76579200000015,
+        465.6717089999993,
+        439.7561249999999
+      ],
+      "suite": "kairo",
+      "timeMs": 426.7658
+    },
+    {
+      "framework": "SolidJS",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        56.506749999999556,
+        55.50849999999991,
+        55.27574999999979
+      ],
+      "suite": "kairo",
+      "timeMs": 55.2757
+    },
+    {
+      "framework": "SolidJS",
+      "test": "triangle",
+      "samplesMs": [
+        147.0915419999992,
+        141.92770799999926,
+        141.37412500000028
+      ],
+      "suite": "kairo",
+      "timeMs": 141.3741
+    },
+    {
+      "framework": "SolidJS",
+      "test": "unstable",
+      "samplesMs": [
+        82.73816600000009,
+        85.46991600000001,
+        85.97520900000018
+      ],
+      "suite": "kairo",
+      "timeMs": 82.7382
+    },
+    {
+      "framework": "SolidJS",
+      "test": "molBench",
+      "samplesMs": [
+        384.830375,
+        387.94733299999996,
+        392.6201669999999
+      ],
+      "suite": "mol",
+      "timeMs": 384.8304
+    },
+    {
+      "framework": "SolidJS",
+      "test": "createDataSignals",
+      "samplesMs": [
+        9.415959,
+        9.488417000000013,
+        7.104709
+      ],
+      "suite": "s",
+      "timeMs": 7.1047
+    },
+    {
+      "framework": "SolidJS",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        6.72145900000001,
+        13.01475000000002,
+        7.927374999999984
+      ],
+      "suite": "s",
+      "timeMs": 6.7215
+    },
+    {
+      "framework": "SolidJS",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        46.68491700000001,
+        45.259457999999995,
+        47.09529199999997
+      ],
+      "suite": "s",
+      "timeMs": 45.2595
+    },
+    {
+      "framework": "SolidJS",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        37.706083999999976,
+        40.62516699999992,
+        38.826415999999995
+      ],
+      "suite": "s",
+      "timeMs": 37.7061
+    },
+    {
+      "framework": "SolidJS",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        29.079791999999998,
+        30.170834000000013,
+        26.911459000000036
+      ],
+      "suite": "s",
+      "timeMs": 26.9115
+    },
+    {
+      "framework": "SolidJS",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        9.149749999999926,
+        9.372042000000079,
+        8.960417000000007
+      ],
+      "suite": "s",
+      "timeMs": 8.9604
+    },
+    {
+      "framework": "SolidJS",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        32.33108399999992,
+        27.779791000000046,
+        32.26091700000006
+      ],
+      "suite": "s",
+      "timeMs": 27.7798
+    },
+    {
+      "framework": "SolidJS",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        19.26825000000008,
+        20.163125000000036,
+        19.911000000000058
+      ],
+      "suite": "s",
+      "timeMs": 19.2683
+    },
+    {
+      "framework": "SolidJS",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        15.568374999999833,
+        20.355583999999908,
+        18.591957999999977
+      ],
+      "suite": "s",
+      "timeMs": 15.5684
+    },
+    {
+      "framework": "SolidJS",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        16.714457999999922,
+        15.157208000000082,
+        15.949541999999838
+      ],
+      "suite": "s",
+      "timeMs": 15.1572
+    },
+    {
+      "framework": "SolidJS",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        61.69249999999988,
+        62.072625000000016,
+        63.50045799999998
+      ],
+      "suite": "s",
+      "timeMs": 61.6925
+    },
+    {
+      "framework": "SolidJS",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        47.61004200000002,
+        40.191291999999976,
+        40.20012500000007
+      ],
+      "suite": "s",
+      "timeMs": 40.1913
+    },
+    {
+      "framework": "SolidJS",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        32.02841600000011,
+        31.807625000000144,
+        31.410167
+      ],
+      "suite": "s",
+      "timeMs": 31.4102
+    },
+    {
+      "framework": "SolidJS",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        21.445625000000064,
+        24.662417000000005,
+        21.239209000000074
+      ],
+      "suite": "s",
+      "timeMs": 21.2392
+    },
+    {
+      "framework": "SolidJS",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        40.40841699999987,
+        44.319290999999794,
+        40.38545900000008
+      ],
+      "suite": "s",
+      "timeMs": 40.3855
+    },
+    {
+      "framework": "SolidJS",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        39.967957999999726,
+        68.76524999999992,
+        38.63787500000035
+      ],
+      "suite": "s",
+      "timeMs": 38.6379
+    },
+    {
+      "framework": "SolidJS",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        39.51491699999997,
+        34.61220800000001,
+        34.164584000000104
+      ],
+      "suite": "s",
+      "timeMs": 34.1646
+    },
+    {
+      "framework": "SolidJS",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        1204.529875,
+        1294.547333,
+        1281.8404579999997
+      ],
+      "suite": "dynamic",
+      "timeMs": 1204.5299
+    },
+    {
+      "framework": "SolidJS",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        448.9002499999997,
+        454.8462500000005,
+        452.4659579999998
+      ],
+      "suite": "dynamic",
+      "timeMs": 448.9002
+    },
+    {
+      "framework": "SolidJS",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        555.3481250000004,
+        535.4725410000001,
+        543.9913329999999
+      ],
+      "suite": "dynamic",
+      "timeMs": 535.4725
+    },
+    {
+      "framework": "SolidJS",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        900.5929580000011,
+        914.238292,
+        920.1110829999998
+      ],
+      "suite": "dynamic",
+      "timeMs": 900.593
+    },
+    {
+      "framework": "SolidJS",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        275.63774999999987,
+        301.59050000000025,
+        283.8994160000002
+      ],
+      "suite": "dynamic",
+      "timeMs": 275.6377
+    },
+    {
+      "framework": "SolidJS",
+      "test": "cellx10",
+      "samplesMs": [
+        0.0551669999999973,
+        0.04754199999999997,
+        0.045417000000000485
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0454
+    },
+    {
+      "framework": "SolidJS",
+      "test": "cellx20",
+      "samplesMs": [
+        0.0867500000000021,
+        0.07808299999999946,
+        0.05983400000000216
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0598
+    },
+    {
+      "framework": "SolidJS",
+      "test": "cellx30",
+      "samplesMs": [
+        0.06629199999999713,
+        0.04712499999999409,
+        0.04049999999999443
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0405
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        443.88825,
+        427.3285000000001,
+        424.34670800000004
+      ],
+      "suite": "kairo",
+      "timeMs": 424.3467
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "broadPropagation",
+      "samplesMs": [
+        667.0183749999999,
+        656.756416,
+        653.581291
+      ],
+      "suite": "kairo",
+      "timeMs": 653.5813
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "deepPropagation",
+      "samplesMs": [
+        297.68533300000036,
+        300.55391699999973,
+        302.8741250000003
+      ],
+      "suite": "kairo",
+      "timeMs": 297.6853
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "diamond",
+      "samplesMs": [
+        442.49808399999984,
+        438.1142920000002,
+        441.9806670000007
+      ],
+      "suite": "kairo",
+      "timeMs": 438.1143
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "mux",
+      "samplesMs": [
+        280.533042,
+        276.11516699999993,
+        275.3600000000006
+      ],
+      "suite": "kairo",
+      "timeMs": 275.36
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        56.8729170000006,
+        55.728917000000365,
+        55.08650000000034
+      ],
+      "suite": "kairo",
+      "timeMs": 55.0865
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "triangle",
+      "samplesMs": [
+        157.13358299999982,
+        151.08670900000016,
+        149.93504099999973
+      ],
+      "suite": "kairo",
+      "timeMs": 149.935
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "unstable",
+      "samplesMs": [
+        89.16516700000011,
+        86.6180830000003,
+        86.68620900000042
+      ],
+      "suite": "kairo",
+      "timeMs": 86.6181
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "molBench",
+      "samplesMs": [
+        324.43095800000003,
+        328.994625,
+        346.17883399999994
+      ],
+      "suite": "mol",
+      "timeMs": 324.431
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "createDataSignals",
+      "samplesMs": [
+        6.400917000000007,
+        5.614999999999995,
+        5.847834000000006
+      ],
+      "suite": "s",
+      "timeMs": 5.615
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        15.253042000000008,
+        19.040999999999997,
+        14.248041
+      ],
+      "suite": "s",
+      "timeMs": 14.248
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        19.490250000000003,
+        34.14758400000005,
+        37.26158299999997
+      ],
+      "suite": "s",
+      "timeMs": 19.4903
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        13.206667000000039,
+        16.226,
+        14.465584000000035
+      ],
+      "suite": "s",
+      "timeMs": 13.2067
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        11.193209000000024,
+        11.365083000000027,
+        11.14474999999993
+      ],
+      "suite": "s",
+      "timeMs": 11.1447
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        6.017542000000049,
+        8.086874999999964,
+        7.269084000000021
+      ],
+      "suite": "s",
+      "timeMs": 6.0175
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        16.06874999999991,
+        21.278125000000045,
+        39.45499999999993
+      ],
+      "suite": "s",
+      "timeMs": 16.0687
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        15.045916000000034,
+        18.839707999999973,
+        16.046792000000096
+      ],
+      "suite": "s",
+      "timeMs": 15.0459
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        13.507959000000028,
+        17.52887499999997,
+        13.433125000000018
+      ],
+      "suite": "s",
+      "timeMs": 13.4331
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        12.111292000000049,
+        17.067334000000074,
+        11.972667000000001
+      ],
+      "suite": "s",
+      "timeMs": 11.9727
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        113.4999580000001,
+        116.80437500000016,
+        123.25054099999988
+      ],
+      "suite": "s",
+      "timeMs": 113.5
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        66.9305830000003,
+        59.62616700000035,
+        59.615458999999646
+      ],
+      "suite": "s",
+      "timeMs": 59.6155
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        31.88891599999988,
+        31.469375000000127,
+        31.028584000000137
+      ],
+      "suite": "s",
+      "timeMs": 31.0286
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        3.7806250000003274,
+        3.749084000000039,
+        3.777458000000024
+      ],
+      "suite": "s",
+      "timeMs": 3.7491
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        66.45666600000004,
+        66.67995800000017,
+        67.26029199999994
+      ],
+      "suite": "s",
+      "timeMs": 66.4567
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        43.71537499999977,
+        43.06224999999995,
+        43.32058300000017
+      ],
+      "suite": "s",
+      "timeMs": 43.0622
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        18.65029199999981,
+        18.73508300000003,
+        19.407874999999876
+      ],
+      "suite": "s",
+      "timeMs": 18.6503
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        582.2131669999999,
+        567.3813339999999,
+        577.966167
+      ],
+      "suite": "dynamic",
+      "timeMs": 567.3813
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        266.650709,
+        258.43170899999996,
+        261.64545899999985
+      ],
+      "suite": "dynamic",
+      "timeMs": 258.4317
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        441.70420899999954,
+        440.5336669999997,
+        437.9481249999999
+      ],
+      "suite": "dynamic",
+      "timeMs": 437.9481
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        442.35154200000034,
+        449.0720419999998,
+        438.12766700000066
+      ],
+      "suite": "dynamic",
+      "timeMs": 438.1277
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        221.04274999999961,
+        227.10624999999982,
+        216.6058750000002
+      ],
+      "suite": "dynamic",
+      "timeMs": 216.6059
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "cellx10",
+      "samplesMs": [
+        0.10612499999999869,
+        0.12291600000000358,
+        0.11187500000000483
+      ],
+      "suite": "cellx",
+      "timeMs": 0.1061
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "cellx20",
+      "samplesMs": [
+        3.0877920000000003,
+        1.9792500000000004,
+        1.9726249999999936
+      ],
+      "suite": "cellx",
+      "timeMs": 1.9726
+    },
+    {
+      "framework": "Svelte v5",
+      "test": "cellx30",
+      "samplesMs": [
+        236.24033300000002,
+        236.3226669999999,
+        235.789
+      ],
+      "suite": "cellx",
+      "timeMs": 235.789
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        198.907042,
+        209.92370900000003,
+        207.820333
+      ],
+      "suite": "kairo",
+      "timeMs": 198.907
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "broadPropagation",
+      "samplesMs": [
+        505.9761669999999,
+        539.0567079999998,
+        508.95995800000014
+      ],
+      "suite": "kairo",
+      "timeMs": 505.9762
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "deepPropagation",
+      "samplesMs": [
+        145.63537499999984,
+        148.2760000000003,
+        146.04441599999973
+      ],
+      "suite": "kairo",
+      "timeMs": 145.6354
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "diamond",
+      "samplesMs": [
+        202.6318339999998,
+        196.06045799999993,
+        206.19000000000005
+      ],
+      "suite": "kairo",
+      "timeMs": 196.0605
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "mux",
+      "samplesMs": [
+        478.2035840000003,
+        490.4757090000003,
+        466.078125
+      ],
+      "suite": "kairo",
+      "timeMs": 466.0781
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        40.74829200000022,
+        40.109417000000576,
+        40.0034999999998
+      ],
+      "suite": "kairo",
+      "timeMs": 40.0035
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "triangle",
+      "samplesMs": [
+        73.17816700000003,
+        99.58029199999964,
+        76.7182499999999
+      ],
+      "suite": "kairo",
+      "timeMs": 73.1782
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "unstable",
+      "samplesMs": [
+        108.99058299999979,
+        102.19941599999947,
+        103.9683329999998
+      ],
+      "suite": "kairo",
+      "timeMs": 102.1994
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "molBench",
+      "samplesMs": [
+        328.716334,
+        364.004291,
+        332.01029100000005
+      ],
+      "suite": "mol",
+      "timeMs": 328.7163
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "createDataSignals",
+      "samplesMs": [
+        22.887500000000003,
+        9.75779200000001,
+        9.733542
+      ],
+      "suite": "s",
+      "timeMs": 9.7335
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        18.112707999999998,
+        20.729708000000016,
+        18.748665999999986
+      ],
+      "suite": "s",
+      "timeMs": 18.1127
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        40.98400000000004,
+        52.33095899999995,
+        57.39804200000003
+      ],
+      "suite": "s",
+      "timeMs": 40.984
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        25.853166999999985,
+        28.87966700000004,
+        28.404790999999932
+      ],
+      "suite": "s",
+      "timeMs": 25.8532
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        22.568084,
+        23.597582999999986,
+        25.158541999999898
+      ],
+      "suite": "s",
+      "timeMs": 22.5681
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        11.963541999999961,
+        12.514499999999998,
+        14.991209000000026
+      ],
+      "suite": "s",
+      "timeMs": 11.9635
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        29.875999999999976,
+        29.835624999999936,
+        30.461291999999958
+      ],
+      "suite": "s",
+      "timeMs": 29.8356
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        26.316749999999956,
+        23.778332999999748,
+        26.304208000000017
+      ],
+      "suite": "s",
+      "timeMs": 23.7783
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        18.104917000000114,
+        17.80437499999971,
+        19.494125000000167
+      ],
+      "suite": "s",
+      "timeMs": 17.8044
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        16.872875000000022,
+        17.770834000000377,
+        16.7234169999997
+      ],
+      "suite": "s",
+      "timeMs": 16.7234
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        28.85575000000017,
+        28.65029199999981,
+        34.110625000000255
+      ],
+      "suite": "s",
+      "timeMs": 28.6503
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        17.369040999999925,
+        17.967583000000104,
+        19.963709000000108
+      ],
+      "suite": "s",
+      "timeMs": 17.369
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        10.684250000000247,
+        10.388500000000022,
+        10.817375000000084
+      ],
+      "suite": "s",
+      "timeMs": 10.3885
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        6.717250000000149,
+        6.76424999999972,
+        6.418499999999767
+      ],
+      "suite": "s",
+      "timeMs": 6.4185
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        24.29062500000009,
+        24.160499999999956,
+        24.118625000000065
+      ],
+      "suite": "s",
+      "timeMs": 24.1186
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        23.30829100000028,
+        22.75695799999994,
+        23.289832999999817
+      ],
+      "suite": "s",
+      "timeMs": 22.757
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        23.13312500000029,
+        23.65995900000007,
+        22.885291000000052
+      ],
+      "suite": "s",
+      "timeMs": 22.8853
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        323.01275000000004,
+        342.50141600000006,
+        338.15145900000016
+      ],
+      "suite": "dynamic",
+      "timeMs": 323.0128
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        235.3694170000001,
+        255.6411250000001,
+        226.2624579999997
+      ],
+      "suite": "dynamic",
+      "timeMs": 226.2625
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        466.18854199999987,
+        459.1244999999999,
+        467.9685000000004
+      ],
+      "suite": "dynamic",
+      "timeMs": 459.1245
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        523.5982090000007,
+        509.5297500000006,
+        528.7331250000007
+      ],
+      "suite": "dynamic",
+      "timeMs": 509.5298
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        198.76633399999992,
+        192.06045900000026,
+        191.4042499999996
+      ],
+      "suite": "dynamic",
+      "timeMs": 191.4042
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "cellx10",
+      "samplesMs": [
+        0.09429199999999582,
+        0.06779099999999971,
+        0.07095799999999741
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0678
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "cellx20",
+      "samplesMs": [
+        0.07737500000000352,
+        0.06212500000000176,
+        0.06704100000000324
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0621
+    },
+    {
+      "framework": "@amadeus-it-group/tansu",
+      "test": "cellx30",
+      "samplesMs": [
+        0.0628330000000048,
+        0.1599159999999955,
+        0.04899999999999238
+      ],
+      "suite": "cellx",
+      "timeMs": 0.049
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        283.398166,
+        287.520125,
+        276.790791
+      ],
+      "suite": "kairo",
+      "timeMs": 276.7908
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "broadPropagation",
+      "samplesMs": [
+        743.881542,
+        718.0169999999998,
+        793.4659580000002
+      ],
+      "suite": "kairo",
+      "timeMs": 718.017
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "deepPropagation",
+      "samplesMs": [
+        261.21762499999977,
+        255.80262500000026,
+        261.23979099999997
+      ],
+      "suite": "kairo",
+      "timeMs": 255.8026
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "diamond",
+      "samplesMs": [
+        401.7249579999998,
+        431.1346249999997,
+        390.01454100000046
+      ],
+      "suite": "kairo",
+      "timeMs": 390.0145
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "mux",
+      "samplesMs": [
+        522.289417,
+        515.7531250000002,
+        520.4060829999999
+      ],
+      "suite": "kairo",
+      "timeMs": 515.7531
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        49.518457999999555,
+        74.24691600000006,
+        52.898291999999856
+      ],
+      "suite": "kairo",
+      "timeMs": 49.5185
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "triangle",
+      "samplesMs": [
+        170.08379100000002,
+        170.73008299999947,
+        166.03495899999962
+      ],
+      "suite": "kairo",
+      "timeMs": 166.035
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "unstable",
+      "samplesMs": [
+        92.6449590000002,
+        75.90095800000017,
+        75.63200000000052
+      ],
+      "suite": "kairo",
+      "timeMs": 75.632
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "molBench",
+      "samplesMs": [
+        318.447667,
+        318.57025,
+        318.70841600000006
+      ],
+      "suite": "mol",
+      "timeMs": 318.4477
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "createDataSignals",
+      "samplesMs": [
+        7.3538329999999945,
+        6.220541999999995,
+        6.151332999999994
+      ],
+      "suite": "s",
+      "timeMs": 6.1513
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        8.521583000000007,
+        7.174499999999995,
+        5.734875000000002
+      ],
+      "suite": "s",
+      "timeMs": 5.7349
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        15.406083999999993,
+        15.89533400000002,
+        16.486917000000005
+      ],
+      "suite": "s",
+      "timeMs": 15.4061
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        10.177791000000013,
+        13.891707999999994,
+        9.890166999999991
+      ],
+      "suite": "s",
+      "timeMs": 9.8902
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        9.910874999999976,
+        11.277292000000045,
+        13.445375000000013
+      ],
+      "suite": "s",
+      "timeMs": 9.9109
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        11.05054100000001,
+        12.413834000000008,
+        11.171207999999979
+      ],
+      "suite": "s",
+      "timeMs": 11.0505
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        17.080917,
+        14.553291000000002,
+        14.575125000000014
+      ],
+      "suite": "s",
+      "timeMs": 14.5533
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        15.565583000000004,
+        12.963374999999985,
+        13.83645899999999
+      ],
+      "suite": "s",
+      "timeMs": 12.9634
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        14.362124999999992,
+        13.879084000000034,
+        14.883583000000044
+      ],
+      "suite": "s",
+      "timeMs": 13.8791
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        12.432665999999926,
+        11.164417000000071,
+        12.133249999999975
+      ],
+      "suite": "s",
+      "timeMs": 11.1644
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        53.32108400000004,
+        53.54141600000003,
+        51.383916
+      ],
+      "suite": "s",
+      "timeMs": 51.3839
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        36.72716600000001,
+        33.799666,
+        34.23566699999992
+      ],
+      "suite": "s",
+      "timeMs": 33.7997
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        23.452250000000163,
+        24.699333000000024,
+        23.990374999999858
+      ],
+      "suite": "s",
+      "timeMs": 23.4523
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        20.629791999999952,
+        19.78229199999987,
+        18.876375000000053
+      ],
+      "suite": "s",
+      "timeMs": 18.8764
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        45.70120799999995,
+        43.641832999999906,
+        45.265125000000126
+      ],
+      "suite": "s",
+      "timeMs": 43.6418
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        36.577,
+        38.80137500000001,
+        40.37804200000005
+      ],
+      "suite": "s",
+      "timeMs": 36.577
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        35.7253340000002,
+        34.25416600000017,
+        32.45916699999998
+      ],
+      "suite": "s",
+      "timeMs": 32.4592
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        600.0773749999998,
+        571.057041,
+        573.721583
+      ],
+      "suite": "dynamic",
+      "timeMs": 571.057
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        394.987208,
+        365.2957080000001,
+        383.60466700000006
+      ],
+      "suite": "dynamic",
+      "timeMs": 365.2957
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        3389.140958000001,
+        3606.2770409999994,
+        3412.894875
+      ],
+      "suite": "dynamic",
+      "timeMs": 3389.141
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        3196.0982500000027,
+        3182.4582499999997,
+        3143.9990840000028
+      ],
+      "suite": "dynamic",
+      "timeMs": 3143.9991
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        259.3687919999975,
+        251.49916700000176,
+        246.87704200000007
+      ],
+      "suite": "dynamic",
+      "timeMs": 246.877
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "cellx10",
+      "samplesMs": [
+        0.08054200000000122,
+        0.09158399999999745,
+        0.08270800000000378
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0805
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "cellx20",
+      "samplesMs": [
+        0.11345800000000139,
+        0.10699999999999932,
+        0.07900000000000063
+      ],
+      "suite": "cellx",
+      "timeMs": 0.079
+    },
+    {
+      "framework": "@tldraw/state",
+      "test": "cellx30",
+      "samplesMs": [
+        0.07887499999999648,
+        0.06408300000000366,
+        0.17729200000000134
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0641
+    },
+    {
+      "framework": "uSignal",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        369.236375,
+        359.94275,
+        384.6418339999999
+      ],
+      "suite": "kairo",
+      "timeMs": 359.9427
+    },
+    {
+      "framework": "uSignal",
+      "test": "broadPropagation",
+      "samplesMs": [
+        537.7463329999998,
+        516.844542,
+        493.5717089999998
+      ],
+      "suite": "kairo",
+      "timeMs": 493.5717
+    },
+    {
+      "framework": "uSignal",
+      "test": "deepPropagation",
+      "samplesMs": [
+        167.50404100000014,
+        161.6644170000004,
+        158.1047920000001
+      ],
+      "suite": "kairo",
+      "timeMs": 158.1048
+    },
+    {
+      "framework": "uSignal",
+      "test": "diamond",
+      "samplesMs": [
+        267.81595800000014,
+        284.23025000000007,
+        269.93766600000026
+      ],
+      "suite": "kairo",
+      "timeMs": 267.816
+    },
+    {
+      "framework": "uSignal",
+      "test": "mux",
+      "samplesMs": [
+        539.786333,
+        513.7349159999994,
+        510.9006250000002
+      ],
+      "suite": "kairo",
+      "timeMs": 510.9006
+    },
+    {
+      "framework": "uSignal",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        42.24041699999998,
+        39.71141700000044,
+        40.31779199999983
+      ],
+      "suite": "kairo",
+      "timeMs": 39.7114
+    },
+    {
+      "framework": "uSignal",
+      "test": "triangle",
+      "samplesMs": [
+        107.70216699999946,
+        100.36070800000016,
+        102.25004200000058
+      ],
+      "suite": "kairo",
+      "timeMs": 100.3607
+    },
+    {
+      "framework": "uSignal",
+      "test": "unstable",
+      "samplesMs": [
+        57.009250000000065,
+        57.17674999999963,
+        57.17274999999972
+      ],
+      "suite": "kairo",
+      "timeMs": 57.0093
+    },
+    {
+      "framework": "uSignal",
+      "test": "molBench",
+      "samplesMs": [
+        473.653875,
+        435.15883299999996,
+        428.689667
+      ],
+      "suite": "mol",
+      "timeMs": 428.6897
+    },
+    {
+      "framework": "uSignal",
+      "test": "createDataSignals",
+      "samplesMs": [
+        9.915834000000004,
+        7.750208999999998,
+        7.454083000000011
+      ],
+      "suite": "s",
+      "timeMs": 7.4541
+    },
+    {
+      "framework": "uSignal",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        7.298457999999997,
+        6.439791999999997,
+        5.489082999999994
+      ],
+      "suite": "s",
+      "timeMs": 5.4891
+    },
+    {
+      "framework": "uSignal",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        39.105875,
+        37.45333400000001,
+        38.733457999999985
+      ],
+      "suite": "s",
+      "timeMs": 37.4533
+    },
+    {
+      "framework": "uSignal",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        19.70029199999999,
+        23.450375000000008,
+        17.37429199999997
+      ],
+      "suite": "s",
+      "timeMs": 17.3743
+    },
+    {
+      "framework": "uSignal",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        20.295583000000022,
+        16.12404200000003,
+        18.347583999999983
+      ],
+      "suite": "s",
+      "timeMs": 16.124
+    },
+    {
+      "framework": "uSignal",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        9.141375000000039,
+        9.229250000000036,
+        9.007542000000058
+      ],
+      "suite": "s",
+      "timeMs": 9.0075
+    },
+    {
+      "framework": "uSignal",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        24.375790999999936,
+        28.45279199999993,
+        27.043750000000045
+      ],
+      "suite": "s",
+      "timeMs": 24.3758
+    },
+    {
+      "framework": "uSignal",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        21.236832999999933,
+        19.460790999999972,
+        23.79600000000005
+      ],
+      "suite": "s",
+      "timeMs": 19.4608
+    },
+    {
+      "framework": "uSignal",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        17.02329199999997,
+        16.133249999999975,
+        17.224666999999954
+      ],
+      "suite": "s",
+      "timeMs": 16.1332
+    },
+    {
+      "framework": "uSignal",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        17.848541999999952,
+        14.30195900000001,
+        16.554958000000056
+      ],
+      "suite": "s",
+      "timeMs": 14.302
+    },
+    {
+      "framework": "uSignal",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        28.511082999999985,
+        28.826874999999973,
+        28.12345900000014
+      ],
+      "suite": "s",
+      "timeMs": 28.1235
+    },
+    {
+      "framework": "uSignal",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        23.119333000000097,
+        19.713375000000042,
+        19.6831659999998
+      ],
+      "suite": "s",
+      "timeMs": 19.6832
+    },
+    {
+      "framework": "uSignal",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        12.712541999999985,
+        11.94341600000007,
+        12.516333000000031
+      ],
+      "suite": "s",
+      "timeMs": 11.9434
+    },
+    {
+      "framework": "uSignal",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        10.022666999999956,
+        10.127375000000029,
+        9.955749999999853
+      ],
+      "suite": "s",
+      "timeMs": 9.9557
+    },
+    {
+      "framework": "uSignal",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        25.635082999999895,
+        26.84016600000018,
+        27.884250000000065
+      ],
+      "suite": "s",
+      "timeMs": 25.6351
+    },
+    {
+      "framework": "uSignal",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        23.2037499999999,
+        23.277458000000024,
+        25.28404099999989
+      ],
+      "suite": "s",
+      "timeMs": 23.2037
+    },
+    {
+      "framework": "uSignal",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        29.238292,
+        29.015583000000106,
+        29.391417000000047
+      ],
+      "suite": "s",
+      "timeMs": 29.0156
+    },
+    {
+      "framework": "uSignal",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        329.93616699999995,
+        342.00299999999993,
+        342.044167
+      ],
+      "suite": "dynamic",
+      "timeMs": 329.9362
+    },
+    {
+      "framework": "uSignal",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        310.99466699999994,
+        320.2475419999996,
+        306.2685839999999
+      ],
+      "suite": "dynamic",
+      "timeMs": 306.2686
+    },
+    {
+      "framework": "uSignal",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        385.7091660000001,
+        382.80887500000017,
+        446.2221249999998
+      ],
+      "suite": "dynamic",
+      "timeMs": 382.8089
+    },
+    {
+      "framework": "uSignal",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        974.342834,
+        908.7637910000003,
+        879.0259999999998
+      ],
+      "suite": "dynamic",
+      "timeMs": 879.026
+    },
+    {
+      "framework": "uSignal",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        224.74675000000025,
+        222.86612500000047,
+        224.23762499999975
+      ],
+      "suite": "dynamic",
+      "timeMs": 222.8661
+    },
+    {
+      "framework": "uSignal",
+      "test": "cellx10",
+      "samplesMs": [
+        0.05075000000000074,
+        0.04341699999999804,
+        0.04262499999999392
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0426
+    },
+    {
+      "framework": "uSignal",
+      "test": "cellx20",
+      "samplesMs": [
+        0.07004099999999625,
+        0.07541700000000162,
+        0.03466699999999889
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0347
+    },
+    {
+      "framework": "uSignal",
+      "test": "cellx30",
+      "samplesMs": [
+        0.11862500000000153,
+        0.12966600000000028,
+        0.11699999999999733
+      ],
+      "suite": "cellx",
+      "timeMs": 0.117
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        179.351417,
+        174.611,
+        172.712
+      ],
+      "suite": "kairo",
+      "timeMs": 172.712
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "broadPropagation",
+      "samplesMs": [
+        352.3697910000001,
+        347.072416,
+        346.6405
+      ],
+      "suite": "kairo",
+      "timeMs": 346.6405
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "deepPropagation",
+      "samplesMs": [
+        108.99966599999993,
+        109.4937910000001,
+        109.74470799999995
+      ],
+      "suite": "kairo",
+      "timeMs": 108.9997
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "diamond",
+      "samplesMs": [
+        179.14554199999998,
+        178.11987499999987,
+        177.02337500000021
+      ],
+      "suite": "kairo",
+      "timeMs": 177.0234
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "mux",
+      "samplesMs": [
+        346.09175000000005,
+        343.2591660000003,
+        335.65454199999976
+      ],
+      "suite": "kairo",
+      "timeMs": 335.6545
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        21.404291999999714,
+        20.441542000000027,
+        20.647416999999678
+      ],
+      "suite": "kairo",
+      "timeMs": 20.4415
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "triangle",
+      "samplesMs": [
+        67.63308299999971,
+        68.2414590000003,
+        68.49483400000008
+      ],
+      "suite": "kairo",
+      "timeMs": 67.6331
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "unstable",
+      "samplesMs": [
+        47.43858299999965,
+        45.3650419999999,
+        45.781790999999885
+      ],
+      "suite": "kairo",
+      "timeMs": 45.365
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "molBench",
+      "samplesMs": [
+        311.96129099999996,
+        341.5942079999999,
+        316.0381249999999
+      ],
+      "suite": "mol",
+      "timeMs": 311.9613
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "createDataSignals",
+      "samplesMs": [
+        5.515292000000002,
+        6.691374999999994,
+        6.923874999999995
+      ],
+      "suite": "s",
+      "timeMs": 5.5153
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        6.760292000000007,
+        5.476208,
+        5.022374999999997
+      ],
+      "suite": "s",
+      "timeMs": 5.0224
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        18.243499999999983,
+        17.953082999999992,
+        19.396917000000002
+      ],
+      "suite": "s",
+      "timeMs": 17.9531
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        10.083708000000001,
+        11.781959,
+        11.522750000000002
+      ],
+      "suite": "s",
+      "timeMs": 10.0837
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        11.045874999999967,
+        8.295624999999973,
+        11.417332999999985
+      ],
+      "suite": "s",
+      "timeMs": 8.2956
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        8.617834000000016,
+        15.252207999999996,
+        10.630958000000021
+      ],
+      "suite": "s",
+      "timeMs": 8.6178
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        13.240499999999997,
+        11.899999999999977,
+        12.61379199999999
+      ],
+      "suite": "s",
+      "timeMs": 11.9
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        11.980834000000016,
+        10.745541000000003,
+        12.185000000000002
+      ],
+      "suite": "s",
+      "timeMs": 10.7455
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        10.669167000000016,
+        6.313874999999939,
+        9.175000000000068
+      ],
+      "suite": "s",
+      "timeMs": 6.3139
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        4.702374999999961,
+        8.11729200000002,
+        6.100083000000041
+      ],
+      "suite": "s",
+      "timeMs": 4.7024
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        20.556917,
+        20.757167000000095,
+        19.11370899999997
+      ],
+      "suite": "s",
+      "timeMs": 19.1137
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        14.791375000000016,
+        11.642209000000094,
+        11.662167000000068
+      ],
+      "suite": "s",
+      "timeMs": 11.6422
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        8.339791999999989,
+        8.280999999999949,
+        8.112457999999947
+      ],
+      "suite": "s",
+      "timeMs": 8.1125
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        6.719667000000072,
+        6.468583000000081,
+        6.311958000000004
+      ],
+      "suite": "s",
+      "timeMs": 6.312
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        17.258291999999983,
+        16.2718339999999,
+        17.50041699999997
+      ],
+      "suite": "s",
+      "timeMs": 16.2718
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        16.013500000000022,
+        16.503832999999986,
+        16.714833999999996
+      ],
+      "suite": "s",
+      "timeMs": 16.0135
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        16.339375000000018,
+        15.770459000000074,
+        16.762333000000126
+      ],
+      "suite": "s",
+      "timeMs": 15.7705
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        276.921208,
+        269.85970800000007,
+        269.0039159999999
+      ],
+      "suite": "dynamic",
+      "timeMs": 269.0039
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        200.84579199999985,
+        232.41195800000014,
+        219.48625000000015
+      ],
+      "suite": "dynamic",
+      "timeMs": 200.8458
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        364.728208,
+        370.578125,
+        390.63091600000007
+      ],
+      "suite": "dynamic",
+      "timeMs": 364.7282
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        585.606084,
+        623.0670840000002,
+        570.6137090000002
+      ],
+      "suite": "dynamic",
+      "timeMs": 570.6137
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        178.39199999999983,
+        178.02174999999988,
+        172.26266699999996
+      ],
+      "suite": "dynamic",
+      "timeMs": 172.2627
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "cellx10",
+      "samplesMs": [
+        0.06637500000000074,
+        0.06987499999999613,
+        0.06745899999999949
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0664
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "cellx20",
+      "samplesMs": [
+        0.10979200000000588,
+        0.07350000000000279,
+        0.067541999999996
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0675
+    },
+    {
+      "framework": "@vue/reactivity",
+      "test": "cellx30",
+      "samplesMs": [
+        0.0657499999999942,
+        0.05487500000000267,
+        0.05237499999999784
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0524
+    }
+  ],
+  "failures": []
+}

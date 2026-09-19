@@ -1,5 +1,5 @@
+import { retain } from "../util/cleanup";
 import { ReactiveFramework } from "../util/reactiveFramework";
-// @ts-ignore
 import * as $ from "svelte/internal/client";
 
 // NOTE: The svelte adapter uses private, internal APIs that are usually only
@@ -28,12 +28,14 @@ export const svelteFramework: ReactiveFramework = {
   effect: (fn) => {
     $.render_effect(fn);
   },
-  withBatch: $.flush_sync,
+  withBatch: $.flush,
   withBuild: <T>(fn: () => T): T => {
     let res: T | undefined;
-    $.effect_root(() => {
-      res = fn();
-    });
+    retain(
+      $.effect_root(() => {
+        res = fn();
+      })
+    );
     return res!;
   },
 };

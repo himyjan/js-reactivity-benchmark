@@ -1,7 +1,10 @@
+import { dispose } from "./util/cleanup";
 import { Counter, makeGraph, runGraph } from "./util/dependencyGraph";
-import { expect, test, vi } from "vitest";
+import { afterEach, expect, test, vi } from "vitest";
 import { FrameworkInfo, TestConfig } from "./util/frameworkTypes";
 import { frameworkInfo } from "./config";
+
+afterEach(dispose);
 
 frameworkInfo.forEach((frameworkInfo) => frameworkTests(frameworkInfo));
 
@@ -22,6 +25,53 @@ function makeConfig(): TestConfig {
  */
 function frameworkTests({ framework, testPullCounts }: FrameworkInfo) {
   const name = framework.name;
+  test(`${name} | batch observes final diamond value once`, () => {
+    const source = framework.signal(1);
+    const values: number[] = [];
+    framework.withBuild(() => {
+      const a = framework.computed(() => source.read() * 2);
+      const b = framework.computed(() => source.read() * 3);
+      framework.effect(() => {
+        values.push(a.read() + b.read());
+      });
+    });
+    framework.withBatch(() => {
+      source.write(2);
+      source.write(3);
+    });
+    expect(values).toEqual([5, 15]);
+  });
+  test(`${name} | switches dependencies and stops reading the inactive branch`, () => {
+    framework.withBuild(() => {
+      const branch = framework.signal(true);
+      const a = framework.signal(2);
+      const b = framework.signal(7);
+      const value = framework.computed(() =>
+        branch.read() ? a.read() : b.read()
+      );
+      expect(value.read()).toBe(2);
+      framework.withBatch(() => branch.write(false));
+      expect(value.read()).toBe(7);
+      framework.withBatch(() => a.write(100));
+      expect(value.read()).toBe(7);
+      framework.withBatch(() => b.write(9));
+      expect(value.read()).toBe(9);
+    });
+  });
+  test(`${name} | disposed effects no longer run`, () => {
+    const source = framework.signal(1);
+    let calls = 0;
+    framework.withBuild(() =>
+      framework.effect(() => {
+        source.read();
+        calls++;
+      })
+    );
+    expect(calls).toBe(1);
+    dispose();
+    framework.withBatch(() => source.write(2));
+    expect(calls).toBe(1);
+  });
   test(`${name} | simple dependency executes`, () => {
     framework.withBuild(() => {
       const s = framework.signal(2);

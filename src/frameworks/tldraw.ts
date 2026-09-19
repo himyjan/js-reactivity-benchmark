@@ -1,22 +1,23 @@
+import { retain } from "../util/cleanup";
 import { ReactiveFramework } from "../util/reactiveFramework";
-import { atom, computed, react, transact } from "signia";
+import { atom, computed, react, transact } from "@tldraw/state";
 
-export const signiaFramework: ReactiveFramework = {
-  name: "Signia",
+export const tldrawFramework: ReactiveFramework = {
+  name: "@tldraw/state",
   signal: (initialValue) => {
     const s = atom("s", initialValue);
     return {
       write: (v) => s.set(v),
-      read: () => s.value,
+      read: () => s.get(),
     };
   },
   computed: (fn) => {
     const c = computed("c", fn);
     return {
-      read: () => c.value,
+      read: () => c.get(),
     };
   },
-  effect: (fn) => react("r", fn),
+  effect: (fn) => retain(react("r", fn)),
   withBatch: (fn) => transact(fn),
   withBuild: (fn) => fn(),
 };

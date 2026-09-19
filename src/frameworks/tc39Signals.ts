@@ -1,7 +1,9 @@
+import { batchWith } from "../util/batch";
+import { retain } from "../util/cleanup";
 import { ReactiveFramework } from "../util/reactiveFramework";
 import { Signal } from "signal-polyfill";
 
-export const tc39SignalsProposalStage0: ReactiveFramework = {
+export const tc39SignalsFramework: ReactiveFramework = {
   name: "TC39 Signals Polyfill",
   signal: (initialValue) => {
     const s = new Signal.State(initialValue);
@@ -16,30 +18,23 @@ export const tc39SignalsProposalStage0: ReactiveFramework = {
       read: () => c.get(),
     };
   },
-  effect: (fn) => effect(fn),
-  withBatch: (fn) => {
-    fn();
-    processPending();
-  },
+  effect: (fn) => retain(effect(fn)),
+  withBatch: batchWith(processPending),
   withBuild: (fn) => fn(),
 };
 
-let needsEnqueue = false;
-
+// Synchronous batch flushes must not enqueue another microtask on every write.
+let scheduled = false;
 const w = new Signal.subtle.Watcher(() => {
-  if (needsEnqueue) {
-    needsEnqueue = false;
-    (async () => {
-      await Promise.resolve();
-      // next micro queue
-      processPending();
-    })();
-  }
+  if (scheduled) return;
+  scheduled = true;
+  queueMicrotask(() => {
+    scheduled = false;
+    processPending();
+  });
 });
 
 function processPending() {
-  needsEnqueue = true;
-
   for (const s of w.getPending()) {
     s.get();
   }
@@ -47,8 +42,8 @@ function processPending() {
   w.watch();
 }
 
-export function effect(callback: any) {
-  let cleanup: any;
+function effect(callback: () => void | (() => void)) {
+  let cleanup: void | (() => void);
 
   const computed = new Signal.Computed(() => {
     typeof cleanup === "function" && cleanup();

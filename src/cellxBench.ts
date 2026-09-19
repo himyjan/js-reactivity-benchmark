@@ -1,3 +1,6 @@
+import { dispose } from "./util/cleanup";
+import { repeats, matchesCase } from "./util/settings";
+import assert from "node:assert/strict";
 // The following is an implementation of the cellx benchmark https://github.com/Riim/cellx/blob/master/perf/perf.html
 import { logPerfResult } from "./util/perfLogging";
 import { Computed, ReactiveFramework } from "./util/reactiveFramework";
@@ -90,54 +93,53 @@ type BenchmarkResults = [
 export const cellxbench = (framework: ReactiveFramework) => {
   globalThis.gc?.();
 
-  const expected: Record<number, BenchmarkResults> = {
-    1000: [
-      [-3, -6, -2, 2],
-      [-2, -4, 2, 3],
-    ],
-    2500: [
-      [-3, -6, -2, 2],
-      [-2, -4, 2, 3],
-    ],
-    5000: [
-      [2, 4, -1, -6],
-      [-2, 1, -4, -4],
-    ],
-  };
+  // An independent non-reactive oracle makes depth configurable without stale fixtures.
+  function reference(
+    depth: number,
+    initial: number[]
+  ): readonly [number, number, number, number] {
+    let [a, b, c, d] = initial;
+    for (let i = 0; i < depth; i++) [a, b, c, d] = [b, a - c, b + d, c];
+    return [a, b, c, d];
+  }
+  const depths =
+    process.env.BENCH_STRESS === "1" ? [1000, 2500, 5000] : [10, 20, 30];
+  const expected: Record<number, BenchmarkResults> = Object.fromEntries(
+    depths.map((depth) => [
+      depth,
+      [reference(depth, [1, 2, 3, 4]), reference(depth, [4, 3, 2, 1])],
+    ])
+  );
 
-  const results: Record<number, BenchmarkResults> = {};
-
-  for (const layers in expected) {
-    let total = 0;
-    for (let i = 0; i < 10; i++) {
-      const [elapsed, before, after] = cellx(framework, Number(layers));
-
-      results[layers] = [before, after];
-
-      total += elapsed;
+  for (const layers of depths) {
+    if (!matchesCase(`cellx${layers}`)) continue;
+    const verify = (before: readonly number[], after: readonly number[]) => {
+      assert(
+        arraysEqual(before, expected[layers][0]),
+        `CellX ${layers}: wrong initial values`
+      );
+      assert(
+        arraysEqual(after, expected[layers][1]),
+        `CellX ${layers}: wrong updated values`
+      );
+    };
+    const [, warmBefore, warmAfter] = cellx(framework, layers);
+    verify(warmBefore, warmAfter);
+    dispose();
+    const samplesMs: number[] = [];
+    for (let i = 0; i < repeats; i++) {
+      globalThis.gc?.();
+      const [elapsed, before, after] = cellx(framework, layers);
+      verify(before, after);
+      samplesMs.push(elapsed);
+      dispose();
     }
-
     logPerfResult({
       framework: framework.name,
       test: `cellx${layers}`,
-      time: total.toFixed(2),
+      time: Math.min(...samplesMs).toFixed(4),
+      samplesMs,
     });
   }
-
-  for (const layers in expected) {
-    const [before, after] = results[layers];
-    const [expectedBefore, expectedAfter] = expected[layers];
-
-    console.assert(
-      arraysEqual(before, expectedBefore),
-      `Expected first layer ${expectedBefore}, found first layer ${before}`
-    );
-
-    console.assert(
-      arraysEqual(after, expectedAfter),
-      `Expected last layer ${expectedAfter}, found last layer ${after}`
-    );
-  }
-
   globalThis.gc?.();
 };

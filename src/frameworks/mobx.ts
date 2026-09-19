@@ -1,3 +1,4 @@
+import { retain } from "../util/cleanup";
 import { computed, observable, autorun, runInAction } from "mobx";
 import { ReactiveFramework } from "../util/reactiveFramework";
 
@@ -11,12 +12,12 @@ export const mobxFramework: ReactiveFramework = {
     };
   },
   computed: (fn) => {
-    const read = computed(fn);
+    const read = computed(fn, { keepAlive: true });
     return {
       read: () => read.get(),
     };
   },
-  effect: (fn) => autorun(fn),
+  effect: (fn) => retain(autorun(fn)),
   withBatch: (fn) => runInAction(fn),
   withBuild: (fn) => fn(),
 };

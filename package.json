@@ -1,44 +1,48 @@
 {
   "name": "js-reactivity-benchmark",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Correctness-checked JavaScript reactive graph benchmarks",
   "scripts": {
     "test": "vitest run",
-    "build": "esbuild src/index.ts --bundle --format=cjs --platform=node --outdir=dist --sourcemap=external",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build",
     "run": "node --expose-gc dist/index.js",
-    "bench": "esbuild src/index.ts --bundle --format=cjs --platform=node | node --expose-gc"
+    "bench": "pnpm build && pnpm run run",
+    "format": "prettier --write .",
+    "check": "pnpm typecheck && pnpm test && pnpm build && pnpm test:cli",
+    "test:cli": "node scripts/check-cli.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@amadeus-it-group/tansu": "^2.0.0",
-    "@angular/core": "19.0.6",
-    "@preact/signals": "^2.0.0",
-    "@reactively/core": "^0.0.8",
-    "@vue/reactivity": "^3.5.13",
-    "alien-signals": "1.0.0-alpha.1",
-    "compostate": "0.6.0-alpha.1",
-    "kairo": "0.6.0-rc.0",
-    "mobx": "^6.13.5",
-    "mol_wire_lib": "^1.0.1259",
+    "@angular/core": "22.1.7",
+    "@vue/reactivity": "^3.5.43",
+    "alien-signals": "3.2.1",
+    "mobx": "^7.0.3",
+    "mol_wire_lib": "^1.0.1781",
     "oby": "15.1.2",
-    "preact": "^10.25.4",
-    "random": "^5.1.1",
-    "react": "^19.0.0",
-    "s-js": "^0.4.9",
-    "signal-polyfill": "^0.2.1",
-    "signia": "^0.1.5",
-    "solid-js": "^1.9.4",
-    "svelte": "5.17.3",
-    "usignal": "^0.9.0",
-    "valtio": "^2.1.2"
+    "random": "^5.5.1",
+    "signal-polyfill": "^0.2.2",
+    "solid-js": "^1.9.15",
+    "svelte": "5.57.0",
+    "usignal": "^0.10.0",
+    "@preact/signals-core": "1.14.4",
+    "@tldraw/state": "5.4.2",
+    "@legendapp/state": "2.1.15"
   },
   "devDependencies": {
-    "@types/node": "^22.10.5",
-    "esbuild": "^0.24.2",
-    "prettier": "^3.4.2",
-    "vitest": "^2.1.8"
+    "@types/node": "^26.6.1",
+    "prettier": "^3.9.8",
+    "vitest": "^5.0.1",
+    "vite": "8.3.0",
+    "typescript": "7.0.2"
+  },
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.3.4",
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

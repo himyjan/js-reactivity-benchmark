@@ -1,3 +1,4 @@
+import { retain } from "../util/cleanup";
 import { ReactiveFramework } from "../util/reactiveFramework";
 import {
   batch,
@@ -12,7 +13,7 @@ export const solidFramework: ReactiveFramework = {
   signal: (initialValue) => {
     const [getter, setter] = createSignal(initialValue);
     return {
-      write: (v) => setter(v as any),
+      write: (v) => setter(() => v),
       read: () => getter(),
     };
   },
@@ -24,5 +25,9 @@ export const solidFramework: ReactiveFramework = {
   },
   effect: (fn) => createRenderEffect(fn),
   withBatch: (fn) => batch(fn),
-  withBuild: (fn) => createRoot(fn),
+  withBuild: (fn) =>
+    createRoot((dispose) => {
+      retain(dispose);
+      return fn();
+    }),
 };

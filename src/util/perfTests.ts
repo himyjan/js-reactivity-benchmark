@@ -1,3 +1,4 @@
+import assert from "node:assert/strict";
 import { FrameworkInfo, TestConfig } from "./frameworkTypes";
 
 export interface TestResult {
@@ -12,6 +13,7 @@ export interface TimingResult<T> {
 
 export interface TestTiming {
   time: number;
+  samplesMs?: number[];
 }
 
 export function verifyBenchResult(
@@ -23,18 +25,14 @@ export function verifyBenchResult(
   const { expected } = config;
   const { result } = timedResult;
 
-  if (expected.sum) {
-    console.assert(
+  if (expected.sum !== undefined) {
+    assert(
       result.sum == expected.sum,
       `sum ${framework.name} ${config.name} result:${result.sum} expected:${expected.sum}`
     );
   }
-  if (
-    expected.count &&
-    (config.readFraction === 1 || testPullCounts) &&
-    testPullCounts !== false
-  ) {
-    console.assert(
+  if (expected.count !== undefined && testPullCounts === true) {
+    assert(
       result.count === expected.count,
       `count ${framework.name} ${config.name} result:${result.count} expected:${expected.count}`
     );

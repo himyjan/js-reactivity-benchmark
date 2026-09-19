@@ -1,34 +1,25 @@
 name: CI
-
 on: [push, pull_request]
 
 jobs:
   test:
-    name: Test Node.js ${{ matrix.node-version }}
     runs-on: ubuntu-latest
-
     strategy:
-      fail-fast: true
+      fail-fast: false
       matrix:
-        node-version: [lts/*]
-
+        node-version: [22, 24]
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 9
-          run_install: false
-
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "pnpm"
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile --strict-peer-dependencies
-
-      - name: Run test
-        run: pnpm test
-
-      - name: Run build
-        run: pnpm build
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile --strict-peer-dependencies
+      - run: pnpm check
+      - run: pnpm run run --smoke --output results/ci-smoke
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: smoke-node-${{ matrix.node-version }}
+          path: results/ci-smoke.*

@@ -1,3 +1,4 @@
+import assert from "node:assert/strict";
 import { Counter } from "../util/dependencyGraph";
 import { Computed, ReactiveFramework } from "../util/reactiveFramework";
 
@@ -26,15 +27,15 @@ export function diamond(bridge: ReactiveFramework) {
     bridge.withBatch(() => {
       head.write(1);
     });
-    console.assert(sum.read() === 2 * width);
+    assert(sum.read() === 2 * width);
     // const atleast = 500;
     callCounter.count = 0;
     for (let i = 0; i < 500; i++) {
       bridge.withBatch(() => {
         head.write(i);
       });
-      console.assert(sum.read() === (i + 1) * width);
+      assert(sum.read() === (i + 1) * width);
     }
-    // console.assert(callCounter.count === atleast);
+    // assert(callCounter.count === atleast);
   };
 }

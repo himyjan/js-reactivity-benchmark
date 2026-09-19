@@ -1,3 +1,5 @@
+import { repeats, smoke, matchesCase } from "./util/settings";
+import { dispose } from "./util/cleanup";
 import { avoidablePropagation } from "./kairo/avoidable";
 import { broadPropagation } from "./kairo/broad";
 import { deepPropagation } from "./kairo/deep";
@@ -23,6 +25,7 @@ const cases = [
 
 export async function kairoBench(framework: ReactiveFramework) {
   for (const c of cases) {
+    if (!matchesCase(c.name)) continue;
     const iter = framework.withBuild(() => {
       const iter = c(framework);
       return iter;
@@ -31,16 +34,18 @@ export async function kairoBench(framework: ReactiveFramework) {
     // warm up
     iter();
 
-    const { timing } = await fastestTest(10, () => {
-      for (let i = 0; i < 1000; i++) {
+    const { timing } = await fastestTest(repeats, () => {
+      for (let i = 0; i < (smoke ? 1 : 1000); i++) {
         iter();
       }
     });
 
+    dispose();
     logPerfResult({
       framework: framework.name,
       test: c.name,
-      time: timing.time.toFixed(2),
+      time: timing.time.toFixed(4),
+      samplesMs: timing.samplesMs,
     });
   }
 }

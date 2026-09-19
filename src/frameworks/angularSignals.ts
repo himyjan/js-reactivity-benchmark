@@ -1,3 +1,5 @@
+import { batchWith } from "../util/batch";
+import { retain } from "../util/cleanup";
 import { ReactiveFramework } from "../util/reactiveFramework";
 import { signal, computed } from "@angular/core";
 import { createWatch, Watch } from "@angular/core/primitives/signals";
@@ -18,10 +20,7 @@ export const angularFramework: ReactiveFramework = {
     };
   },
   effect: (fn) => effect(fn),
-  withBatch: (fn) => {
-    fn();
-    flushEffects();
-  },
+  withBatch: batchWith(flushEffects),
   withBuild: (fn) => fn(),
 };
 
@@ -36,6 +35,10 @@ function effect(effectFn: () => void): void {
 
   // Run effect immediately
   w.run();
+  retain(() => {
+    queue.delete(w);
+    w.destroy();
+  });
 }
 
 function flushEffects(): void {

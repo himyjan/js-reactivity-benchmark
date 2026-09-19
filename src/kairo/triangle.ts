@@ -1,3 +1,4 @@
+import assert from "node:assert/strict";
 import { Counter } from "./../util/dependencyGraph";
 import { Computed, ReactiveFramework } from "../util/reactiveFramework";
 
@@ -29,16 +30,16 @@ export function triangle(bridge: ReactiveFramework) {
     bridge.withBatch(() => {
       head.write(1);
     });
-    console.assert(sum.read() === constant);
+    assert(sum.read() === constant);
     // const atleast = 100;
     callCounter.count = 0;
     for (let i = 0; i < 100; i++) {
       bridge.withBatch(() => {
         head.write(i);
       });
-      console.assert(sum.read() === constant - width + i * width);
+      assert(sum.read() === constant - width + i * width);
     }
-    // console.assert(callCounter.count === atleast);
+    // assert(callCounter.count === atleast);
   };
 }
 

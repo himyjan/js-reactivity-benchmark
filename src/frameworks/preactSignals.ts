@@ -1,5 +1,6 @@
+import { retain } from "../util/cleanup";
 import { ReactiveFramework } from "../util/reactiveFramework";
-import { batch, computed, effect, signal } from "@preact/signals";
+import { batch, computed, effect, signal } from "@preact/signals-core";
 
 export const preactSignalFramework: ReactiveFramework = {
   name: "Preact Signals",
@@ -16,7 +17,7 @@ export const preactSignalFramework: ReactiveFramework = {
       read: () => c.value,
     };
   },
-  effect: (fn) => effect(fn),
+  effect: (fn) => retain(effect(fn)),
   withBatch: (fn) => batch(fn),
   withBuild: (fn) => fn(),
 };

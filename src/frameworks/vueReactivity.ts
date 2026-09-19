@@ -5,47 +5,46 @@ import {
   effect,
   ReactiveEffect,
 } from "@vue/reactivity";
+import { retain } from "../util/cleanup";
+import { batchWith } from "../util/batch";
 import { ReactiveFramework } from "../util/reactiveFramework";
 
-let scheduled = [] as ReactiveEffect[];
-let batching = false;
-
+const scheduled = new Set<ReactiveEffect>();
 export const vueReactivityFramework: ReactiveFramework = {
   name: "@vue/reactivity",
-  signal: (initial) => {
+  signal: <T>(initial: T) => {
     const data = shallowRef(initial);
     return {
-      read: () => data.value as any,
-      write: (v) => (data.value = v as any),
+      read: () => data.value as T,
+      write: (value: T) => {
+        data.value = value;
+      },
     };
   },
   computed: (fn) => {
-    const c = computed(fn);
-    return {
-      read: () => c.value,
-    };
+    const value = computed(fn);
+    return { read: () => value.value };
   },
   effect: (fn) => {
-    let t = effect(() => fn(), {
+    const runner = effect(fn, {
       scheduler: () => {
-        scheduled.push(t.effect);
+        scheduled.add(runner.effect);
       },
     });
+    retain(() => {
+      scheduled.delete(runner.effect);
+      runner.effect.stop();
+    });
   },
-  withBatch: (fn) => {
-    if (batching) {
-      fn();
-    } else {
-      batching = true;
-      fn();
-      while (scheduled.length) {
-        scheduled.pop()!.run();
-      }
-      batching = false;
+  withBatch: batchWith(() => {
+    for (const effect of scheduled) {
+      scheduled.delete(effect);
+      if (effect.dirty) effect.run();
     }
-  },
+  }),
   withBuild: (fn) => {
-    const e = effectScope();
-    return e.run(fn)!;
+    const scope = effectScope();
+    retain(() => scope.stop());
+    return scope.run(fn)!;
   },
 };

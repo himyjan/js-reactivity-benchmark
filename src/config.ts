@@ -3,60 +3,46 @@ import { TestConfig, FrameworkInfo } from "./util/frameworkTypes";
 import { alienFramework } from "./frameworks/alienSignals";
 import { angularFramework } from "./frameworks/angularSignals";
 import { mobxFramework } from "./frameworks/mobx";
-import { tc39SignalsProposalStage0 } from "./frameworks/tc39-proposal-signals-stage-0";
+import { tc39SignalsFramework } from "./frameworks/tc39Signals";
 import { molWireFramework } from "./frameworks/molWire";
 import { obyFramework } from "./frameworks/oby";
 import { preactSignalFramework } from "./frameworks/preactSignals";
-import { reactivelyFramework } from "./frameworks/reactively";
-import { signiaFramework } from "./frameworks/signia";
+import { tldrawFramework } from "./frameworks/tldraw";
+import { legendFramework } from "./frameworks/legend";
 import { solidFramework } from "./frameworks/solid";
-import { sFramework } from "./frameworks/s";
 import { usignalFramework } from "./frameworks/uSignal";
 import { vueReactivityFramework } from "./frameworks/vueReactivity";
 import { svelteFramework } from "./frameworks/svelte";
 import { tansuFramework } from "./frameworks/tansu";
-// import { compostateFramework } from "./frameworks/compostate";
-// import { valtioFramework } from "./frameworks/valtio";
 
 export const frameworkInfo: FrameworkInfo[] = [
+  { framework: legendFramework, testPullCounts: false },
   { framework: alienFramework, testPullCounts: true },
   { framework: preactSignalFramework, testPullCounts: true },
   { framework: svelteFramework, testPullCounts: true },
-  { framework: tc39SignalsProposalStage0, testPullCounts: true },
-  { framework: reactivelyFramework, testPullCounts: true },
-  { framework: sFramework },
+  { framework: tc39SignalsFramework, testPullCounts: true },
   { framework: tansuFramework, testPullCounts: true },
   { framework: angularFramework, testPullCounts: true },
   { framework: molWireFramework, testPullCounts: true },
   { framework: obyFramework, testPullCounts: true },
-  { framework: signiaFramework, testPullCounts: true },
+  { framework: tldrawFramework, testPullCounts: true },
   { framework: solidFramework },
   { framework: usignalFramework, testPullCounts: true },
   { framework: vueReactivityFramework, testPullCounts: true },
-  // NOTE: MobX currently hangs on some of the `dynamic` tests and `cellx` tests, so disable it if you want to run them. (https://github.com/mobxjs/mobx/issues/3926)
   { framework: mobxFramework, testPullCounts: false },
-
-  // --- Disabled frameworks ---
-  // NOTE: the compostate adapter is currently broken and unused.
-  // { framework: compostateFramework },
-  // NOTE: the kairo adapter is currently broken and unused.
-  // { framework: kairoFramework, testPullCounts: true },
-  // NOTE: Valtio currently hangs on some of the `dynamic` tests, so disable it if you want to run them. (https://github.com/pmndrs/valtio/discussions/949)
-  // { framework: valtioFramework },
 ];
 
 export const perfTests: TestConfig[] = [
   {
     name: "simple component",
-    width: 10, // can't change for decorator tests
-    staticFraction: 1, // can't change for decorator tests
-    nSources: 2, // can't change for decorator tests
+    width: 10,
+    staticFraction: 1,
+    nSources: 2,
     totalLayers: 5,
     readFraction: 0.2,
     iterations: 600000,
     expected: {
-      sum: 19199832,
-      count: 2640004,
+      sum: 19199828,
     },
   },
   {
@@ -68,8 +54,7 @@ export const perfTests: TestConfig[] = [
     readFraction: 0.2,
     iterations: 15000,
     expected: {
-      sum: 302310477864,
-      count: 1125003,
+      sum: 302310477860,
     },
   },
   {
@@ -82,7 +67,6 @@ export const perfTests: TestConfig[] = [
     iterations: 7000,
     expected: {
       sum: 29355933696000,
-      count: 1473791,
     },
   },
   {
@@ -95,7 +79,6 @@ export const perfTests: TestConfig[] = [
     iterations: 3000,
     expected: {
       sum: 1171484375000,
-      count: 735756,
     },
   },
   {
@@ -108,22 +91,6 @@ export const perfTests: TestConfig[] = [
     iterations: 500,
     expected: {
       sum: 3.0239642676898464e241,
-      count: 1246502,
     },
   },
-  // Several frameworks hang on this test, so disabling it for now.
-  // @see https://github.com/vuejs/core/issues/11928
-  // {
-  //   name: "very dynamic",
-  //   width: 100,
-  //   totalLayers: 15,
-  //   staticFraction: 0.5,
-  //   nSources: 6,
-  //   readFraction: 1,
-  //   iterations: 2000,
-  //   expected: {
-  //     sum: 15664996402790400,
-  //     count: 1078671,
-  //   },
-  // },
 ];

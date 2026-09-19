@@ -1,3 +1,4 @@
+import assert from "node:assert/strict";
 import { Counter } from "../util/dependencyGraph";
 import { Computed, ReactiveFramework } from "../util/reactiveFramework";
 
@@ -30,8 +31,8 @@ export function broadPropagation(bridge: ReactiveFramework) {
       bridge.withBatch(() => {
         head.write(i);
       });
-      console.assert(last.read() === i + 50);
+      assert(last.read() === i + 50);
     }
-    // console.assert(callCounter.count === atleast, callCounter.count);
+    // assert(callCounter.count === atleast, callCounter.count);
   };
 }

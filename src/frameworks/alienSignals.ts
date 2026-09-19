@@ -1,7 +1,6 @@
-import { getDefaultSystem } from "alien-signals/esm";
+import { retain } from "../util/cleanup";
+import { signal, computed, effect, startBatch, endBatch } from "alien-signals";
 import { ReactiveFramework } from "../util/reactiveFramework";
-
-const { signal, computed, effect, startBatch, endBatch } = getDefaultSystem();
 
 export const alienFramework: ReactiveFramework = {
   name: "alien-signals",
@@ -17,11 +16,19 @@ export const alienFramework: ReactiveFramework = {
       read: computed(fn),
     };
   },
-  effect: effect,
+  effect: (fn) =>
+    retain(
+      effect(() => {
+        fn();
+      })
+    ),
   withBatch: (fn) => {
     startBatch();
-    fn();
-    endBatch();
+    try {
+      fn();
+    } finally {
+      endBatch();
+    }
   },
   withBuild: (fn) => fn(),
 };

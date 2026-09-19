@@ -1,3 +1,4 @@
+import { retain } from "../util/cleanup";
 import { ReactiveFramework } from "../util/reactiveFramework";
 import { batch, computed, effect, signal } from "usignal";
 
@@ -16,7 +17,7 @@ export const usignalFramework: ReactiveFramework = {
       read: () => c.value,
     };
   },
-  effect: (fn) => effect(fn),
+  effect: (fn) => retain(effect(fn)),
   withBatch: (fn) => batch(fn),
   withBuild: (fn) => fn(),
 };
