@@ -6,6 +6,7 @@ export const registry = {
   mobx: ["MobX", "mobx"],
   mol: ["$mol_wire", "mol_wire_lib"],
   oby: ["Oby", "oby"],
+  pota: ["Pota", "pota"],
   preact: ["Preact Signals", "@preact/signals-core"],
   polyfill: ["TC39 Signals Polyfill", "signal-polyfill"],
   solid: ["SolidJS", "solid-js"],

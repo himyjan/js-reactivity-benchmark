@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "startedAt": "2026-09-19T09:15:34.431Z",
-  "finishedAt": "2026-09-19T09:20:51.783Z",
+  "startedAt": "2026-09-19T09:24:42.628Z",
+  "finishedAt": "2026-09-19T09:30:06.265Z",
   "profile": "full",
   "stress": false,
   "graphMode": "observed",
@@ -23,6 +23,7 @@
     "mobx": "7.0.3",
     "mol_wire_lib": "1.0.1781",
     "oby": "15.1.2",
+    "pota": "0.22.235",
     "@preact/signals-core": "1.14.4",
     "signal-polyfill": "0.2.2",
     "solid-js": "1.9.15",
@@ -50,4863 +51,5237 @@
       "framework": "alien-signals",
       "test": "avoidablePropagation",
       "samplesMs": [
-        75.588708,
-        94.687709,
-        69.262
+        73.67304200000001,
+        68.43199999999999,
+        68.81145899999999
       ],
       "suite": "kairo",
-      "timeMs": 69.262
+      "timeMs": 68.432
     },
     {
       "framework": "alien-signals",
       "test": "broadPropagation",
       "samplesMs": [
-        152.483875,
-        149.484083,
-        150.59662500000002
+        141.60087499999997,
+        139.00762499999996,
+        139.27637500000003
       ],
       "suite": "kairo",
-      "timeMs": 149.4841
+      "timeMs": 139.0076
     },
     {
       "framework": "alien-signals",
       "test": "deepPropagation",
       "samplesMs": [
-        54.57137499999999,
-        53.652916000000005,
-        54.14170899999999
+        51.47904200000005,
+        49.810749999999985,
+        49.94608400000004
       ],
       "suite": "kairo",
-      "timeMs": 53.6529
+      "timeMs": 49.8107
     },
     {
       "framework": "alien-signals",
       "test": "diamond",
       "samplesMs": [
-        91.84145799999999,
-        87.13554199999999,
-        89.39529099999982
+        90.89904100000001,
+        85.8001670000001,
+        85.77645800000005
       ],
       "suite": "kairo",
-      "timeMs": 87.1355
+      "timeMs": 85.7765
     },
     {
       "framework": "alien-signals",
       "test": "mux",
       "samplesMs": [
-        174.77824999999984,
-        159.87799999999993,
-        193.0864160000001
+        166.64220899999987,
+        164.44620800000007,
+        157.53516600000012
       ],
       "suite": "kairo",
-      "timeMs": 159.878
+      "timeMs": 157.5352
     },
     {
       "framework": "alien-signals",
       "test": "repeatedObservers",
       "samplesMs": [
-        14.139541999999892,
-        10.744667000000163,
-        10.72479199999998
+        12.805667000000085,
+        10.493791000000101,
+        10.674749999999904
       ],
       "suite": "kairo",
-      "timeMs": 10.7248
+      "timeMs": 10.4938
     },
     {
       "framework": "alien-signals",
       "test": "triangle",
       "samplesMs": [
-        40.815458000000035,
-        34.302458000000115,
-        33.95749999999998
+        39.82962499999985,
+        33.48737499999993,
+        33.408957999999984
       ],
       "suite": "kairo",
-      "timeMs": 33.9575
+      "timeMs": 33.409
     },
     {
       "framework": "alien-signals",
       "test": "unstable",
       "samplesMs": [
-        37.79366600000003,
-        31.36866699999996,
-        31.952458999999862
+        36.26099999999997,
+        30.38175000000001,
+        30.5190419999999
       ],
       "suite": "kairo",
-      "timeMs": 31.3687
+      "timeMs": 30.3818
     },
     {
       "framework": "alien-signals",
       "test": "molBench",
       "samplesMs": [
-        315.36924999999997,
-        310.413542,
-        303.822042
+        299.923875,
+        299.683833,
+        305.8547080000001
       ],
       "suite": "mol",
-      "timeMs": 303.822
+      "timeMs": 299.6838
     },
     {
       "framework": "alien-signals",
       "test": "createDataSignals",
       "samplesMs": [
-        3.9068339999999964,
-        3.9774169999999955,
-        3.9351660000000095
+        4.5319590000000005,
+        4.197249999999997,
+        4.4404579999999925
       ],
       "suite": "s",
-      "timeMs": 3.9068
+      "timeMs": 4.1972
     },
     {
       "framework": "alien-signals",
       "test": "createComputations0to1",
       "samplesMs": [
-        2.671333000000004,
-        3.478958999999989,
-        2.680125000000004
+        2.6373749999999916,
+        3.433125000000004,
+        2.641750000000002
       ],
       "suite": "s",
-      "timeMs": 2.6713
+      "timeMs": 2.6374
     },
     {
       "framework": "alien-signals",
       "test": "createComputations1to1",
       "samplesMs": [
-        15.973042000000007,
-        7.919915999999986,
-        7.842833000000013
+        8.185917000000003,
+        7.3564580000000035,
+        7.928083000000015
       ],
       "suite": "s",
-      "timeMs": 7.8428
+      "timeMs": 7.3565
     },
     {
       "framework": "alien-signals",
       "test": "createComputations2to1",
       "samplesMs": [
-        6.835916000000026,
-        6.270499999999998,
-        6.795999999999992
+        6.83775,
+        6.347083999999995,
+        7.021041999999994
       ],
       "suite": "s",
-      "timeMs": 6.2705
+      "timeMs": 6.3471
     },
     {
       "framework": "alien-signals",
       "test": "createComputations4to1",
       "samplesMs": [
-        6.184041999999977,
-        5.852249999999998,
-        5.895250000000004
+        6.312624999999997,
+        5.7405419999999765,
+        6.085374999999999
       ],
       "suite": "s",
-      "timeMs": 5.8522
+      "timeMs": 5.7405
     },
     {
       "framework": "alien-signals",
       "test": "createComputations1000to1",
       "samplesMs": [
-        5.094040999999976,
-        5.337208000000004,
-        5.165542000000016
+        4.9966249999999945,
+        4.935915999999992,
+        4.935917000000018
       ],
       "suite": "s",
-      "timeMs": 5.094
+      "timeMs": 4.9359
     },
     {
       "framework": "alien-signals",
       "test": "createComputations1to2",
       "samplesMs": [
-        5.8930830000000185,
-        5.6143749999999955,
-        5.773582999999974
+        6.004084000000006,
+        5.810791999999992,
+        6.010000000000019
       ],
       "suite": "s",
-      "timeMs": 5.6144
+      "timeMs": 5.8108
     },
     {
       "framework": "alien-signals",
       "test": "createComputations1to4",
       "samplesMs": [
-        5.630124999999964,
-        5.105582999999967,
-        6.015083000000004
+        5.62254200000001,
+        5.182333000000028,
+        5.55054100000001
       ],
       "suite": "s",
-      "timeMs": 5.1056
+      "timeMs": 5.1823
     },
     {
       "framework": "alien-signals",
       "test": "createComputations1to8",
       "samplesMs": [
-        5.164832999999987,
-        4.52920899999998,
-        5.170833999999957
+        5.3139170000000036,
+        4.599625000000003,
+        5.285457999999949
       ],
       "suite": "s",
-      "timeMs": 4.5292
+      "timeMs": 4.5996
     },
     {
       "framework": "alien-signals",
       "test": "createComputations1to1000",
       "samplesMs": [
-        4.947333000000015,
-        3.952874999999949,
-        4.895999999999958
+        4.832375000000013,
+        3.919040999999993,
+        4.903874999999971
       ],
       "suite": "s",
-      "timeMs": 3.9529
+      "timeMs": 3.919
     },
     {
       "framework": "alien-signals",
       "test": "updateComputations1to1",
       "samplesMs": [
-        15.423375000000021,
-        16.654915999999957,
-        19.409583999999995
+        15.627583000000016,
+        17.766500000000008,
+        20.234000000000037
       ],
       "suite": "s",
-      "timeMs": 15.4234
+      "timeMs": 15.6276
     },
     {
       "framework": "alien-signals",
       "test": "updateComputations2to1",
       "samplesMs": [
-        9.019749999999988,
-        10.315707999999972,
-        11.76483300000001
+        8.93041599999998,
+        10.258375000000001,
+        11.301707999999962
       ],
       "suite": "s",
-      "timeMs": 9.0197
+      "timeMs": 8.9304
     },
     {
       "framework": "alien-signals",
       "test": "updateComputations4to1",
       "samplesMs": [
-        5.784791999999982,
-        5.738833,
-        5.713792000000012
+        5.718583000000024,
+        5.819332999999972,
+        5.835500000000025
       ],
       "suite": "s",
-      "timeMs": 5.7138
+      "timeMs": 5.7186
     },
     {
       "framework": "alien-signals",
       "test": "updateComputations1000to1",
       "samplesMs": [
-        3.5966250000000173,
-        3.466792000000055,
-        3.521417000000042
+        3.8411250000000337,
+        3.331042000000025,
+        3.435583000000065
       ],
       "suite": "s",
-      "timeMs": 3.4668
+      "timeMs": 3.331
     },
     {
       "framework": "alien-signals",
       "test": "updateComputations1to2",
       "samplesMs": [
-        11.527249999999981,
-        11.517583000000059,
-        11.546082999999953
+        11.570542000000046,
+        11.596416999999974,
+        11.507833000000005
       ],
       "suite": "s",
-      "timeMs": 11.5176
+      "timeMs": 11.5078
     },
     {
       "framework": "alien-signals",
       "test": "updateComputations1to4",
       "samplesMs": [
-        10.333875000000035,
-        10.179540999999972,
-        10.193666000000007
+        10.131791999999905,
+        10.176207999999974,
+        10.337084000000004
       ],
       "suite": "s",
-      "timeMs": 10.1795
+      "timeMs": 10.1318
     },
     {
       "framework": "alien-signals",
       "test": "updateComputations1to1000",
       "samplesMs": [
-        10.07179199999996,
-        10.738166999999976,
-        10.29216699999995
+        10.231625000000008,
+        10.69704200000001,
+        10.02979199999993
       ],
       "suite": "s",
-      "timeMs": 10.0718
+      "timeMs": 10.0298
     },
     {
       "framework": "alien-signals",
       "test": "10x5 - 2 sources - read 20% (simple component)",
       "samplesMs": [
-        133.437458,
-        132.811666,
-        138.62337499999995
+        133.906083,
+        140.61733300000003,
+        138.17408400000005
       ],
       "suite": "dynamic",
-      "timeMs": 132.8117
+      "timeMs": 133.9061
     },
     {
       "framework": "alien-signals",
       "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
       "samplesMs": [
-        117.30391700000007,
-        116.92137500000001,
-        117.70229100000006
+        119.592625,
+        112.78620799999999,
+        117.95950000000005
       ],
       "suite": "dynamic",
-      "timeMs": 116.9214
+      "timeMs": 112.7862
     },
     {
       "framework": "alien-signals",
       "test": "1000x12 - 4 sources - dynamic (large web app)",
       "samplesMs": [
-        199.21066700000006,
-        200.57537500000012,
-        199.4732919999999
+        204.842042,
+        205.31458299999986,
+        203.78608400000007
       ],
       "suite": "dynamic",
-      "timeMs": 199.2107
+      "timeMs": 203.7861
     },
     {
       "framework": "alien-signals",
       "test": "1000x5 - 25 sources (wide dense)",
       "samplesMs": [
-        380.81150000000025,
-        391.075875,
-        383.8378340000004
+        381.18354100000033,
+        387.13337500000034,
+        384.6590420000002
       ],
       "suite": "dynamic",
-      "timeMs": 380.8115
+      "timeMs": 381.1835
     },
     {
       "framework": "alien-signals",
       "test": "5x500 - 3 sources (deep)",
       "samplesMs": [
-        88.5425839999998,
-        90.65708300000006,
-        90.19375000000036
+        88.33662500000037,
+        94.3074160000001,
+        94.69220900000028
       ],
       "suite": "dynamic",
-      "timeMs": 88.5426
+      "timeMs": 88.3366
     },
     {
       "framework": "alien-signals",
       "test": "cellx10",
       "samplesMs": [
-        0.03062500000000057,
-        0.03970800000000452,
-        0.026208000000004006
+        0.03249999999999886,
+        0.039917000000002645,
+        0.026000000000003354
       ],
       "suite": "cellx",
-      "timeMs": 0.0262
+      "timeMs": 0.026
     },
     {
       "framework": "alien-signals",
       "test": "cellx20",
       "samplesMs": [
-        0.04233299999999929,
-        0.023707999999999174,
-        0.022792000000002588
+        0.04562500000000114,
+        0.030542000000004066,
+        0.0273340000000033
       ],
       "suite": "cellx",
-      "timeMs": 0.0228
+      "timeMs": 0.0273
     },
     {
       "framework": "alien-signals",
       "test": "cellx30",
       "samplesMs": [
-        0.042124999999998636,
-        0.03166699999999878,
-        0.01999999999999602
+        0.04345800000000111,
+        0.031165999999998917,
+        0.022207999999999117
       ],
       "suite": "cellx",
-      "timeMs": 0.02
+      "timeMs": 0.0222
     },
     {
       "framework": "@angular/signals",
       "test": "avoidablePropagation",
       "samplesMs": [
-        170.26908300000002,
-        163.48658300000002,
-        163.82558300000005
+        173.566375,
+        165.366416,
+        164.40858300000002
       ],
       "suite": "kairo",
-      "timeMs": 163.4866
+      "timeMs": 164.4086
     },
     {
       "framework": "@angular/signals",
       "test": "broadPropagation",
       "samplesMs": [
-        484.4050420000001,
-        473.50137500000005,
-        472.7892079999999
+        483.15254200000004,
+        474.354333,
+        471.565875
       ],
       "suite": "kairo",
-      "timeMs": 472.7892
+      "timeMs": 471.5659
     },
     {
       "framework": "@angular/signals",
       "test": "deepPropagation",
       "samplesMs": [
-        141.4915420000002,
-        141.33899999999994,
-        141.11820800000032
+        142.48741599999994,
+        141.95191699999987,
+        141.75675
       ],
       "suite": "kairo",
-      "timeMs": 141.1182
+      "timeMs": 141.7568
     },
     {
       "framework": "@angular/signals",
       "test": "diamond",
       "samplesMs": [
-        260.523291,
-        246.82975000000033,
-        261.08650000000034
+        253.54341699999986,
+        248.57191699999976,
+        251.16991599999983
       ],
       "suite": "kairo",
-      "timeMs": 246.8298
+      "timeMs": 248.5719
     },
     {
       "framework": "@angular/signals",
       "test": "mux",
       "samplesMs": [
-        479.04633300000023,
-        437.2265419999999,
-        418.0992500000002
+        436.5924580000001,
+        432.3807499999998,
+        419.14670899999965
       ],
       "suite": "kairo",
-      "timeMs": 418.0993
+      "timeMs": 419.1467
     },
     {
       "framework": "@angular/signals",
       "test": "repeatedObservers",
       "samplesMs": [
-        39.110209000000395,
-        38.37391600000046,
-        38.48874999999953
+        36.65229199999976,
+        34.9827920000007,
+        35.24983400000019
       ],
       "suite": "kairo",
-      "timeMs": 38.3739
+      "timeMs": 34.9828
     },
     {
       "framework": "@angular/signals",
       "test": "triangle",
       "samplesMs": [
-        117.97633300000052,
-        105.15295900000001,
-        103.84783400000015
+        107.38562499999989,
+        101.96691699999974,
+        102.4067500000001
       ],
       "suite": "kairo",
-      "timeMs": 103.8478
+      "timeMs": 101.9669
     },
     {
       "framework": "@angular/signals",
       "test": "unstable",
       "samplesMs": [
-        87.83220799999981,
-        83.57554100000016,
-        106.34254199999941
+        85.20200000000023,
+        79.41187500000069,
+        79.40850000000046
       ],
       "suite": "kairo",
-      "timeMs": 83.5755
+      "timeMs": 79.4085
     },
     {
       "framework": "@angular/signals",
       "test": "molBench",
       "samplesMs": [
-        319.3815,
-        311.88762500000007,
-        328.88204200000007
+        309.80758399999996,
+        310.804,
+        316.477583
       ],
       "suite": "mol",
-      "timeMs": 311.8876
+      "timeMs": 309.8076
     },
     {
       "framework": "@angular/signals",
       "test": "createDataSignals",
       "samplesMs": [
-        29.101084,
-        23.483959,
-        26.014666000000005
+        27.195833000000007,
+        20.317791999999997,
+        19.499375000000015
       ],
       "suite": "s",
-      "timeMs": 23.484
+      "timeMs": 19.4994
     },
     {
       "framework": "@angular/signals",
       "test": "createComputations0to1",
       "samplesMs": [
-        10.679624999999987,
-        12.694375000000008,
-        7.284209000000004
+        8.874250000000018,
+        9.996916999999996,
+        6.156416000000007
       ],
       "suite": "s",
-      "timeMs": 7.2842
+      "timeMs": 6.1564
     },
     {
       "framework": "@angular/signals",
       "test": "createComputations1to1",
       "samplesMs": [
-        51.41120799999999,
-        66.27962499999995,
-        65.07695799999999
+        48.79304099999999,
+        47.803124999999966,
+        47.195334
       ],
       "suite": "s",
-      "timeMs": 51.4112
+      "timeMs": 47.1953
     },
     {
       "framework": "@angular/signals",
       "test": "createComputations2to1",
       "samplesMs": [
-        50.41987500000005,
-        45.29945799999996,
-        172.62033300000007
+        41.91437500000001,
+        44.221833000000004,
+        44.649541
       ],
       "suite": "s",
-      "timeMs": 45.2995
+      "timeMs": 41.9144
     },
     {
       "framework": "@angular/signals",
       "test": "createComputations4to1",
       "samplesMs": [
-        52.547916999999984,
-        47.108292000000006,
-        36.249000000000024
+        37.36637499999995,
+        38.772249999999985,
+        32.78937499999995
       ],
       "suite": "s",
-      "timeMs": 36.249
+      "timeMs": 32.7894
     },
     {
       "framework": "@angular/signals",
       "test": "createComputations1000to1",
       "samplesMs": [
-        26.410417000000052,
-        35.96795799999995,
-        23.424666000000116
+        24.528583000000026,
+        31.02125000000001,
+        22.607291000000032
       ],
       "suite": "s",
-      "timeMs": 23.4247
+      "timeMs": 22.6073
     },
     {
       "framework": "@angular/signals",
       "test": "createComputations1to2",
       "samplesMs": [
-        31.88045800000009,
-        29.35287500000004,
-        26.14970900000003
+        30.614625000000046,
+        28.87783300000001,
+        30.853832999999895
       ],
       "suite": "s",
-      "timeMs": 26.1497
+      "timeMs": 28.8778
     },
     {
       "framework": "@angular/signals",
       "test": "createComputations1to4",
       "samplesMs": [
-        16.068665999999894,
-        21.34395900000004,
-        15.292167000000063
+        14.851499999999987,
+        20.355583999999908,
+        14.917875000000095
       ],
       "suite": "s",
-      "timeMs": 15.2922
+      "timeMs": 14.8515
     },
     {
       "framework": "@angular/signals",
       "test": "createComputations1to8",
       "samplesMs": [
-        12.551375000000007,
-        12.185834000000114,
-        19.537832999999864
+        10.080416000000014,
+        11.001625000000104,
+        16.164125000000013
       ],
       "suite": "s",
-      "timeMs": 12.1858
+      "timeMs": 10.0804
     },
     {
       "framework": "@angular/signals",
       "test": "createComputations1to1000",
       "samplesMs": [
-        11.035583000000088,
-        14.437582999999904,
-        7.742541000000074
+        8.593375000000151,
+        12.122290999999905,
+        6.042458000000124
       ],
       "suite": "s",
-      "timeMs": 7.7425
+      "timeMs": 6.0425
     },
     {
       "framework": "@angular/signals",
       "test": "updateComputations1to1",
       "samplesMs": [
-        26.89737500000001,
-        25.233791999999994,
-        21.719499999999925
+        21.003250000000207,
+        24.11808300000007,
+        20.514249999999947
       ],
       "suite": "s",
-      "timeMs": 21.7195
+      "timeMs": 20.5142
     },
     {
       "framework": "@angular/signals",
       "test": "updateComputations2to1",
       "samplesMs": [
-        19.04291699999999,
-        12.446292000000085,
-        17.06470800000011
+        18.30187500000011,
+        11.720583000000033,
+        16.397959000000128
       ],
       "suite": "s",
-      "timeMs": 12.4463
+      "timeMs": 11.7206
     },
     {
       "framework": "@angular/signals",
       "test": "updateComputations4to1",
       "samplesMs": [
-        9.158208000000059,
-        12.635457999999971,
-        9.835958000000119
+        8.855000000000018,
+        10.937875000000076,
+        9.590000000000146
       ],
       "suite": "s",
-      "timeMs": 9.1582
+      "timeMs": 8.855
     },
     {
       "framework": "@angular/signals",
       "test": "updateComputations1000to1",
       "samplesMs": [
-        9.708999999999833,
-        6.4379999999998745,
-        8.331249999999955
+        9.672415999999885,
+        7.27208399999995,
+        7.989542000000029
       ],
       "suite": "s",
-      "timeMs": 6.438
+      "timeMs": 7.2721
     },
     {
       "framework": "@angular/signals",
       "test": "updateComputations1to2",
       "samplesMs": [
-        24.432000000000016,
-        23.844916000000012,
-        23.72824999999989
+        21.703958000000057,
+        27.14970799999992,
+        18.382916999999907
       ],
       "suite": "s",
-      "timeMs": 23.7282
+      "timeMs": 18.3829
     },
     {
       "framework": "@angular/signals",
       "test": "updateComputations1to4",
       "samplesMs": [
-        22.454625000000078,
-        22.145792000000256,
-        27.298957999999857
+        21.732999999999947,
+        21.674041999999872,
+        25.757583000000068
       ],
       "suite": "s",
-      "timeMs": 22.1458
+      "timeMs": 21.674
     },
     {
       "framework": "@angular/signals",
       "test": "updateComputations1to1000",
       "samplesMs": [
-        18.347875000000386,
-        28.705207999999857,
-        22.795832999999675
+        18.248333000000002,
+        21.271124999999984,
+        22.082458000000088
       ],
       "suite": "s",
-      "timeMs": 18.3479
+      "timeMs": 18.2483
     },
     {
       "framework": "@angular/signals",
       "test": "10x5 - 2 sources - read 20% (simple component)",
       "samplesMs": [
-        447.51408299999997,
-        438.35395800000015,
-        460.4168339999999
+        439.99770800000005,
+        432.9152499999999,
+        427.2521670000001
       ],
       "suite": "dynamic",
-      "timeMs": 438.354
+      "timeMs": 427.2522
     },
     {
       "framework": "@angular/signals",
       "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
       "samplesMs": [
-        331.50420799999984,
-        324.94095800000014,
-        319.0000420000001
+        329.19337499999983,
+        323.74066600000015,
+        325.521667
       ],
       "suite": "dynamic",
-      "timeMs": 319
+      "timeMs": 323.7407
     },
     {
       "framework": "@angular/signals",
       "test": "1000x12 - 4 sources - dynamic (large web app)",
       "samplesMs": [
-        604.9694999999997,
-        591.0519169999998,
-        674.9412920000004
+        551.399042,
+        557.7859170000002,
+        636.4234999999999
       ],
       "suite": "dynamic",
-      "timeMs": 591.0519
+      "timeMs": 551.399
     },
     {
       "framework": "@angular/signals",
       "test": "1000x5 - 25 sources (wide dense)",
       "samplesMs": [
-        1039.3687920000002,
-        984.3280420000001,
-        971.9450419999994
+        940.943209,
+        954.583125000001,
+        894.6164580000004
       ],
       "suite": "dynamic",
-      "timeMs": 971.945
+      "timeMs": 894.6165
     },
     {
       "framework": "@angular/signals",
       "test": "5x500 - 3 sources (deep)",
       "samplesMs": [
-        244.36004200000025,
-        246.62954200000058,
-        254.31525000000147
+        242.20045899999968,
+        241.00387500000033,
+        233.38700000000063
       ],
       "suite": "dynamic",
-      "timeMs": 244.36
+      "timeMs": 233.387
     },
     {
       "framework": "@angular/signals",
       "test": "cellx10",
       "samplesMs": [
-        0.08133300000000077,
-        0.06879199999999486,
-        0.05145800000000378
+        0.0656669999999977,
+        0.06254099999999596,
+        0.05345799999999912
       ],
       "suite": "cellx",
-      "timeMs": 0.0515
+      "timeMs": 0.0535
     },
     {
       "framework": "@angular/signals",
       "test": "cellx20",
       "samplesMs": [
-        0.09600000000000364,
-        0.06654100000000085,
-        0.07737499999999642
+        0.08470799999999912,
+        0.05962499999999693,
+        0.06649999999999778
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0596
+    },
+    {
+      "framework": "@angular/signals",
+      "test": "cellx30",
+      "samplesMs": [
+        0.07374999999999687,
+        0.0557500000000033,
+        0.057124999999999204
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0558
+    },
+    {
+      "framework": "MobX",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        308.515958,
+        301.43179100000003,
+        311.160792
+      ],
+      "suite": "kairo",
+      "timeMs": 301.4318
+    },
+    {
+      "framework": "MobX",
+      "test": "broadPropagation",
+      "samplesMs": [
+        768.167917,
+        762.0881670000001,
+        764.00675
+      ],
+      "suite": "kairo",
+      "timeMs": 762.0882
+    },
+    {
+      "framework": "MobX",
+      "test": "deepPropagation",
+      "samplesMs": [
+        402.48775000000023,
+        301.58491700000013,
+        295.2643750000002
+      ],
+      "suite": "kairo",
+      "timeMs": 295.2644
+    },
+    {
+      "framework": "MobX",
+      "test": "diamond",
+      "samplesMs": [
+        396.87416699999994,
+        406.61874999999964,
+        391.2398750000002
+      ],
+      "suite": "kairo",
+      "timeMs": 391.2399
+    },
+    {
+      "framework": "MobX",
+      "test": "mux",
+      "samplesMs": [
+        447.823625,
+        440.7576250000002,
+        439.86254199999985
+      ],
+      "suite": "kairo",
+      "timeMs": 439.8625
+    },
+    {
+      "framework": "MobX",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        31.976292000000285,
+        31.785249999999905,
+        35.37870800000019
+      ],
+      "suite": "kairo",
+      "timeMs": 31.7852
+    },
+    {
+      "framework": "MobX",
+      "test": "triangle",
+      "samplesMs": [
+        154.96704099999988,
+        143.8795829999999,
+        261.88804100000016
+      ],
+      "suite": "kairo",
+      "timeMs": 143.8796
+    },
+    {
+      "framework": "MobX",
+      "test": "unstable",
+      "samplesMs": [
+        111.81133299999965,
+        97.00966699999935,
+        92.80266699999993
+      ],
+      "suite": "kairo",
+      "timeMs": 92.8027
+    },
+    {
+      "framework": "MobX",
+      "test": "molBench",
+      "samplesMs": [
+        395.576875,
+        359.770166,
+        331.9
+      ],
+      "suite": "mol",
+      "timeMs": 331.9
+    },
+    {
+      "framework": "MobX",
+      "test": "createDataSignals",
+      "samplesMs": [
+        8.010458,
+        9.913000000000011,
+        9.717916000000002
+      ],
+      "suite": "s",
+      "timeMs": 8.0105
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        30.855166999999994,
+        30.37908299999998,
+        26.872792000000004
+      ],
+      "suite": "s",
+      "timeMs": 26.8728
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        85.72725000000003,
+        81.72162500000002,
+        78.69475
+      ],
+      "suite": "s",
+      "timeMs": 78.6947
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        29.84299999999996,
+        31.248000000000047,
+        29.22829200000001
+      ],
+      "suite": "s",
+      "timeMs": 29.2283
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        22.073000000000093,
+        25.91770900000006,
+        27.47620799999993
+      ],
+      "suite": "s",
+      "timeMs": 22.073
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        15.743749999999977,
+        11.874042000000031,
+        17.168709000000035
+      ],
+      "suite": "s",
+      "timeMs": 11.874
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        60.86916599999995,
+        55.76345800000013,
+        49.887833
+      ],
+      "suite": "s",
+      "timeMs": 49.8878
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        47.540457999999944,
+        55.52149999999983,
+        61.270500000000084
+      ],
+      "suite": "s",
+      "timeMs": 47.5405
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        63.66616700000009,
+        61.179709,
+        54.99595799999997
+      ],
+      "suite": "s",
+      "timeMs": 54.996
+    },
+    {
+      "framework": "MobX",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        42.67520800000011,
+        39.575624999999945,
+        41.00533299999984
+      ],
+      "suite": "s",
+      "timeMs": 39.5756
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        38.89200000000005,
+        40.554582999999866,
+        38.75712500000009
+      ],
+      "suite": "s",
+      "timeMs": 38.7571
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        27.49804199999994,
+        22.495249999999942,
+        22.639000000000124
+      ],
+      "suite": "s",
+      "timeMs": 22.4952
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        13.10787500000015,
+        13.15774999999985,
+        14.224624999999833
+      ],
+      "suite": "s",
+      "timeMs": 13.1079
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        5.7348329999999805,
+        6.152790999999979,
+        6.212667000000238
+      ],
+      "suite": "s",
+      "timeMs": 5.7348
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        37.650666999999885,
+        37.73804100000007,
+        37.00095800000008
+      ],
+      "suite": "s",
+      "timeMs": 37.001
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        34.58854199999996,
+        33.517875000000004,
+        34.15083300000015
+      ],
+      "suite": "s",
+      "timeMs": 33.5179
+    },
+    {
+      "framework": "MobX",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        30.819334000000254,
+        30.73416700000007,
+        32.262750000000324
+      ],
+      "suite": "s",
+      "timeMs": 30.7342
+    },
+    {
+      "framework": "MobX",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        517.6242919999999,
+        538.964708,
+        556.509834
+      ],
+      "suite": "dynamic",
+      "timeMs": 517.6243
+    },
+    {
+      "framework": "MobX",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        427.82612500000005,
+        374.8835829999998,
+        357.93541700000014
+      ],
+      "suite": "dynamic",
+      "timeMs": 357.9354
+    },
+    {
+      "framework": "MobX",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        643.2659160000003,
+        563.8319170000004,
+        560.7183749999995
+      ],
+      "suite": "dynamic",
+      "timeMs": 560.7184
+    },
+    {
+      "framework": "MobX",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        850.1874159999998,
+        673.3971249999995,
+        628.1980000000003
+      ],
+      "suite": "dynamic",
+      "timeMs": 628.198
+    },
+    {
+      "framework": "MobX",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        245.99966600000153,
+        245.2056250000005,
+        247.95666700000038
+      ],
+      "suite": "dynamic",
+      "timeMs": 245.2056
+    },
+    {
+      "framework": "MobX",
+      "test": "cellx10",
+      "samplesMs": [
+        0.10508300000000048,
+        0.1335419999999985,
+        0.0934999999999988
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0935
+    },
+    {
+      "framework": "MobX",
+      "test": "cellx20",
+      "samplesMs": [
+        0.12837499999999835,
+        0.14279100000000255,
+        0.1738330000000019
+      ],
+      "suite": "cellx",
+      "timeMs": 0.1284
+    },
+    {
+      "framework": "MobX",
+      "test": "cellx30",
+      "samplesMs": [
+        0.09100000000000108,
+        0.10404199999999975,
+        0.25566700000000253
+      ],
+      "suite": "cellx",
+      "timeMs": 0.091
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        244.61137499999998,
+        232.89220800000004,
+        231.53491600000007
+      ],
+      "suite": "kairo",
+      "timeMs": 231.5349
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "broadPropagation",
+      "samplesMs": [
+        716.9515419999999,
+        710.6515000000002,
+        712.715416
+      ],
+      "suite": "kairo",
+      "timeMs": 710.6515
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "deepPropagation",
+      "samplesMs": [
+        207.3994160000002,
+        206.26600000000008,
+        204.09749999999985
+      ],
+      "suite": "kairo",
+      "timeMs": 204.0975
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "diamond",
+      "samplesMs": [
+        320.1443750000003,
+        314.93008299999974,
+        303.54104199999983
+      ],
+      "suite": "kairo",
+      "timeMs": 303.541
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "mux",
+      "samplesMs": [
+        504.1697919999997,
+        502.8104999999996,
+        497.21879199999967
+      ],
+      "suite": "kairo",
+      "timeMs": 497.2188
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        70.37316699999974,
+        69.7156670000004,
+        71.07650000000012
+      ],
+      "suite": "kairo",
+      "timeMs": 69.7157
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "triangle",
+      "samplesMs": [
+        113.06212500000038,
+        108.14766699999927,
+        109.67133300000023
+      ],
+      "suite": "kairo",
+      "timeMs": 108.1477
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "unstable",
+      "samplesMs": [
+        191.65029099999992,
+        185.92912500000057,
+        183.2172500000006
+      ],
+      "suite": "kairo",
+      "timeMs": 183.2173
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "molBench",
+      "samplesMs": [
+        241.32816699999998,
+        231.67974999999996,
+        257.89645899999994
+      ],
+      "suite": "mol",
+      "timeMs": 231.6797
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createDataSignals",
+      "samplesMs": [
+        15.320916000000011,
+        27.43379200000001,
+        15.518459000000007
+      ],
+      "suite": "s",
+      "timeMs": 15.3209
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        13.481915999999984,
+        19.84224999999998,
+        14.347500000000025
+      ],
+      "suite": "s",
+      "timeMs": 13.4819
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        66.32683300000008,
+        63.301874999999995,
+        61.332583
+      ],
+      "suite": "s",
+      "timeMs": 61.3326
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        41.66108299999996,
+        59.44791699999996,
+        49.70404200000007
+      ],
+      "suite": "s",
+      "timeMs": 41.6611
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        33.57316700000001,
+        52.123165999999856,
+        45.709334000000126
+      ],
+      "suite": "s",
+      "timeMs": 33.5732
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        27.545499999999947,
+        42.02233299999989,
+        39.820834000000104
+      ],
+      "suite": "s",
+      "timeMs": 27.5455
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        43.140166000000136,
+        54.987333000000035,
+        52.66816599999993
+      ],
+      "suite": "s",
+      "timeMs": 43.1402
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        35.0698339999999,
+        34.12058399999978,
+        33.83537500000011
+      ],
+      "suite": "s",
+      "timeMs": 33.8354
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        28.797665999999936,
+        26.572124999999687,
+        26.733000000000175
+      ],
+      "suite": "s",
+      "timeMs": 26.5721
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        24.520166999999674,
+        22.214208000000326,
+        23.204541000000063
+      ],
+      "suite": "s",
+      "timeMs": 22.2142
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        51.6775419999999,
+        52.914916999999605,
+        51.37049999999999
+      ],
+      "suite": "s",
+      "timeMs": 51.3705
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        31.849249999999756,
+        28.317708999999923,
+        28.323457999999846
+      ],
+      "suite": "s",
+      "timeMs": 28.3177
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        18.263374999999996,
+        17.907874999999876,
+        18.078667000000223
+      ],
+      "suite": "s",
+      "timeMs": 17.9079
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        8.723916999999801,
+        8.327874999999949,
+        8.226583000000119
+      ],
+      "suite": "s",
+      "timeMs": 8.2266
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        45.11149999999998,
+        44.31837499999983,
+        44.8074160000001
+      ],
+      "suite": "s",
+      "timeMs": 44.3184
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        43.23120800000015,
+        43.93645800000013,
+        43.266625000000204
+      ],
+      "suite": "s",
+      "timeMs": 43.2312
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        47.83783399999993,
+        48.48037499999964,
+        47.83562499999971
+      ],
+      "suite": "s",
+      "timeMs": 47.8356
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        433.626125,
+        430.10854100000006,
+        430.71720900000014
+      ],
+      "suite": "dynamic",
+      "timeMs": 430.1085
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        262.0284579999998,
+        263.5901249999997,
+        266.7417919999998
+      ],
+      "suite": "dynamic",
+      "timeMs": 262.0285
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        428.3978750000001,
+        434.2570000000005,
+        417.6145000000006
+      ],
+      "suite": "dynamic",
+      "timeMs": 417.6145
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        576.7893750000003,
+        580.591375,
+        572.3081249999996
+      ],
+      "suite": "dynamic",
+      "timeMs": 572.3081
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        209.25345899999957,
+        207.29662499999995,
+        201.5696250000001
+      ],
+      "suite": "dynamic",
+      "timeMs": 201.5696
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "cellx10",
+      "samplesMs": [
+        0.13079199999999958,
+        0.09312500000000057,
+        0.05512499999999676
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0551
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "cellx20",
+      "samplesMs": [
+        0.0972500000000025,
+        0.05445799999999679,
+        0.05220899999999773
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0522
+    },
+    {
+      "framework": "$mol_wire",
+      "test": "cellx30",
+      "samplesMs": [
+        0.0747080000000011,
+        0.06970800000000565,
+        0.17204199999999759
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0697
+    },
+    {
+      "framework": "Oby",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        164.452667,
+        156.73604199999997,
+        157.60870900000003
+      ],
+      "suite": "kairo",
+      "timeMs": 156.736
+    },
+    {
+      "framework": "Oby",
+      "test": "broadPropagation",
+      "samplesMs": [
+        337.483917,
+        330.81108400000005,
+        329.10725
+      ],
+      "suite": "kairo",
+      "timeMs": 329.1073
+    },
+    {
+      "framework": "Oby",
+      "test": "deepPropagation",
+      "samplesMs": [
+        149.39812500000016,
+        149.07483300000013,
+        148.41183300000012
+      ],
+      "suite": "kairo",
+      "timeMs": 148.4118
+    },
+    {
+      "framework": "Oby",
+      "test": "diamond",
+      "samplesMs": [
+        185.07487500000002,
+        179.53274999999985,
+        180.157917
+      ],
+      "suite": "kairo",
+      "timeMs": 179.5327
+    },
+    {
+      "framework": "Oby",
+      "test": "mux",
+      "samplesMs": [
+        297.1414999999997,
+        293.74887499999977,
+        284.40083400000003
+      ],
+      "suite": "kairo",
+      "timeMs": 284.4008
+    },
+    {
+      "framework": "Oby",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        26.657916999999998,
+        24.728625000000193,
+        24.825916999999663
+      ],
+      "suite": "kairo",
+      "timeMs": 24.7286
+    },
+    {
+      "framework": "Oby",
+      "test": "triangle",
+      "samplesMs": [
+        91.95091700000012,
+        84.88804200000004,
+        85.12279199999966
+      ],
+      "suite": "kairo",
+      "timeMs": 84.888
+    },
+    {
+      "framework": "Oby",
+      "test": "unstable",
+      "samplesMs": [
+        47.748291999999765,
+        45.02012500000001,
+        43.671875
+      ],
+      "suite": "kairo",
+      "timeMs": 43.6719
+    },
+    {
+      "framework": "Oby",
+      "test": "molBench",
+      "samplesMs": [
+        367.62250000000006,
+        362.127459,
+        362.9186659999999
+      ],
+      "suite": "mol",
+      "timeMs": 362.1275
+    },
+    {
+      "framework": "Oby",
+      "test": "createDataSignals",
+      "samplesMs": [
+        10.189583000000006,
+        8.87037500000001,
+        8.816833000000003
+      ],
+      "suite": "s",
+      "timeMs": 8.8168
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        22.084709000000004,
+        34.392875000000004,
+        20.105917000000005
+      ],
+      "suite": "s",
+      "timeMs": 20.1059
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        86.22158300000001,
+        60.89416699999998,
+        68.22820899999994
+      ],
+      "suite": "s",
+      "timeMs": 60.8942
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        45.09404200000006,
+        46.565624999999955,
+        38.09841700000004
+      ],
+      "suite": "s",
+      "timeMs": 38.0984
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        27.584292000000005,
+        33.41691700000001,
+        28.653332999999975
+      ],
+      "suite": "s",
+      "timeMs": 27.5843
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        10.604041000000052,
+        13.27904099999978,
+        11.346917000000076
+      ],
+      "suite": "s",
+      "timeMs": 10.604
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        40.72516699999983,
+        46.86112500000013,
+        45.425083000000086
+      ],
+      "suite": "s",
+      "timeMs": 40.7252
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        32.608834000000115,
+        41.39279099999999,
+        33.26424999999995
+      ],
+      "suite": "s",
+      "timeMs": 32.6088
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        28.05016599999999,
+        35.073874999999816,
+        30.44425000000001
+      ],
+      "suite": "s",
+      "timeMs": 28.0502
+    },
+    {
+      "framework": "Oby",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        28.663583000000017,
+        46.601875000000064,
+        29.27991699999984
+      ],
+      "suite": "s",
+      "timeMs": 28.6636
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        23.726916999999958,
+        25.14658300000019,
+        23.49862499999972
+      ],
+      "suite": "s",
+      "timeMs": 23.4986
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        17.54995800000006,
+        14.403041999999914,
+        14.431957999999668
+      ],
+      "suite": "s",
+      "timeMs": 14.403
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        8.92791699999998,
+        9.031750000000102,
+        9.253083999999944
+      ],
+      "suite": "s",
+      "timeMs": 8.9279
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        8.555041000000074,
+        8.187041000000136,
+        8.121750000000247
+      ],
+      "suite": "s",
+      "timeMs": 8.1218
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        29.349334,
+        25.666917000000012,
+        25.598791999999776
+      ],
+      "suite": "s",
+      "timeMs": 25.5988
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        24.788416000000325,
+        24.631124999999884,
+        24.6181660000002
+      ],
+      "suite": "s",
+      "timeMs": 24.6182
+    },
+    {
+      "framework": "Oby",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        24.083416999999827,
+        24.13883399999986,
+        24.07445800000005
+      ],
+      "suite": "s",
+      "timeMs": 24.0745
+    },
+    {
+      "framework": "Oby",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        329.010708,
+        319.0285,
+        362.82558300000005
+      ],
+      "suite": "dynamic",
+      "timeMs": 319.0285
+    },
+    {
+      "framework": "Oby",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        236.9200830000002,
+        228.48237500000005,
+        222.24241699999993
+      ],
+      "suite": "dynamic",
+      "timeMs": 222.2424
+    },
+    {
+      "framework": "Oby",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        397.3852499999998,
+        454.7271249999999,
+        534.9295000000002
+      ],
+      "suite": "dynamic",
+      "timeMs": 397.3852
+    },
+    {
+      "framework": "Oby",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        436.1434170000002,
+        436.32679199999984,
+        440.67816700000003
+      ],
+      "suite": "dynamic",
+      "timeMs": 436.1434
+    },
+    {
+      "framework": "Oby",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        194.04574999999932,
+        196.35120800000004,
+        192.73320799999965
+      ],
+      "suite": "dynamic",
+      "timeMs": 192.7332
+    },
+    {
+      "framework": "Oby",
+      "test": "cellx10",
+      "samplesMs": [
+        0.09425000000000239,
+        0.074542000000001,
+        0.06654199999999832
       ],
       "suite": "cellx",
       "timeMs": 0.0665
     },
     {
-      "framework": "@angular/signals",
-      "test": "cellx30",
-      "samplesMs": [
-        0.07195899999999966,
-        0.05612499999999443,
-        0.06454200000000299
-      ],
-      "suite": "cellx",
-      "timeMs": 0.0561
-    },
-    {
-      "framework": "MobX",
-      "test": "avoidablePropagation",
-      "samplesMs": [
-        319.036459,
-        318.69891699999994,
-        327.90820800000006
-      ],
-      "suite": "kairo",
-      "timeMs": 318.6989
-    },
-    {
-      "framework": "MobX",
-      "test": "broadPropagation",
-      "samplesMs": [
-        874.853541,
-        799.3769579999998,
-        771.750916
-      ],
-      "suite": "kairo",
-      "timeMs": 771.7509
-    },
-    {
-      "framework": "MobX",
-      "test": "deepPropagation",
-      "samplesMs": [
-        282.98454200000015,
-        277.110917,
-        273.3232920000005
-      ],
-      "suite": "kairo",
-      "timeMs": 273.3233
-    },
-    {
-      "framework": "MobX",
-      "test": "diamond",
-      "samplesMs": [
-        370.5442920000005,
-        365.75174999999945,
-        364.6701670000002
-      ],
-      "suite": "kairo",
-      "timeMs": 364.6702
-    },
-    {
-      "framework": "MobX",
-      "test": "mux",
-      "samplesMs": [
-        394.4528330000003,
-        392.2763330000007,
-        384.9032079999997
-      ],
-      "suite": "kairo",
-      "timeMs": 384.9032
-    },
-    {
-      "framework": "MobX",
-      "test": "repeatedObservers",
-      "samplesMs": [
-        27.774875000000065,
-        26.93708400000014,
-        26.927332999999635
-      ],
-      "suite": "kairo",
-      "timeMs": 26.9273
-    },
-    {
-      "framework": "MobX",
-      "test": "triangle",
-      "samplesMs": [
-        131.71749999999975,
-        125.81224999999995,
-        128.3787080000002
-      ],
-      "suite": "kairo",
-      "timeMs": 125.8122
-    },
-    {
-      "framework": "MobX",
-      "test": "unstable",
-      "samplesMs": [
-        65.41362500000014,
-        61.66783399999986,
-        61.84991600000012
-      ],
-      "suite": "kairo",
-      "timeMs": 61.6678
-    },
-    {
-      "framework": "MobX",
-      "test": "molBench",
-      "samplesMs": [
-        315.635958,
-        339.832208,
-        323.71062500000005
-      ],
-      "suite": "mol",
-      "timeMs": 315.636
-    },
-    {
-      "framework": "MobX",
-      "test": "createDataSignals",
-      "samplesMs": [
-        6.050208000000005,
-        6.451708999999994,
-        7.078582999999995
-      ],
-      "suite": "s",
-      "timeMs": 6.0502
-    },
-    {
-      "framework": "MobX",
-      "test": "createComputations0to1",
-      "samplesMs": [
-        26.694584000000006,
-        24.76412499999998,
-        22.803583000000003
-      ],
-      "suite": "s",
-      "timeMs": 22.8036
-    },
-    {
-      "framework": "MobX",
-      "test": "createComputations1to1",
-      "samplesMs": [
-        71.48262500000004,
-        76.06254099999995,
-        71.32329199999998
-      ],
-      "suite": "s",
-      "timeMs": 71.3233
-    },
-    {
-      "framework": "MobX",
-      "test": "createComputations2to1",
-      "samplesMs": [
-        28.161917000000017,
-        29.25587500000006,
-        50.54975000000002
-      ],
-      "suite": "s",
-      "timeMs": 28.1619
-    },
-    {
-      "framework": "MobX",
-      "test": "createComputations4to1",
-      "samplesMs": [
-        19.656292000000008,
-        21.359916,
-        22.900083999999993
-      ],
-      "suite": "s",
-      "timeMs": 19.6563
-    },
-    {
-      "framework": "MobX",
-      "test": "createComputations1000to1",
-      "samplesMs": [
-        11.143000000000029,
-        9.201875000000086,
-        11.558415999999966
-      ],
-      "suite": "s",
-      "timeMs": 9.2019
-    },
-    {
-      "framework": "MobX",
-      "test": "createComputations1to2",
-      "samplesMs": [
-        42.98654099999999,
-        40.651792,
-        42.0311660000001
-      ],
-      "suite": "s",
-      "timeMs": 40.6518
-    },
-    {
-      "framework": "MobX",
-      "test": "createComputations1to4",
-      "samplesMs": [
-        39.73624999999993,
-        39.333041000000094,
-        39.75845800000002
-      ],
-      "suite": "s",
-      "timeMs": 39.333
-    },
-    {
-      "framework": "MobX",
-      "test": "createComputations1to8",
-      "samplesMs": [
-        39.46766699999989,
-        38.57954100000006,
-        39.12833300000011
-      ],
-      "suite": "s",
-      "timeMs": 38.5795
-    },
-    {
-      "framework": "MobX",
-      "test": "createComputations1to1000",
-      "samplesMs": [
-        38.943874999999935,
-        37.566417,
-        38.31600000000003
-      ],
-      "suite": "s",
-      "timeMs": 37.5664
-    },
-    {
-      "framework": "MobX",
-      "test": "updateComputations1to1",
-      "samplesMs": [
-        36.03366699999992,
-        37.414999999999964,
-        35.463708
-      ],
-      "suite": "s",
-      "timeMs": 35.4637
-    },
-    {
-      "framework": "MobX",
-      "test": "updateComputations2to1",
-      "samplesMs": [
-        24.71791600000006,
-        20.312165999999934,
-        20.570250000000215
-      ],
-      "suite": "s",
-      "timeMs": 20.3122
-    },
-    {
-      "framework": "MobX",
-      "test": "updateComputations4to1",
-      "samplesMs": [
-        12.1087500000001,
-        12.200000000000045,
-        12.054915999999821
-      ],
-      "suite": "s",
-      "timeMs": 12.0549
-    },
-    {
-      "framework": "MobX",
-      "test": "updateComputations1000to1",
-      "samplesMs": [
-        5.134583999999904,
-        5.667249999999967,
-        5.346708000000035
-      ],
-      "suite": "s",
-      "timeMs": 5.1346
-    },
-    {
-      "framework": "MobX",
-      "test": "updateComputations1to2",
-      "samplesMs": [
-        32.432666000000154,
-        32.06754100000012,
-        32.06050000000005
-      ],
-      "suite": "s",
-      "timeMs": 32.0605
-    },
-    {
-      "framework": "MobX",
-      "test": "updateComputations1to4",
-      "samplesMs": [
-        29.57516600000008,
-        29.444290999999794,
-        29.378333999999995
-      ],
-      "suite": "s",
-      "timeMs": 29.3783
-    },
-    {
-      "framework": "MobX",
-      "test": "updateComputations1to1000",
-      "samplesMs": [
-        27.582458999999744,
-        27.87304099999983,
-        27.6752919999999
-      ],
-      "suite": "s",
-      "timeMs": 27.5825
-    },
-    {
-      "framework": "MobX",
-      "test": "10x5 - 2 sources - read 20% (simple component)",
-      "samplesMs": [
-        499.91595799999993,
-        496.27420800000004,
-        523.1395000000002
-      ],
-      "suite": "dynamic",
-      "timeMs": 496.2742
-    },
-    {
-      "framework": "MobX",
-      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
-      "samplesMs": [
-        328.7038339999999,
-        329.46608300000025,
-        328.9560839999999
-      ],
-      "suite": "dynamic",
-      "timeMs": 328.7038
-    },
-    {
-      "framework": "MobX",
-      "test": "1000x12 - 4 sources - dynamic (large web app)",
-      "samplesMs": [
-        481.20358300000044,
-        466.0279580000006,
-        460.132208
-      ],
-      "suite": "dynamic",
-      "timeMs": 460.1322
-    },
-    {
-      "framework": "MobX",
-      "test": "1000x5 - 25 sources (wide dense)",
-      "samplesMs": [
-        663.1121659999999,
-        618.5820409999997,
-        619.2249579999998
-      ],
-      "suite": "dynamic",
-      "timeMs": 618.582
-    },
-    {
-      "framework": "MobX",
-      "test": "5x500 - 3 sources (deep)",
-      "samplesMs": [
-        266.9163749999989,
-        283.2815410000003,
-        249.16491599999972
-      ],
-      "suite": "dynamic",
-      "timeMs": 249.1649
-    },
-    {
-      "framework": "MobX",
-      "test": "cellx10",
-      "samplesMs": [
-        0.10466699999999918,
-        0.12770799999999838,
-        0.11325000000000074
-      ],
-      "suite": "cellx",
-      "timeMs": 0.1047
-    },
-    {
-      "framework": "MobX",
-      "test": "cellx20",
-      "samplesMs": [
-        0.1338750000000033,
-        0.13937500000000114,
-        0.09683299999998951
-      ],
-      "suite": "cellx",
-      "timeMs": 0.0968
-    },
-    {
-      "framework": "MobX",
-      "test": "cellx30",
-      "samplesMs": [
-        0.1280840000000012,
-        0.09720899999999233,
-        0.30879199999999685
-      ],
-      "suite": "cellx",
-      "timeMs": 0.0972
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "avoidablePropagation",
-      "samplesMs": [
-        249.193041,
-        244.20679199999995,
-        234.68170899999996
-      ],
-      "suite": "kairo",
-      "timeMs": 234.6817
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "broadPropagation",
-      "samplesMs": [
-        744.7199580000001,
-        741.9269170000002,
-        725.8316250000003
-      ],
-      "suite": "kairo",
-      "timeMs": 725.8316
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "deepPropagation",
-      "samplesMs": [
-        212.3243749999997,
-        209.4029999999998,
-        210.29158300000017
-      ],
-      "suite": "kairo",
-      "timeMs": 209.403
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "diamond",
-      "samplesMs": [
-        320.5567920000003,
-        314.17787499999986,
-        313.5735420000001
-      ],
-      "suite": "kairo",
-      "timeMs": 313.5735
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "mux",
-      "samplesMs": [
-        511.54920800000036,
-        521.894542,
-        512.6134589999992
-      ],
-      "suite": "kairo",
-      "timeMs": 511.5492
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "repeatedObservers",
-      "samplesMs": [
-        71.73733399999946,
-        70.65412500000002,
-        69.92241699999977
-      ],
-      "suite": "kairo",
-      "timeMs": 69.9224
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "triangle",
-      "samplesMs": [
-        117.15937500000018,
-        113.33570799999961,
-        109.35875000000033
-      ],
-      "suite": "kairo",
-      "timeMs": 109.3588
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "unstable",
-      "samplesMs": [
-        169.86962500000027,
-        186.59095799999977,
-        168.5152079999998
-      ],
-      "suite": "kairo",
-      "timeMs": 168.5152
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "molBench",
-      "samplesMs": [
-        240.228334,
-        229.42729099999997,
-        231.81054099999994
-      ],
-      "suite": "mol",
-      "timeMs": 229.4273
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "createDataSignals",
-      "samplesMs": [
-        13.295916999999989,
-        25.934208000000012,
-        14.679166999999978
-      ],
-      "suite": "s",
-      "timeMs": 13.2959
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "createComputations0to1",
-      "samplesMs": [
-        13.918166999999983,
-        17.09216699999999,
-        13.503750000000025
-      ],
-      "suite": "s",
-      "timeMs": 13.5038
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "createComputations1to1",
-      "samplesMs": [
-        64.47058299999998,
-        58.77674999999999,
-        56.07633299999998
-      ],
-      "suite": "s",
-      "timeMs": 56.0763
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "createComputations2to1",
-      "samplesMs": [
-        41.76299999999992,
-        58.56091700000002,
-        48.15433300000018
-      ],
-      "suite": "s",
-      "timeMs": 41.763
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "createComputations4to1",
-      "samplesMs": [
-        32.95716700000003,
-        49.22012500000005,
-        42.410499999999956
-      ],
-      "suite": "s",
-      "timeMs": 32.9572
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "createComputations1000to1",
-      "samplesMs": [
-        27.406542000000172,
-        40.43120799999997,
-        38.205832999999984
-      ],
-      "suite": "s",
-      "timeMs": 27.4065
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "createComputations1to2",
-      "samplesMs": [
-        41.825582999999824,
-        48.275666,
-        44.004249999999956
-      ],
-      "suite": "s",
-      "timeMs": 41.8256
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "createComputations1to4",
-      "samplesMs": [
-        34.407208999999966,
-        33.45000000000027,
-        33.537417000000005
-      ],
-      "suite": "s",
-      "timeMs": 33.45
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "createComputations1to8",
-      "samplesMs": [
-        27.70566699999972,
-        24.62345899999991,
-        27.414582999999766
-      ],
-      "suite": "s",
-      "timeMs": 24.6235
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "createComputations1to1000",
-      "samplesMs": [
-        23.240000000000236,
-        21.53558299999986,
-        24.155666999999994
-      ],
-      "suite": "s",
-      "timeMs": 21.5356
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "updateComputations1to1",
-      "samplesMs": [
-        50.626624999999876,
-        49.40579200000002,
-        48.976958000000195
-      ],
-      "suite": "s",
-      "timeMs": 48.977
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "updateComputations2to1",
-      "samplesMs": [
-        31.407374999999774,
-        28.338874999999916,
-        28.02712500000007
-      ],
-      "suite": "s",
-      "timeMs": 28.0271
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "updateComputations4to1",
-      "samplesMs": [
-        17.884166999999707,
-        18.179208000000017,
-        18.109542000000147
-      ],
-      "suite": "s",
-      "timeMs": 17.8842
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "updateComputations1000to1",
-      "samplesMs": [
-        8.37979200000018,
-        8.36629099999982,
-        8.416499999999814
-      ],
-      "suite": "s",
-      "timeMs": 8.3663
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "updateComputations1to2",
-      "samplesMs": [
-        44.35174999999981,
-        43.62479099999973,
-        43.21495899999991
-      ],
-      "suite": "s",
-      "timeMs": 43.215
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "updateComputations1to4",
-      "samplesMs": [
-        43.86366599999974,
-        42.069792000000234,
-        42.17525000000023
-      ],
-      "suite": "s",
-      "timeMs": 42.0698
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "updateComputations1to1000",
-      "samplesMs": [
-        46.52629100000013,
-        48.76587500000005,
-        49.65808300000026
-      ],
-      "suite": "s",
-      "timeMs": 46.5263
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "10x5 - 2 sources - read 20% (simple component)",
-      "samplesMs": [
-        467.626041,
-        445.0798329999999,
-        476.62458300000003
-      ],
-      "suite": "dynamic",
-      "timeMs": 445.0798
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
-      "samplesMs": [
-        290.6609169999997,
-        265.68941600000016,
-        254.06004100000018
-      ],
-      "suite": "dynamic",
-      "timeMs": 254.06
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "1000x12 - 4 sources - dynamic (large web app)",
-      "samplesMs": [
-        409.72749999999996,
-        425.13099999999986,
-        415.35341699999935
-      ],
-      "suite": "dynamic",
-      "timeMs": 409.7275
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "1000x5 - 25 sources (wide dense)",
-      "samplesMs": [
-        541.3226250000007,
-        531.618958,
-        545.9466659999998
-      ],
-      "suite": "dynamic",
-      "timeMs": 531.619
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "5x500 - 3 sources (deep)",
-      "samplesMs": [
-        225.07725000000028,
-        198.85762500000055,
-        198.06479200000012
-      ],
-      "suite": "dynamic",
-      "timeMs": 198.0648
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "cellx10",
-      "samplesMs": [
-        0.1613749999999996,
-        0.21258299999999508,
-        0.06541599999999903
-      ],
-      "suite": "cellx",
-      "timeMs": 0.0654
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "cellx20",
-      "samplesMs": [
-        0.06383300000000247,
-        0.05183399999999949,
-        0.04954200000000242
-      ],
-      "suite": "cellx",
-      "timeMs": 0.0495
-    },
-    {
-      "framework": "$mol_wire",
-      "test": "cellx30",
-      "samplesMs": [
-        0.09041600000000471,
-        0.07216700000000742,
-        0.07037499999999852
-      ],
-      "suite": "cellx",
-      "timeMs": 0.0704
-    },
-    {
-      "framework": "Oby",
-      "test": "avoidablePropagation",
-      "samplesMs": [
-        164.224,
-        158.230833,
-        163.068125
-      ],
-      "suite": "kairo",
-      "timeMs": 158.2308
-    },
-    {
-      "framework": "Oby",
-      "test": "broadPropagation",
-      "samplesMs": [
-        373.715875,
-        375.80341699999997,
-        376.21783400000004
-      ],
-      "suite": "kairo",
-      "timeMs": 373.7159
-    },
-    {
-      "framework": "Oby",
-      "test": "deepPropagation",
-      "samplesMs": [
-        147.74366599999985,
-        145.06883300000004,
-        144.2945420000001
-      ],
-      "suite": "kairo",
-      "timeMs": 144.2945
-    },
-    {
-      "framework": "Oby",
-      "test": "diamond",
-      "samplesMs": [
-        189.98862499999996,
-        191.4393339999997,
-        205.25420900000017
-      ],
-      "suite": "kairo",
-      "timeMs": 189.9886
-    },
-    {
-      "framework": "Oby",
-      "test": "mux",
-      "samplesMs": [
-        309.508875,
-        313.8577500000001,
-        310.931458
-      ],
-      "suite": "kairo",
-      "timeMs": 309.5089
-    },
-    {
-      "framework": "Oby",
-      "test": "repeatedObservers",
-      "samplesMs": [
-        27.695791999999983,
-        25.90208399999983,
-        26.458458000000064
-      ],
-      "suite": "kairo",
-      "timeMs": 25.9021
-    },
-    {
-      "framework": "Oby",
-      "test": "triangle",
-      "samplesMs": [
-        92.35449999999992,
-        84.14562500000011,
-        84.11083400000007
-      ],
-      "suite": "kairo",
-      "timeMs": 84.1108
-    },
-    {
-      "framework": "Oby",
-      "test": "unstable",
-      "samplesMs": [
-        44.680207999999766,
-        41.59583299999986,
-        43.87341600000036
-      ],
-      "suite": "kairo",
-      "timeMs": 41.5958
-    },
-    {
-      "framework": "Oby",
-      "test": "molBench",
-      "samplesMs": [
-        380.940541,
-        361.938792,
-        360.39824999999996
-      ],
-      "suite": "mol",
-      "timeMs": 360.3982
-    },
-    {
-      "framework": "Oby",
-      "test": "createDataSignals",
-      "samplesMs": [
-        10.172709000000012,
-        8.613708000000003,
-        8.605707999999993
-      ],
-      "suite": "s",
-      "timeMs": 8.6057
-    },
-    {
-      "framework": "Oby",
-      "test": "createComputations0to1",
-      "samplesMs": [
-        58.58320800000001,
-        60.47800000000001,
-        27.330083000000002
-      ],
-      "suite": "s",
-      "timeMs": 27.3301
-    },
-    {
-      "framework": "Oby",
-      "test": "createComputations1to1",
-      "samplesMs": [
-        81.838167,
-        90.66754100000003,
-        85.21895799999993
-      ],
-      "suite": "s",
-      "timeMs": 81.8382
-    },
-    {
-      "framework": "Oby",
-      "test": "createComputations2to1",
-      "samplesMs": [
-        46.141624999999976,
-        80.71566700000005,
-        40.25729200000001
-      ],
-      "suite": "s",
-      "timeMs": 40.2573
-    },
-    {
-      "framework": "Oby",
-      "test": "createComputations4to1",
-      "samplesMs": [
-        28.679124999999885,
-        37.49262500000009,
-        28.639042000000018
-      ],
-      "suite": "s",
-      "timeMs": 28.639
-    },
-    {
-      "framework": "Oby",
-      "test": "createComputations1000to1",
-      "samplesMs": [
-        11.488000000000056,
-        20.86866699999996,
-        11.126042000000098
-      ],
-      "suite": "s",
-      "timeMs": 11.126
-    },
-    {
-      "framework": "Oby",
-      "test": "createComputations1to2",
-      "samplesMs": [
-        67.7102080000002,
-        59.47812500000009,
-        53.55104099999994
-      ],
-      "suite": "s",
-      "timeMs": 53.551
-    },
-    {
-      "framework": "Oby",
-      "test": "createComputations1to4",
-      "samplesMs": [
-        37.5384590000001,
-        37.15616699999987,
-        32.94274999999993
-      ],
-      "suite": "s",
-      "timeMs": 32.9427
-    },
-    {
-      "framework": "Oby",
-      "test": "createComputations1to8",
-      "samplesMs": [
-        33.757500000000164,
-        49.33725000000004,
-        28.450333000000228
-      ],
-      "suite": "s",
-      "timeMs": 28.4503
-    },
-    {
-      "framework": "Oby",
-      "test": "createComputations1to1000",
-      "samplesMs": [
-        31.309000000000196,
-        46.458292000000256,
-        28.71583399999963
-      ],
-      "suite": "s",
-      "timeMs": 28.7158
-    },
-    {
-      "framework": "Oby",
-      "test": "updateComputations1to1",
-      "samplesMs": [
-        24.41574999999966,
-        26.101500000000215,
-        24.949291000000358
-      ],
-      "suite": "s",
-      "timeMs": 24.4157
-    },
-    {
-      "framework": "Oby",
-      "test": "updateComputations2to1",
-      "samplesMs": [
-        18.427459,
-        15.442459000000326,
-        15.929250000000138
-      ],
-      "suite": "s",
-      "timeMs": 15.4425
-    },
-    {
-      "framework": "Oby",
-      "test": "updateComputations4to1",
-      "samplesMs": [
-        9.674207999999908,
-        9.794750000000022,
-        9.7365420000001
-      ],
-      "suite": "s",
-      "timeMs": 9.6742
-    },
-    {
-      "framework": "Oby",
-      "test": "updateComputations1000to1",
-      "samplesMs": [
-        9.592709000000013,
-        8.416834000000108,
-        7.875084000000243
-      ],
-      "suite": "s",
-      "timeMs": 7.8751
-    },
-    {
-      "framework": "Oby",
-      "test": "updateComputations1to2",
-      "samplesMs": [
-        28.851584000000003,
-        24.545916999999918,
-        24.180875000000015
-      ],
-      "suite": "s",
-      "timeMs": 24.1809
-    },
-    {
-      "framework": "Oby",
-      "test": "updateComputations1to4",
-      "samplesMs": [
-        24.146834000000126,
-        24.509542000000238,
-        24.020540999999866
-      ],
-      "suite": "s",
-      "timeMs": 24.0205
-    },
-    {
-      "framework": "Oby",
-      "test": "updateComputations1to1000",
-      "samplesMs": [
-        23.366374999999607,
-        22.984541000000263,
-        23.045834000000013
-      ],
-      "suite": "s",
-      "timeMs": 22.9845
-    },
-    {
-      "framework": "Oby",
-      "test": "10x5 - 2 sources - read 20% (simple component)",
-      "samplesMs": [
-        324.16616700000003,
-        304.85858300000007,
-        357.25654199999997
-      ],
-      "suite": "dynamic",
-      "timeMs": 304.8586
-    },
-    {
-      "framework": "Oby",
-      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
-      "samplesMs": [
-        222.79212500000017,
-        231.45150000000012,
-        224.45600000000013
-      ],
-      "suite": "dynamic",
-      "timeMs": 222.7921
-    },
-    {
-      "framework": "Oby",
-      "test": "1000x12 - 4 sources - dynamic (large web app)",
-      "samplesMs": [
-        412.6911250000003,
-        459.3082909999998,
-        445.37029200000006
-      ],
-      "suite": "dynamic",
-      "timeMs": 412.6911
-    },
-    {
-      "framework": "Oby",
-      "test": "1000x5 - 25 sources (wide dense)",
-      "samplesMs": [
-        441.1690829999998,
-        430.4093750000002,
-        486.314292
-      ],
-      "suite": "dynamic",
-      "timeMs": 430.4094
-    },
-    {
-      "framework": "Oby",
-      "test": "5x500 - 3 sources (deep)",
-      "samplesMs": [
-        195.62795800000004,
-        209.85054199999922,
-        212.51800000000003
-      ],
-      "suite": "dynamic",
-      "timeMs": 195.628
-    },
-    {
-      "framework": "Oby",
-      "test": "cellx10",
-      "samplesMs": [
-        0.10541699999999565,
-        0.08879100000000051,
-        0.1097910000000013
-      ],
-      "suite": "cellx",
-      "timeMs": 0.0888
-    },
-    {
       "framework": "Oby",
       "test": "cellx20",
       "samplesMs": [
-        0.11187499999999773,
-        0.09008299999999281,
-        0.06708299999999667
+        0.08525000000000205,
+        0.08062499999999773,
+        0.046999999999997044
       ],
       "suite": "cellx",
-      "timeMs": 0.0671
+      "timeMs": 0.047
     },
     {
       "framework": "Oby",
       "test": "cellx30",
       "samplesMs": [
-        0.055083999999993694,
-        0.05325000000000557,
-        0.2111670000000032
+        0.07337499999999864,
+        0.15220800000000168,
+        0.15808299999999775
       ],
       "suite": "cellx",
-      "timeMs": 0.0533
+      "timeMs": 0.0734
+    },
+    {
+      "framework": "Pota",
+      "test": "avoidablePropagation",
+      "samplesMs": [
+        271.357083,
+        266.01950000000005,
+        266.03658300000006
+      ],
+      "suite": "kairo",
+      "timeMs": 266.0195
+    },
+    {
+      "framework": "Pota",
+      "test": "broadPropagation",
+      "samplesMs": [
+        410.9730420000001,
+        402.781833,
+        405.4548749999997
+      ],
+      "suite": "kairo",
+      "timeMs": 402.7818
+    },
+    {
+      "framework": "Pota",
+      "test": "deepPropagation",
+      "samplesMs": [
+        165.2779999999998,
+        164.2860410000003,
+        163.66574999999966
+      ],
+      "suite": "kairo",
+      "timeMs": 163.6657
+    },
+    {
+      "framework": "Pota",
+      "test": "diamond",
+      "samplesMs": [
+        253.1812500000001,
+        251.01216599999998,
+        250.43566599999986
+      ],
+      "suite": "kairo",
+      "timeMs": 250.4357
+    },
+    {
+      "framework": "Pota",
+      "test": "mux",
+      "samplesMs": [
+        295.32141699999966,
+        294.281375,
+        287.21170900000016
+      ],
+      "suite": "kairo",
+      "timeMs": 287.2117
+    },
+    {
+      "framework": "Pota",
+      "test": "repeatedObservers",
+      "samplesMs": [
+        71.90712500000063,
+        53.73545800000011,
+        54.07829099999981
+      ],
+      "suite": "kairo",
+      "timeMs": 53.7355
+    },
+    {
+      "framework": "Pota",
+      "test": "triangle",
+      "samplesMs": [
+        89.01699999999983,
+        83.07633299999998,
+        82.84870800000044
+      ],
+      "suite": "kairo",
+      "timeMs": 82.8487
+    },
+    {
+      "framework": "Pota",
+      "test": "unstable",
+      "samplesMs": [
+        76.6045409999997,
+        74.32099999999991,
+        74.79716599999938
+      ],
+      "suite": "kairo",
+      "timeMs": 74.321
+    },
+    {
+      "framework": "Pota",
+      "test": "molBench",
+      "samplesMs": [
+        369.864666,
+        367.75312500000007,
+        364.66254200000003
+      ],
+      "suite": "mol",
+      "timeMs": 364.6625
+    },
+    {
+      "framework": "Pota",
+      "test": "createDataSignals",
+      "samplesMs": [
+        7.812457999999992,
+        19.215167000000008,
+        18.52491599999999
+      ],
+      "suite": "s",
+      "timeMs": 7.8125
+    },
+    {
+      "framework": "Pota",
+      "test": "createComputations0to1",
+      "samplesMs": [
+        12.375708000000003,
+        11.149875000000009,
+        13.191500000000019
+      ],
+      "suite": "s",
+      "timeMs": 11.1499
+    },
+    {
+      "framework": "Pota",
+      "test": "createComputations1to1",
+      "samplesMs": [
+        49.040542000000016,
+        49.85449999999997,
+        45.43545799999998
+      ],
+      "suite": "s",
+      "timeMs": 45.4355
+    },
+    {
+      "framework": "Pota",
+      "test": "createComputations2to1",
+      "samplesMs": [
+        25.139999999999986,
+        38.993625000000065,
+        43.22249999999997
+      ],
+      "suite": "s",
+      "timeMs": 25.14
+    },
+    {
+      "framework": "Pota",
+      "test": "createComputations4to1",
+      "samplesMs": [
+        26.963540999999964,
+        26.854167000000075,
+        27.87470899999994
+      ],
+      "suite": "s",
+      "timeMs": 26.8542
+    },
+    {
+      "framework": "Pota",
+      "test": "createComputations1000to1",
+      "samplesMs": [
+        10.903374999999983,
+        9.011458000000061,
+        10.160665999999992
+      ],
+      "suite": "s",
+      "timeMs": 9.0115
+    },
+    {
+      "framework": "Pota",
+      "test": "createComputations1to2",
+      "samplesMs": [
+        32.50666699999999,
+        33.13537500000007,
+        34.83529199999998
+      ],
+      "suite": "s",
+      "timeMs": 32.5067
+    },
+    {
+      "framework": "Pota",
+      "test": "createComputations1to4",
+      "samplesMs": [
+        23.109166999999843,
+        19.784083999999893,
+        24.06224999999995
+      ],
+      "suite": "s",
+      "timeMs": 19.7841
+    },
+    {
+      "framework": "Pota",
+      "test": "createComputations1to8",
+      "samplesMs": [
+        23.213416999999936,
+        18.714082999999846,
+        22.635375000000067
+      ],
+      "suite": "s",
+      "timeMs": 18.7141
+    },
+    {
+      "framework": "Pota",
+      "test": "createComputations1to1000",
+      "samplesMs": [
+        18.631875000000036,
+        12.116958000000068,
+        18.766415999999936
+      ],
+      "suite": "s",
+      "timeMs": 12.117
+    },
+    {
+      "framework": "Pota",
+      "test": "updateComputations1to1",
+      "samplesMs": [
+        49.031499999999824,
+        49.81383299999993,
+        49.20470799999998
+      ],
+      "suite": "s",
+      "timeMs": 49.0315
+    },
+    {
+      "framework": "Pota",
+      "test": "updateComputations2to1",
+      "samplesMs": [
+        31.68733400000019,
+        27.702375000000075,
+        27.62129099999993
+      ],
+      "suite": "s",
+      "timeMs": 27.6213
+    },
+    {
+      "framework": "Pota",
+      "test": "updateComputations4to1",
+      "samplesMs": [
+        16.860208000000057,
+        16.755542000000105,
+        16.85850000000005
+      ],
+      "suite": "s",
+      "timeMs": 16.7555
+    },
+    {
+      "framework": "Pota",
+      "test": "updateComputations1000to1",
+      "samplesMs": [
+        7.213832999999795,
+        8.91216600000007,
+        7.580832999999984
+      ],
+      "suite": "s",
+      "timeMs": 7.2138
+    },
+    {
+      "framework": "Pota",
+      "test": "updateComputations1to2",
+      "samplesMs": [
+        36.33400000000006,
+        36.051750000000084,
+        36.41325000000006
+      ],
+      "suite": "s",
+      "timeMs": 36.0518
+    },
+    {
+      "framework": "Pota",
+      "test": "updateComputations1to4",
+      "samplesMs": [
+        30.392457999999806,
+        30.432416999999987,
+        30.026832999999897
+      ],
+      "suite": "s",
+      "timeMs": 30.0268
+    },
+    {
+      "framework": "Pota",
+      "test": "updateComputations1to1000",
+      "samplesMs": [
+        24.05870799999957,
+        24.901250000000346,
+        25.17300000000023
+      ],
+      "suite": "s",
+      "timeMs": 24.0587
+    },
+    {
+      "framework": "Pota",
+      "test": "10x5 - 2 sources - read 20% (simple component)",
+      "samplesMs": [
+        443.10466699999995,
+        442.3382909999999,
+        475.4825000000001
+      ],
+      "suite": "dynamic",
+      "timeMs": 442.3383
+    },
+    {
+      "framework": "Pota",
+      "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
+      "samplesMs": [
+        249.34787499999993,
+        247.35987499999965,
+        254.92837499999996
+      ],
+      "suite": "dynamic",
+      "timeMs": 247.3599
+    },
+    {
+      "framework": "Pota",
+      "test": "1000x12 - 4 sources - dynamic (large web app)",
+      "samplesMs": [
+        332.3470419999999,
+        377.11412500000006,
+        353.03295800000024
+      ],
+      "suite": "dynamic",
+      "timeMs": 332.347
+    },
+    {
+      "framework": "Pota",
+      "test": "1000x5 - 25 sources (wide dense)",
+      "samplesMs": [
+        517.3194579999999,
+        547.2058340000003,
+        550.8547909999998
+      ],
+      "suite": "dynamic",
+      "timeMs": 517.3195
+    },
+    {
+      "framework": "Pota",
+      "test": "5x500 - 3 sources (deep)",
+      "samplesMs": [
+        200.5454580000005,
+        202.43754099999933,
+        202.1464589999996
+      ],
+      "suite": "dynamic",
+      "timeMs": 200.5455
+    },
+    {
+      "framework": "Pota",
+      "test": "cellx10",
+      "samplesMs": [
+        0.0402079999999998,
+        0.03704200000000668,
+        0.04729199999999878
+      ],
+      "suite": "cellx",
+      "timeMs": 0.037
+    },
+    {
+      "framework": "Pota",
+      "test": "cellx20",
+      "samplesMs": [
+        0.06770900000000069,
+        0.06550000000000011,
+        0.03816600000000392
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0382
+    },
+    {
+      "framework": "Pota",
+      "test": "cellx30",
+      "samplesMs": [
+        0.03725000000000023,
+        0.028708000000001732,
+        0.0239169999999973
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0239
     },
     {
       "framework": "Preact Signals",
       "test": "avoidablePropagation",
       "samplesMs": [
-        94.88254099999999,
-        92.46908399999998,
-        90.893958
+        93.721584,
+        89.237333,
+        87.97225
       ],
       "suite": "kairo",
-      "timeMs": 90.894
+      "timeMs": 87.9723
     },
     {
       "framework": "Preact Signals",
       "test": "broadPropagation",
       "samplesMs": [
-        182.96237499999995,
-        177.748375,
-        176.87187499999993
+        166.730792,
+        161.948708,
+        163.17612499999996
       ],
       "suite": "kairo",
-      "timeMs": 176.8719
+      "timeMs": 161.9487
     },
     {
       "framework": "Preact Signals",
       "test": "deepPropagation",
       "samplesMs": [
-        72.75625000000002,
-        70.52654199999995,
-        70.67637500000001
+        71.33625000000006,
+        69.64970800000003,
+        69.73183400000005
       ],
       "suite": "kairo",
-      "timeMs": 70.5265
+      "timeMs": 69.6497
     },
     {
       "framework": "Preact Signals",
       "test": "diamond",
       "samplesMs": [
-        121.08683399999995,
-        115.73170800000003,
-        114.66699999999992
+        118.84908300000006,
+        114.85845800000016,
+        114.7750840000001
       ],
       "suite": "kairo",
-      "timeMs": 114.667
+      "timeMs": 114.7751
     },
     {
       "framework": "Preact Signals",
       "test": "mux",
       "samplesMs": [
-        214.74125000000004,
-        222.64874999999984,
-        218.95629099999974
+        182.7331250000002,
+        180.52258400000005,
+        174.46625000000017
       ],
       "suite": "kairo",
-      "timeMs": 214.7413
+      "timeMs": 174.4663
     },
     {
       "framework": "Preact Signals",
       "test": "repeatedObservers",
       "samplesMs": [
-        13.842458000000079,
-        12.376250000000255,
-        12.457915999999841
+        13.356416999999965,
+        12.1887499999998,
+        12.131375000000162
       ],
       "suite": "kairo",
-      "timeMs": 12.3763
+      "timeMs": 12.1314
     },
     {
       "framework": "Preact Signals",
       "test": "triangle",
       "samplesMs": [
-        55.77445800000032,
-        49.61870899999985,
-        48.41658300000017
+        53.18416600000023,
+        48.07408299999997,
+        48.113582999999835
       ],
       "suite": "kairo",
-      "timeMs": 48.4166
+      "timeMs": 48.0741
     },
     {
       "framework": "Preact Signals",
       "test": "unstable",
       "samplesMs": [
-        27.37545799999998,
-        25.55749999999989,
-        25.35520899999983
+        27.27191700000003,
+        25.191417,
+        25.32137499999999
       ],
       "suite": "kairo",
-      "timeMs": 25.3552
+      "timeMs": 25.1914
     },
     {
       "framework": "Preact Signals",
       "test": "molBench",
       "samplesMs": [
-        312.05429200000003,
-        300.528667,
-        304.953625
+        309.488375,
+        297.49608399999994,
+        300.6804169999999
       ],
       "suite": "mol",
-      "timeMs": 300.5287
+      "timeMs": 297.4961
     },
     {
       "framework": "Preact Signals",
       "test": "createDataSignals",
       "samplesMs": [
-        6.022207999999999,
-        5.478915999999998,
-        5.594958000000005
+        5.425583000000003,
+        5.971834000000001,
+        5.6299999999999955
       ],
       "suite": "s",
-      "timeMs": 5.4789
+      "timeMs": 5.4256
     },
     {
       "framework": "Preact Signals",
       "test": "createComputations0to1",
       "samplesMs": [
-        5.964165999999992,
-        5.291584,
-        4.471582999999995
+        5.605125000000001,
+        4.965666999999996,
+        4.484207999999995
       ],
       "suite": "s",
-      "timeMs": 4.4716
+      "timeMs": 4.4842
     },
     {
       "framework": "Preact Signals",
       "test": "createComputations1to1",
       "samplesMs": [
-        16.260000000000005,
-        14.733875000000012,
-        14.522667000000013
+        13.753541999999996,
+        14.470416999999998,
+        14.369083000000018
       ],
       "suite": "s",
-      "timeMs": 14.5227
+      "timeMs": 13.7535
     },
     {
       "framework": "Preact Signals",
       "test": "createComputations2to1",
       "samplesMs": [
-        9.437625000000025,
-        18.340833000000003,
-        9.386374999999987
+        8.569250000000011,
+        17.334374999999994,
+        9.359332999999992
       ],
       "suite": "s",
-      "timeMs": 9.3864
+      "timeMs": 8.5693
     },
     {
       "framework": "Preact Signals",
       "test": "createComputations4to1",
       "samplesMs": [
-        6.59250000000003,
-        6.724291999999991,
-        6.585624999999993
+        6.6067919999999845,
+        6.368707999999998,
+        6.18545899999998
       ],
       "suite": "s",
-      "timeMs": 6.5856
+      "timeMs": 6.1855
     },
     {
       "framework": "Preact Signals",
       "test": "createComputations1000to1",
       "samplesMs": [
-        8.267584,
-        7.180207999999993,
-        7.876916999999992
+        7.6316249999999854,
+        6.728707999999983,
+        7.697166999999979
       ],
       "suite": "s",
-      "timeMs": 7.1802
+      "timeMs": 6.7287
     },
     {
       "framework": "Preact Signals",
       "test": "createComputations1to2",
       "samplesMs": [
-        14.427999999999997,
-        11.975582999999972,
-        11.810041000000012
+        13.318750000000023,
+        11.578750000000014,
+        11.70150000000001
       ],
       "suite": "s",
-      "timeMs": 11.81
+      "timeMs": 11.5788
     },
     {
       "framework": "Preact Signals",
       "test": "createComputations1to4",
       "samplesMs": [
-        10.398167,
-        10.575499999999977,
-        11.776665999999977
+        10.77766600000001,
+        10.406875000000014,
+        12.230415999999991
       ],
       "suite": "s",
-      "timeMs": 10.3982
+      "timeMs": 10.4069
     },
     {
       "framework": "Preact Signals",
       "test": "createComputations1to8",
       "samplesMs": [
-        10.3245,
-        9.989708000000007,
-        10.580667000000005
+        8.983708000000036,
+        8.777832999999987,
+        9.557000000000016
       ],
       "suite": "s",
-      "timeMs": 9.9897
+      "timeMs": 8.7778
     },
     {
       "framework": "Preact Signals",
       "test": "createComputations1to1000",
       "samplesMs": [
-        8.908665999999982,
-        4.377624999999966,
-        8.61304100000001
+        8.814750000000004,
+        4.453291999999976,
+        8.314458000000002
       ],
       "suite": "s",
-      "timeMs": 4.3776
+      "timeMs": 4.4533
     },
     {
       "framework": "Preact Signals",
       "test": "updateComputations1to1",
       "samplesMs": [
-        17.24620900000002,
-        17.804125,
-        16.78920800000003
+        16.77595800000006,
+        17.834333000000015,
+        16.40062499999999
       ],
       "suite": "s",
-      "timeMs": 16.7892
+      "timeMs": 16.4006
     },
     {
       "framework": "Preact Signals",
       "test": "updateComputations2to1",
       "samplesMs": [
-        12.424958999999944,
-        9.815209000000095,
-        9.602750000000015
+        12.18425000000002,
+        9.39691599999992,
+        9.661209000000099
       ],
       "suite": "s",
-      "timeMs": 9.6028
+      "timeMs": 9.3969
     },
     {
       "framework": "Preact Signals",
       "test": "updateComputations4to1",
       "samplesMs": [
-        6.194000000000074,
-        6.0952499999999645,
-        5.993833999999993
+        6.066124999999943,
+        6.190958000000023,
+        6.032291999999984
       ],
       "suite": "s",
-      "timeMs": 5.9938
+      "timeMs": 6.0323
     },
     {
       "framework": "Preact Signals",
       "test": "updateComputations1000to1",
       "samplesMs": [
-        4.366541999999981,
-        4.480792000000065,
-        4.4705000000000155
+        4.418374999999969,
+        4.497624999999971,
+        4.288290999999958
       ],
       "suite": "s",
-      "timeMs": 4.3665
+      "timeMs": 4.2883
     },
     {
       "framework": "Preact Signals",
       "test": "updateComputations1to2",
       "samplesMs": [
-        12.838999999999942,
-        13.182000000000016,
-        14.41370900000004
+        11.755833999999936,
+        11.765375000000063,
+        11.483208000000104
       ],
       "suite": "s",
-      "timeMs": 12.839
+      "timeMs": 11.4832
     },
     {
       "framework": "Preact Signals",
       "test": "updateComputations1to4",
       "samplesMs": [
-        10.910792000000015,
-        10.550916999999913,
-        10.459249999999997
+        10.447165999999925,
+        10.419083999999998,
+        10.567750000000046
       ],
       "suite": "s",
-      "timeMs": 10.4592
+      "timeMs": 10.4191
     },
     {
       "framework": "Preact Signals",
       "test": "updateComputations1to1000",
       "samplesMs": [
-        8.596874999999955,
-        8.582708000000025,
-        8.518500000000017
+        9.407624999999939,
+        8.704791999999998,
+        8.669834000000037
       ],
       "suite": "s",
-      "timeMs": 8.5185
+      "timeMs": 8.6698
     },
     {
       "framework": "Preact Signals",
       "test": "10x5 - 2 sources - read 20% (simple component)",
       "samplesMs": [
-        193.13025000000002,
-        206.79566700000004,
-        197.08020899999997
+        189.446334,
+        199.80383399999994,
+        192.466
       ],
       "suite": "dynamic",
-      "timeMs": 193.1303
+      "timeMs": 189.4463
     },
     {
       "framework": "Preact Signals",
       "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
       "samplesMs": [
-        172.03550000000007,
-        172.81216599999993,
-        165.69504200000006
+        180.2657499999999,
+        176.38762500000007,
+        169.01383299999998
       ],
       "suite": "dynamic",
-      "timeMs": 165.695
+      "timeMs": 169.0138
     },
     {
       "framework": "Preact Signals",
       "test": "1000x12 - 4 sources - dynamic (large web app)",
       "samplesMs": [
-        267.6275830000002,
-        264.2597499999997,
-        293.70729100000017
+        273.5302499999998,
+        279.45554100000027,
+        297.32400000000007
       ],
       "suite": "dynamic",
-      "timeMs": 264.2597
+      "timeMs": 273.5302
     },
     {
       "framework": "Preact Signals",
       "test": "1000x5 - 25 sources (wide dense)",
       "samplesMs": [
-        467.69450000000006,
-        437.83729200000016,
-        450.9536250000001
+        425.5106249999999,
+        421.98425,
+        422.379958
       ],
       "suite": "dynamic",
-      "timeMs": 437.8373
+      "timeMs": 421.9842
     },
     {
       "framework": "Preact Signals",
       "test": "5x500 - 3 sources (deep)",
       "samplesMs": [
-        140.44866700000057,
-        136.12887499999943,
-        144.68020800000068
+        132.5352499999999,
+        131.80412499999966,
+        129.71245799999997
       ],
       "suite": "dynamic",
-      "timeMs": 136.1289
+      "timeMs": 129.7125
     },
     {
       "framework": "Preact Signals",
       "test": "cellx10",
       "samplesMs": [
-        0.05720900000000029,
-        0.05062499999999659,
-        0.06754099999999852
+        0.05124999999999602,
+        0.04945899999999881,
+        0.047750000000000625
       ],
       "suite": "cellx",
-      "timeMs": 0.0506
+      "timeMs": 0.0478
     },
     {
       "framework": "Preact Signals",
       "test": "cellx20",
       "samplesMs": [
-        0.06462499999999949,
-        0.052250000000000796,
-        0.037624999999998465
-      ],
-      "suite": "cellx",
-      "timeMs": 0.0376
-    },
-    {
-      "framework": "Preact Signals",
-      "test": "cellx30",
-      "samplesMs": [
-        0.0433749999999975,
-        0.025666000000001077,
-        0.02549999999999386
+        0.0643749999999983,
+        0.048458000000003665,
+        0.025542000000001508
       ],
       "suite": "cellx",
       "timeMs": 0.0255
     },
     {
+      "framework": "Preact Signals",
+      "test": "cellx30",
+      "samplesMs": [
+        0.032875000000004206,
+        0.026457999999998094,
+        0.028375000000004036
+      ],
+      "suite": "cellx",
+      "timeMs": 0.0265
+    },
+    {
       "framework": "TC39 Signals Polyfill",
       "test": "avoidablePropagation",
       "samplesMs": [
-        300.749042,
-        255.55429200000003,
-        247.99487499999998
+        262.148083,
+        252.692833,
+        253.33179199999995
       ],
       "suite": "kairo",
-      "timeMs": 247.9949
+      "timeMs": 252.6928
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "broadPropagation",
       "samplesMs": [
-        914.397167,
-        907.6388750000001,
-        893.969458
+        898.216542,
+        883.4626670000002,
+        879.766709
       ],
       "suite": "kairo",
-      "timeMs": 893.9695
+      "timeMs": 879.7667
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "deepPropagation",
       "samplesMs": [
-        237.98958399999992,
-        239.27124999999978,
-        237.71775000000025
+        241.47508400000015,
+        240.9041669999997,
+        238.61329199999955
       ],
       "suite": "kairo",
-      "timeMs": 237.7178
+      "timeMs": 238.6133
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "diamond",
       "samplesMs": [
-        419.3522499999999,
-        415.7106249999997,
-        416.112083
+        418.8860829999994,
+        422.2128330000005,
+        414.3285829999995
       ],
       "suite": "kairo",
-      "timeMs": 415.7106
+      "timeMs": 414.3286
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "mux",
       "samplesMs": [
-        666.2145419999997,
-        661.8904579999999,
-        678.4845829999995
+        668.1713749999999,
+        666.7533750000002,
+        660.8801670000003
       ],
       "suite": "kairo",
-      "timeMs": 661.8905
+      "timeMs": 660.8802
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "repeatedObservers",
       "samplesMs": [
-        140.59279199999946,
-        145.21654200000012,
-        142.08537500000057
+        134.97595900000033,
+        134.42041700000027,
+        133.85058300000037
       ],
       "suite": "kairo",
-      "timeMs": 140.5928
+      "timeMs": 133.8506
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "triangle",
       "samplesMs": [
-        190.30504200000087,
-        184.39395799999875,
-        185.22799999999916
+        181.8517499999998,
+        175.26658399999906,
+        174.4358749999992
       ],
       "suite": "kairo",
-      "timeMs": 184.394
+      "timeMs": 174.4359
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "unstable",
       "samplesMs": [
-        480.565333999999,
-        510.2469579999997,
-        486.6040830000002
+        467.0571659999987,
+        467.3990419999991,
+        476.6326250000002
       ],
       "suite": "kairo",
-      "timeMs": 480.5653
+      "timeMs": 467.0572
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "molBench",
       "samplesMs": [
-        343.216375,
-        348.22183300000006,
-        328.6910419999999
+        341.279459,
+        339.106625,
+        338.84662500000013
       ],
       "suite": "mol",
-      "timeMs": 328.691
+      "timeMs": 338.8466
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "createDataSignals",
       "samplesMs": [
-        16.201125000000005,
-        12.413167000000001,
-        12.77345799999999
+        15.626625000000004,
+        12.623165999999998,
+        12.915041999999985
       ],
       "suite": "s",
-      "timeMs": 12.4132
+      "timeMs": 12.6232
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "createComputations0to1",
       "samplesMs": [
-        14.652749999999997,
-        14.675042000000019,
-        13.852208000000019
+        14.848208,
+        15.196042000000006,
+        14.936624999999992
       ],
       "suite": "s",
-      "timeMs": 13.8522
+      "timeMs": 14.8482
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "createComputations1to1",
       "samplesMs": [
-        37.75012499999997,
-        41.11520900000005,
-        37.19954200000001
+        39.215209000000016,
+        42.94466699999998,
+        38.833500000000015
       ],
       "suite": "s",
-      "timeMs": 37.1995
+      "timeMs": 38.8335
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "createComputations2to1",
       "samplesMs": [
-        28.558750000000032,
-        33.37483299999997,
-        28.955375000000004
+        28.465082999999993,
+        33.16050000000001,
+        28.190999999999917
       ],
       "suite": "s",
-      "timeMs": 28.5588
+      "timeMs": 28.191
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "createComputations4to1",
       "samplesMs": [
-        20.841166000000044,
-        22.288749999999936,
-        25.729791999999975
+        21.441040999999927,
+        23.396875000000023,
+        24.59345799999994
       ],
       "suite": "s",
-      "timeMs": 20.8412
+      "timeMs": 21.441
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "createComputations1000to1",
       "samplesMs": [
-        14.915332999999919,
-        18.111083000000008,
-        14.178625000000011
+        14.633874999999989,
+        16.106625000000008,
+        13.218374999999924
       ],
       "suite": "s",
-      "timeMs": 14.1786
+      "timeMs": 13.2184
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "createComputations1to2",
       "samplesMs": [
-        31.854959000000008,
-        32.460583999999926,
-        31.976957999999968
+        33.0793339999999,
+        32.39966700000002,
+        31.662500000000023
       ],
       "suite": "s",
-      "timeMs": 31.855
+      "timeMs": 31.6625
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "createComputations1to4",
       "samplesMs": [
-        27.86016600000005,
-        26.700290999999993,
-        26.81162500000005
+        28.612499999999955,
+        29.02125000000001,
+        28.116041999999993
       ],
       "suite": "s",
-      "timeMs": 26.7003
+      "timeMs": 28.116
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "createComputations1to8",
       "samplesMs": [
-        24.300291000000016,
-        24.217374999999947,
-        24.383707999999842
+        23.597833000000037,
+        24.5954999999999,
+        24.45662500000003
       ],
       "suite": "s",
-      "timeMs": 24.2174
+      "timeMs": 23.5978
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "createComputations1to1000",
       "samplesMs": [
-        21.505584,
-        22.89145899999994,
-        21.71245799999997
+        21.53170799999998,
+        22.088457999999946,
+        22.207124999999905
       ],
       "suite": "s",
-      "timeMs": 21.5056
+      "timeMs": 21.5317
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "updateComputations1to1",
       "samplesMs": [
-        38.85845900000004,
-        44.477750000000015,
-        39.56637500000011
+        40.206957999999986,
+        43.36875000000009,
+        40.300792
       ],
       "suite": "s",
-      "timeMs": 38.8585
+      "timeMs": 40.207
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "updateComputations2to1",
       "samplesMs": [
-        30.55445899999995,
-        22.924790999999914,
-        26.12245800000005
+        30.067834000000175,
+        23.938666000000012,
+        27.13350000000014
       ],
       "suite": "s",
-      "timeMs": 22.9248
+      "timeMs": 23.9387
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "updateComputations4to1",
       "samplesMs": [
-        17.192000000000007,
-        18.496124999999893,
-        17.748499999999922
+        17.284708000000137,
+        18.683250000000044,
+        17.720708999999943
       ],
       "suite": "s",
-      "timeMs": 17.192
+      "timeMs": 17.2847
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "updateComputations1000to1",
       "samplesMs": [
-        10.568041999999878,
-        8.458417000000054,
-        10.007166999999981
+        10.07095900000013,
+        8.087541000000101,
+        10.245124999999916
       ],
       "suite": "s",
-      "timeMs": 8.4584
+      "timeMs": 8.0875
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "updateComputations1to2",
       "samplesMs": [
-        37.8879579999998,
-        35.78079200000002,
-        35.28579100000002
+        37.71679100000006,
+        42.63329199999998,
+        33.8053339999999
       ],
       "suite": "s",
-      "timeMs": 35.2858
+      "timeMs": 33.8053
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "updateComputations1to4",
       "samplesMs": [
-        30.214874999999893,
-        31.197708000000148,
-        35.7326250000001
+        32.789792000000034,
+        32.85649999999987,
+        36.95683400000007
       ],
       "suite": "s",
-      "timeMs": 30.2149
+      "timeMs": 32.7898
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "updateComputations1to1000",
       "samplesMs": [
-        25.291791999999987,
-        28.174541999999747,
-        27.74191699999983
+        25.817625000000135,
+        29.03958399999965,
+        29.264415999999983
       ],
       "suite": "s",
-      "timeMs": 25.2918
+      "timeMs": 25.8176
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "10x5 - 2 sources - read 20% (simple component)",
       "samplesMs": [
-        1290.304041,
-        1283.558833,
-        1276.6427919999996
+        1255.6814170000002,
+        1258.264083,
+        1277.0264579999998
       ],
       "suite": "dynamic",
-      "timeMs": 1276.6428
+      "timeMs": 1255.6814
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
       "samplesMs": [
-        496.7923329999994,
-        507.06408399999964,
-        509.78020800000013
+        494.55524999999943,
+        498.1072920000006,
+        500.0174999999999
       ],
       "suite": "dynamic",
-      "timeMs": 496.7923
+      "timeMs": 494.5552
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "1000x12 - 4 sources - dynamic (large web app)",
       "samplesMs": [
-        9132.112083999997,
-        10915.002874999998,
-        9322.387000000002
+        9096.306750000002,
+        9598.768250000005,
+        9200.542834
       ],
       "suite": "dynamic",
-      "timeMs": 9132.1121
+      "timeMs": 9096.3068
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "1000x5 - 25 sources (wide dense)",
       "samplesMs": [
-        6742.185292000002,
-        6641.645916999994,
-        7200.973709000013
+        6690.665957999998,
+        6643.163124999999,
+        6669.530250000003
       ],
       "suite": "dynamic",
-      "timeMs": 6641.6459
+      "timeMs": 6643.1631
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "5x500 - 3 sources (deep)",
       "samplesMs": [
-        497.6041660000046,
-        382.7661669999943,
-        377.15425000000687
+        336.5708330000052,
+        333.7485420000012,
+        327.98766699999396
       ],
       "suite": "dynamic",
-      "timeMs": 377.1543
+      "timeMs": 327.9877
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "cellx10",
       "samplesMs": [
-        0.08516700000000554,
-        0.08216600000000085,
-        0.0759169999999969
+        0.08616700000000321,
+        0.08595900000000256,
+        0.0778749999999988
       ],
       "suite": "cellx",
-      "timeMs": 0.0759
+      "timeMs": 0.0779
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "cellx20",
       "samplesMs": [
-        0.11191700000000537,
-        0.1007499999999979,
-        0.07891699999999702
+        0.11208300000000548,
+        0.0934170000000023,
+        0.08216699999999832
       ],
       "suite": "cellx",
-      "timeMs": 0.0789
+      "timeMs": 0.0822
     },
     {
       "framework": "TC39 Signals Polyfill",
       "test": "cellx30",
       "samplesMs": [
-        0.09479200000000532,
-        0.06487500000000068,
-        0.1145829999999961
+        0.07600000000000051,
+        0.06666700000000247,
+        0.11966600000000938
       ],
       "suite": "cellx",
-      "timeMs": 0.0649
+      "timeMs": 0.0667
     },
     {
       "framework": "SolidJS",
       "test": "avoidablePropagation",
       "samplesMs": [
-        338.492917,
-        766.817125,
-        442.58529099999987
+        329.498125,
+        320.22600000000006,
+        319.939042
       ],
       "suite": "kairo",
-      "timeMs": 338.4929
+      "timeMs": 319.939
     },
     {
       "framework": "SolidJS",
       "test": "broadPropagation",
       "samplesMs": [
-        793.324959,
-        751.0147919999999,
-        729.8324170000001
+        759.751291,
+        751.7865830000001,
+        751.158958
       ],
       "suite": "kairo",
-      "timeMs": 729.8324
+      "timeMs": 751.159
     },
     {
       "framework": "SolidJS",
       "test": "deepPropagation",
       "samplesMs": [
-        300.4191659999997,
-        314.0210420000003,
-        330.34020800000053
+        286.7624999999998,
+        285.55929100000003,
+        286.5410420000003
       ],
       "suite": "kairo",
-      "timeMs": 300.4192
+      "timeMs": 285.5593
     },
     {
       "framework": "SolidJS",
       "test": "diamond",
       "samplesMs": [
-        432.0472499999996,
-        442.5174999999999,
-        420.9081669999996
+        410.63637500000004,
+        408.67562500000076,
+        407.18170800000007
       ],
       "suite": "kairo",
-      "timeMs": 420.9082
+      "timeMs": 407.1817
     },
     {
       "framework": "SolidJS",
       "test": "mux",
       "samplesMs": [
-        426.76579200000015,
-        465.6717089999993,
-        439.7561249999999
+        420.1793749999997,
+        420.51908300000014,
+        409.9090409999999
       ],
       "suite": "kairo",
-      "timeMs": 426.7658
+      "timeMs": 409.909
     },
     {
       "framework": "SolidJS",
       "test": "repeatedObservers",
       "samplesMs": [
-        56.506749999999556,
-        55.50849999999991,
-        55.27574999999979
+        54.32483299999967,
+        53.06745899999987,
+        53.33879200000047
       ],
       "suite": "kairo",
-      "timeMs": 55.2757
+      "timeMs": 53.0675
     },
     {
       "framework": "SolidJS",
       "test": "triangle",
       "samplesMs": [
-        147.0915419999992,
-        141.92770799999926,
-        141.37412500000028
+        145.85554200000024,
+        141.3426669999999,
+        140.62904200000048
       ],
       "suite": "kairo",
-      "timeMs": 141.3741
+      "timeMs": 140.629
     },
     {
       "framework": "SolidJS",
       "test": "unstable",
       "samplesMs": [
-        82.73816600000009,
-        85.46991600000001,
-        85.97520900000018
+        84.79833300000064,
+        81.93983300000036,
+        81.9614590000001
       ],
       "suite": "kairo",
-      "timeMs": 82.7382
+      "timeMs": 81.9398
     },
     {
       "framework": "SolidJS",
       "test": "molBench",
       "samplesMs": [
-        384.830375,
-        387.94733299999996,
-        392.6201669999999
+        377.91775,
+        370.172958,
+        367.26366699999994
       ],
       "suite": "mol",
-      "timeMs": 384.8304
+      "timeMs": 367.2637
     },
     {
       "framework": "SolidJS",
       "test": "createDataSignals",
       "samplesMs": [
-        9.415959,
-        9.488417000000013,
-        7.104709
+        7.589959,
+        7.877334000000005,
+        6.917417
       ],
       "suite": "s",
-      "timeMs": 7.1047
+      "timeMs": 6.9174
     },
     {
       "framework": "SolidJS",
       "test": "createComputations0to1",
       "samplesMs": [
-        6.72145900000001,
-        13.01475000000002,
-        7.927374999999984
+        6.887792000000005,
+        14.468791999999993,
+        7.977000000000004
       ],
       "suite": "s",
-      "timeMs": 6.7215
+      "timeMs": 6.8878
     },
     {
       "framework": "SolidJS",
       "test": "createComputations1to1",
       "samplesMs": [
-        46.68491700000001,
-        45.259457999999995,
-        47.09529199999997
+        43.74716600000002,
+        42.43229200000002,
+        41.42183299999999
       ],
       "suite": "s",
-      "timeMs": 45.2595
+      "timeMs": 41.4218
     },
     {
       "framework": "SolidJS",
       "test": "createComputations2to1",
       "samplesMs": [
-        37.706083999999976,
-        40.62516699999992,
-        38.826415999999995
+        36.65641700000003,
+        38.64533300000005,
+        36.53895799999998
       ],
       "suite": "s",
-      "timeMs": 37.7061
+      "timeMs": 36.539
     },
     {
       "framework": "SolidJS",
       "test": "createComputations4to1",
       "samplesMs": [
-        29.079791999999998,
-        30.170834000000013,
-        26.911459000000036
+        27.876292000000035,
+        29.053665999999907,
+        27.778374999999983
       ],
       "suite": "s",
-      "timeMs": 26.9115
+      "timeMs": 27.7784
     },
     {
       "framework": "SolidJS",
       "test": "createComputations1000to1",
       "samplesMs": [
-        9.149749999999926,
-        9.372042000000079,
-        8.960417000000007
+        8.800666999999976,
+        8.868334000000004,
+        8.809792000000016
       ],
       "suite": "s",
-      "timeMs": 8.9604
+      "timeMs": 8.8007
     },
     {
       "framework": "SolidJS",
       "test": "createComputations1to2",
       "samplesMs": [
-        32.33108399999992,
-        27.779791000000046,
-        32.26091700000006
+        31.981249999999932,
+        30.69429100000002,
+        29.441874999999982
       ],
       "suite": "s",
-      "timeMs": 27.7798
+      "timeMs": 29.4419
     },
     {
       "framework": "SolidJS",
       "test": "createComputations1to4",
       "samplesMs": [
-        19.26825000000008,
-        20.163125000000036,
-        19.911000000000058
+        18.33720799999992,
+        20.021791000000007,
+        20.250540999999885
       ],
       "suite": "s",
-      "timeMs": 19.2683
+      "timeMs": 18.3372
     },
     {
       "framework": "SolidJS",
       "test": "createComputations1to8",
       "samplesMs": [
-        15.568374999999833,
-        20.355583999999908,
-        18.591957999999977
+        14.047625000000153,
+        18.247082999999975,
+        15.013834000000088
       ],
       "suite": "s",
-      "timeMs": 15.5684
+      "timeMs": 14.0476
     },
     {
       "framework": "SolidJS",
       "test": "createComputations1to1000",
       "samplesMs": [
-        16.714457999999922,
-        15.157208000000082,
-        15.949541999999838
+        13.527499999999918,
+        12.874250000000075,
+        13.330375000000004
       ],
       "suite": "s",
-      "timeMs": 15.1572
+      "timeMs": 12.8743
     },
     {
       "framework": "SolidJS",
       "test": "updateComputations1to1",
       "samplesMs": [
-        61.69249999999988,
-        62.072625000000016,
-        63.50045799999998
+        58.25308300000006,
+        57.022042000000056,
+        57.262457999999924
       ],
       "suite": "s",
-      "timeMs": 61.6925
+      "timeMs": 57.022
     },
     {
       "framework": "SolidJS",
       "test": "updateComputations2to1",
       "samplesMs": [
-        47.61004200000002,
-        40.191291999999976,
-        40.20012500000007
+        42.87975000000006,
+        36.68204199999991,
+        37.11566700000003
       ],
       "suite": "s",
-      "timeMs": 40.1913
+      "timeMs": 36.682
     },
     {
       "framework": "SolidJS",
       "test": "updateComputations4to1",
       "samplesMs": [
-        32.02841600000011,
-        31.807625000000144,
-        31.410167
+        29.063750000000027,
+        28.507166000000097,
+        28.484500000000025
       ],
       "suite": "s",
-      "timeMs": 31.4102
+      "timeMs": 28.4845
     },
     {
       "framework": "SolidJS",
       "test": "updateComputations1000to1",
       "samplesMs": [
-        21.445625000000064,
-        24.662417000000005,
-        21.239209000000074
+        21.065207999999984,
+        23.0763750000001,
+        20.353374999999915
       ],
       "suite": "s",
-      "timeMs": 21.2392
+      "timeMs": 20.3534
     },
     {
       "framework": "SolidJS",
       "test": "updateComputations1to2",
       "samplesMs": [
-        40.40841699999987,
-        44.319290999999794,
-        40.38545900000008
+        42.126624999999876,
+        38.70508400000017,
+        38.81987499999991
       ],
       "suite": "s",
-      "timeMs": 40.3855
+      "timeMs": 38.7051
     },
     {
       "framework": "SolidJS",
       "test": "updateComputations1to4",
       "samplesMs": [
-        39.967957999999726,
-        68.76524999999992,
-        38.63787500000035
+        36.051124999999956,
+        35.98720800000001,
+        35.501832999999806
       ],
       "suite": "s",
-      "timeMs": 38.6379
+      "timeMs": 35.5018
     },
     {
       "framework": "SolidJS",
       "test": "updateComputations1to1000",
       "samplesMs": [
-        39.51491699999997,
-        34.61220800000001,
-        34.164584000000104
+        36.73591600000009,
+        33.18891600000006,
+        33.48454199999969
       ],
       "suite": "s",
-      "timeMs": 34.1646
+      "timeMs": 33.1889
     },
     {
       "framework": "SolidJS",
       "test": "10x5 - 2 sources - read 20% (simple component)",
       "samplesMs": [
-        1204.529875,
-        1294.547333,
-        1281.8404579999997
+        1201.047875,
+        1317.4776659999998,
+        1295.6365829999995
       ],
       "suite": "dynamic",
-      "timeMs": 1204.5299
+      "timeMs": 1201.0479
     },
     {
       "framework": "SolidJS",
       "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
       "samplesMs": [
-        448.9002499999997,
-        454.8462500000005,
-        452.4659579999998
+        439.45887500000026,
+        446.09299999999985,
+        454.05529099999967
       ],
       "suite": "dynamic",
-      "timeMs": 448.9002
+      "timeMs": 439.4589
     },
     {
       "framework": "SolidJS",
       "test": "1000x12 - 4 sources - dynamic (large web app)",
       "samplesMs": [
-        555.3481250000004,
-        535.4725410000001,
-        543.9913329999999
+        544.6854160000003,
+        538.7467500000002,
+        531.9634580000002
       ],
       "suite": "dynamic",
-      "timeMs": 535.4725
+      "timeMs": 531.9635
     },
     {
       "framework": "SolidJS",
       "test": "1000x5 - 25 sources (wide dense)",
       "samplesMs": [
-        900.5929580000011,
-        914.238292,
-        920.1110829999998
+        875.3602499999997,
+        898.5284169999995,
+        890.8293749999993
       ],
       "suite": "dynamic",
-      "timeMs": 900.593
+      "timeMs": 875.3602
     },
     {
       "framework": "SolidJS",
       "test": "5x500 - 3 sources (deep)",
       "samplesMs": [
-        275.63774999999987,
-        301.59050000000025,
-        283.8994160000002
+        276.7272499999999,
+        285.27820900000006,
+        278.8689999999988
       ],
       "suite": "dynamic",
-      "timeMs": 275.6377
+      "timeMs": 276.7272
     },
     {
       "framework": "SolidJS",
       "test": "cellx10",
       "samplesMs": [
-        0.0551669999999973,
-        0.04754199999999997,
-        0.045417000000000485
+        0.05991600000000119,
+        0.05016599999999727,
+        0.044708999999997445
       ],
       "suite": "cellx",
-      "timeMs": 0.0454
+      "timeMs": 0.0447
     },
     {
       "framework": "SolidJS",
       "test": "cellx20",
       "samplesMs": [
-        0.0867500000000021,
-        0.07808299999999946,
-        0.05983400000000216
+        0.08420800000000384,
+        0.07000000000000028,
+        0.059457999999999345
       ],
       "suite": "cellx",
-      "timeMs": 0.0598
+      "timeMs": 0.0595
     },
     {
       "framework": "SolidJS",
       "test": "cellx30",
       "samplesMs": [
-        0.06629199999999713,
-        0.04712499999999409,
-        0.04049999999999443
+        0.05870800000000287,
+        0.031208999999996934,
+        0.03616699999999895
       ],
       "suite": "cellx",
-      "timeMs": 0.0405
+      "timeMs": 0.0312
     },
     {
       "framework": "Svelte v5",
       "test": "avoidablePropagation",
       "samplesMs": [
-        443.88825,
-        427.3285000000001,
-        424.34670800000004
+        441.19341699999995,
+        423.266583,
+        421.6328329999999
       ],
       "suite": "kairo",
-      "timeMs": 424.3467
+      "timeMs": 421.6328
     },
     {
       "framework": "Svelte v5",
       "test": "broadPropagation",
       "samplesMs": [
-        667.0183749999999,
-        656.756416,
-        653.581291
+        662.653542,
+        660.0530419999998,
+        660.971458
       ],
       "suite": "kairo",
-      "timeMs": 653.5813
+      "timeMs": 660.053
     },
     {
       "framework": "Svelte v5",
       "test": "deepPropagation",
       "samplesMs": [
-        297.68533300000036,
-        300.55391699999973,
-        302.8741250000003
+        288.34516600000006,
+        286.4687909999998,
+        290.3846659999999
       ],
       "suite": "kairo",
-      "timeMs": 297.6853
+      "timeMs": 286.4688
     },
     {
       "framework": "Svelte v5",
       "test": "diamond",
       "samplesMs": [
-        442.49808399999984,
-        438.1142920000002,
-        441.9806670000007
+        442.0299160000004,
+        438.0780420000001,
+        435.17633300000034
       ],
       "suite": "kairo",
-      "timeMs": 438.1143
+      "timeMs": 435.1763
     },
     {
       "framework": "Svelte v5",
       "test": "mux",
       "samplesMs": [
-        280.533042,
-        276.11516699999993,
-        275.3600000000006
+        277.822083,
+        277.8742910000001,
+        271.70358399999986
       ],
       "suite": "kairo",
-      "timeMs": 275.36
+      "timeMs": 271.7036
     },
     {
       "framework": "Svelte v5",
       "test": "repeatedObservers",
       "samplesMs": [
-        56.8729170000006,
-        55.728917000000365,
-        55.08650000000034
+        55.633583000000726,
+        55.25266600000032,
+        55.199249999999665
       ],
       "suite": "kairo",
-      "timeMs": 55.0865
+      "timeMs": 55.1992
     },
     {
       "framework": "Svelte v5",
       "test": "triangle",
       "samplesMs": [
-        157.13358299999982,
-        151.08670900000016,
-        149.93504099999973
+        152.49049999999988,
+        147.66720799999985,
+        155.3922080000002
       ],
       "suite": "kairo",
-      "timeMs": 149.935
+      "timeMs": 147.6672
     },
     {
       "framework": "Svelte v5",
       "test": "unstable",
       "samplesMs": [
-        89.16516700000011,
-        86.6180830000003,
-        86.68620900000042
+        92.10674999999992,
+        87.66849999999977,
+        87.64041600000019
       ],
       "suite": "kairo",
-      "timeMs": 86.6181
+      "timeMs": 87.6404
     },
     {
       "framework": "Svelte v5",
       "test": "molBench",
       "samplesMs": [
-        324.43095800000003,
-        328.994625,
-        346.17883399999994
+        322.968167,
+        314.86204200000003,
+        314.005583
       ],
       "suite": "mol",
-      "timeMs": 324.431
+      "timeMs": 314.0056
     },
     {
       "framework": "Svelte v5",
       "test": "createDataSignals",
       "samplesMs": [
-        6.400917000000007,
-        5.614999999999995,
-        5.847834000000006
+        5.969458000000003,
+        5.534208000000007,
+        5.346417000000002
       ],
       "suite": "s",
-      "timeMs": 5.615
+      "timeMs": 5.3464
     },
     {
       "framework": "Svelte v5",
       "test": "createComputations0to1",
       "samplesMs": [
-        15.253042000000008,
-        19.040999999999997,
-        14.248041
+        13.926417,
+        18.936000000000007,
+        13.008708999999982
       ],
       "suite": "s",
-      "timeMs": 14.248
+      "timeMs": 13.0087
     },
     {
       "framework": "Svelte v5",
       "test": "createComputations1to1",
       "samplesMs": [
-        19.490250000000003,
-        34.14758400000005,
-        37.26158299999997
+        17.22845799999999,
+        23.727041999999983,
+        22.404416999999967
       ],
       "suite": "s",
-      "timeMs": 19.4903
+      "timeMs": 17.2285
     },
     {
       "framework": "Svelte v5",
       "test": "createComputations2to1",
       "samplesMs": [
-        13.206667000000039,
-        16.226,
-        14.465584000000035
+        11.258624999999938,
+        14.480666999999926,
+        12.572708000000034
       ],
       "suite": "s",
-      "timeMs": 13.2067
+      "timeMs": 11.2586
     },
     {
       "framework": "Svelte v5",
       "test": "createComputations4to1",
       "samplesMs": [
-        11.193209000000024,
-        11.365083000000027,
-        11.14474999999993
+        8.17204199999992,
+        9.59720900000002,
+        9.336749999999938
       ],
       "suite": "s",
-      "timeMs": 11.1447
+      "timeMs": 8.172
     },
     {
       "framework": "Svelte v5",
       "test": "createComputations1000to1",
       "samplesMs": [
-        6.017542000000049,
-        8.086874999999964,
-        7.269084000000021
+        5.2162080000000515,
+        6.01683300000002,
+        6.22524999999996
       ],
       "suite": "s",
-      "timeMs": 6.0175
+      "timeMs": 5.2162
     },
     {
       "framework": "Svelte v5",
       "test": "createComputations1to2",
       "samplesMs": [
-        16.06874999999991,
-        21.278125000000045,
-        39.45499999999993
+        15.069333000000029,
+        19.02662500000008,
+        15.388791999999967
       ],
       "suite": "s",
-      "timeMs": 16.0687
+      "timeMs": 15.0693
     },
     {
       "framework": "Svelte v5",
       "test": "createComputations1to4",
       "samplesMs": [
-        15.045916000000034,
-        18.839707999999973,
-        16.046792000000096
+        14.050208999999995,
+        17.960250000000087,
+        13.504458000000113
       ],
       "suite": "s",
-      "timeMs": 15.0459
+      "timeMs": 13.5045
     },
     {
       "framework": "Svelte v5",
       "test": "createComputations1to8",
       "samplesMs": [
-        13.507959000000028,
-        17.52887499999997,
-        13.433125000000018
+        12.69720899999993,
+        17.26166699999999,
+        12.660459000000174
       ],
       "suite": "s",
-      "timeMs": 13.4331
+      "timeMs": 12.6605
     },
     {
       "framework": "Svelte v5",
       "test": "createComputations1to1000",
       "samplesMs": [
-        12.111292000000049,
-        17.067334000000074,
-        11.972667000000001
+        11.305458000000044,
+        15.517916999999898,
+        11.775708000000122
       ],
       "suite": "s",
-      "timeMs": 11.9727
+      "timeMs": 11.3055
     },
     {
       "framework": "Svelte v5",
       "test": "updateComputations1to1",
       "samplesMs": [
-        113.4999580000001,
-        116.80437500000016,
-        123.25054099999988
+        113.82933400000002,
+        113.20883299999991,
+        113.33062500000005
       ],
       "suite": "s",
-      "timeMs": 113.5
+      "timeMs": 113.2088
     },
     {
       "framework": "Svelte v5",
       "test": "updateComputations2to1",
       "samplesMs": [
-        66.9305830000003,
-        59.62616700000035,
-        59.615458999999646
+        62.41775000000007,
+        57.885625000000346,
+        57.679083999999875
       ],
       "suite": "s",
-      "timeMs": 59.6155
+      "timeMs": 57.6791
     },
     {
       "framework": "Svelte v5",
       "test": "updateComputations4to1",
       "samplesMs": [
-        31.88891599999988,
-        31.469375000000127,
-        31.028584000000137
+        30.712666999999783,
+        30.367416999999932,
+        30.35104199999978
       ],
       "suite": "s",
-      "timeMs": 31.0286
+      "timeMs": 30.351
     },
     {
       "framework": "Svelte v5",
       "test": "updateComputations1000to1",
       "samplesMs": [
-        3.7806250000003274,
-        3.749084000000039,
-        3.777458000000024
+        3.7319579999998496,
+        3.6686250000002474,
+        3.6970420000002377
       ],
       "suite": "s",
-      "timeMs": 3.7491
+      "timeMs": 3.6686
     },
     {
       "framework": "Svelte v5",
       "test": "updateComputations1to2",
       "samplesMs": [
-        66.45666600000004,
-        66.67995800000017,
-        67.26029199999994
+        66.93270900000016,
+        66.29450000000043,
+        66.13295900000003
       ],
       "suite": "s",
-      "timeMs": 66.4567
+      "timeMs": 66.133
     },
     {
       "framework": "Svelte v5",
       "test": "updateComputations1to4",
       "samplesMs": [
-        43.71537499999977,
-        43.06224999999995,
-        43.32058300000017
+        42.85279100000025,
+        44.70687500000031,
+        43.47691699999996
       ],
       "suite": "s",
-      "timeMs": 43.0622
+      "timeMs": 42.8528
     },
     {
       "framework": "Svelte v5",
       "test": "updateComputations1to1000",
       "samplesMs": [
-        18.65029199999981,
-        18.73508300000003,
-        19.407874999999876
+        19.1215830000001,
+        19.710125000000062,
+        19.921834000000217
       ],
       "suite": "s",
-      "timeMs": 18.6503
+      "timeMs": 19.1216
     },
     {
       "framework": "Svelte v5",
       "test": "10x5 - 2 sources - read 20% (simple component)",
       "samplesMs": [
-        582.2131669999999,
-        567.3813339999999,
-        577.966167
+        591.2391670000001,
+        572.6819579999999,
+        572.0453749999999
       ],
       "suite": "dynamic",
-      "timeMs": 567.3813
+      "timeMs": 572.0454
     },
     {
       "framework": "Svelte v5",
       "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
       "samplesMs": [
-        266.650709,
-        258.43170899999996,
-        261.64545899999985
+        254.41949999999997,
+        249.18991700000015,
+        253.46620799999982
       ],
       "suite": "dynamic",
-      "timeMs": 258.4317
+      "timeMs": 249.1899
     },
     {
       "framework": "Svelte v5",
       "test": "1000x12 - 4 sources - dynamic (large web app)",
       "samplesMs": [
-        441.70420899999954,
-        440.5336669999997,
-        437.9481249999999
+        449.3944590000001,
+        447.87866699999995,
+        441.66533400000026
       ],
       "suite": "dynamic",
-      "timeMs": 437.9481
+      "timeMs": 441.6653
     },
     {
       "framework": "Svelte v5",
       "test": "1000x5 - 25 sources (wide dense)",
       "samplesMs": [
-        442.35154200000034,
-        449.0720419999998,
-        438.12766700000066
+        444.9114589999999,
+        451.3291249999993,
+        435.9628330000005
       ],
       "suite": "dynamic",
-      "timeMs": 438.1277
+      "timeMs": 435.9628
     },
     {
       "framework": "Svelte v5",
       "test": "5x500 - 3 sources (deep)",
       "samplesMs": [
-        221.04274999999961,
-        227.10624999999982,
-        216.6058750000002
+        227.77058399999987,
+        226.30737500000032,
+        220.26733299999978
       ],
       "suite": "dynamic",
-      "timeMs": 216.6059
+      "timeMs": 220.2673
     },
     {
       "framework": "Svelte v5",
       "test": "cellx10",
       "samplesMs": [
-        0.10612499999999869,
-        0.12291600000000358,
-        0.11187500000000483
+        0.11016699999999702,
+        0.12254199999999571,
+        0.10150000000000148
       ],
       "suite": "cellx",
-      "timeMs": 0.1061
+      "timeMs": 0.1015
     },
     {
       "framework": "Svelte v5",
       "test": "cellx20",
       "samplesMs": [
-        3.0877920000000003,
-        1.9792500000000004,
-        1.9726249999999936
+        3.1662079999999975,
+        2.014417000000009,
+        2.0454579999999964
       ],
       "suite": "cellx",
-      "timeMs": 1.9726
+      "timeMs": 2.0144
     },
     {
       "framework": "Svelte v5",
       "test": "cellx30",
       "samplesMs": [
-        236.24033300000002,
-        236.3226669999999,
-        235.789
+        239.66462499999994,
+        237.630042,
+        237.59241700000007
       ],
       "suite": "cellx",
-      "timeMs": 235.789
+      "timeMs": 237.5924
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "avoidablePropagation",
       "samplesMs": [
-        198.907042,
-        209.92370900000003,
-        207.820333
+        197.674,
+        192.32675,
+        192.77266699999996
       ],
       "suite": "kairo",
-      "timeMs": 198.907
+      "timeMs": 192.3268
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "broadPropagation",
       "samplesMs": [
-        505.9761669999999,
-        539.0567079999998,
-        508.95995800000014
+        515.6005000000001,
+        501.51874999999995,
+        502.9887920000001
       ],
       "suite": "kairo",
-      "timeMs": 505.9762
+      "timeMs": 501.5187
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "deepPropagation",
       "samplesMs": [
-        145.63537499999984,
-        148.2760000000003,
-        146.04441599999973
+        146.46950000000015,
+        147.46841700000004,
+        148.9702500000003
       ],
       "suite": "kairo",
-      "timeMs": 145.6354
+      "timeMs": 146.4695
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "diamond",
       "samplesMs": [
-        202.6318339999998,
-        196.06045799999993,
-        206.19000000000005
+        197.154,
+        194.49370799999997,
+        194.37770899999987
       ],
       "suite": "kairo",
-      "timeMs": 196.0605
+      "timeMs": 194.3777
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "mux",
       "samplesMs": [
-        478.2035840000003,
-        490.4757090000003,
-        466.078125
+        478.1624160000001,
+        463.0739999999996,
+        451.198042
       ],
       "suite": "kairo",
-      "timeMs": 466.0781
+      "timeMs": 451.198
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "repeatedObservers",
       "samplesMs": [
-        40.74829200000022,
-        40.109417000000576,
-        40.0034999999998
+        40.10099999999966,
+        40.25,
+        39.417084000000614
       ],
       "suite": "kairo",
-      "timeMs": 40.0035
+      "timeMs": 39.4171
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "triangle",
       "samplesMs": [
-        73.17816700000003,
-        99.58029199999964,
-        76.7182499999999
+        74.25558300000012,
+        68.77266700000018,
+        68.29241700000057
       ],
       "suite": "kairo",
-      "timeMs": 73.1782
+      "timeMs": 68.2924
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "unstable",
       "samplesMs": [
-        108.99058299999979,
-        102.19941599999947,
-        103.9683329999998
+        101.46404200000052,
+        97.57483299999967,
+        96.55274999999983
       ],
       "suite": "kairo",
-      "timeMs": 102.1994
+      "timeMs": 96.5527
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "molBench",
       "samplesMs": [
-        328.716334,
-        364.004291,
-        332.01029100000005
+        311.84074999999996,
+        309.74291700000003,
+        306.89975000000004
       ],
       "suite": "mol",
-      "timeMs": 328.7163
+      "timeMs": 306.8998
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "createDataSignals",
       "samplesMs": [
-        22.887500000000003,
-        9.75779200000001,
-        9.733542
+        19.885000000000005,
+        10.052374999999998,
+        8.952584000000002
       ],
       "suite": "s",
-      "timeMs": 9.7335
+      "timeMs": 8.9526
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "createComputations0to1",
       "samplesMs": [
-        18.112707999999998,
-        20.729708000000016,
-        18.748665999999986
+        16.020291999999984,
+        19.400499999999994,
+        17.72883300000001
       ],
       "suite": "s",
-      "timeMs": 18.1127
+      "timeMs": 16.0203
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "createComputations1to1",
       "samplesMs": [
-        40.98400000000004,
-        52.33095899999995,
-        57.39804200000003
+        39.377707999999984,
+        55.26804199999998,
+        64.23512499999993
       ],
       "suite": "s",
-      "timeMs": 40.984
+      "timeMs": 39.3777
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "createComputations2to1",
       "samplesMs": [
-        25.853166999999985,
-        28.87966700000004,
-        28.404790999999932
+        25.895916000000057,
+        24.8207910000001,
+        27.964375000000018
       ],
       "suite": "s",
-      "timeMs": 25.8532
+      "timeMs": 24.8208
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "createComputations4to1",
       "samplesMs": [
-        22.568084,
-        23.597582999999986,
-        25.158541999999898
+        21.797541999999794,
+        22.544250000000147,
+        24.049166999999898
       ],
       "suite": "s",
-      "timeMs": 22.5681
+      "timeMs": 21.7975
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "createComputations1000to1",
       "samplesMs": [
-        11.963541999999961,
-        12.514499999999998,
-        14.991209000000026
+        11.966040999999905,
+        12.007749999999987,
+        13.060917000000018
       ],
       "suite": "s",
-      "timeMs": 11.9635
+      "timeMs": 11.966
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "createComputations1to2",
       "samplesMs": [
-        29.875999999999976,
-        29.835624999999936,
-        30.461291999999958
+        29.02883399999996,
+        27.51233400000001,
+        29.88824999999997
       ],
       "suite": "s",
-      "timeMs": 29.8356
+      "timeMs": 27.5123
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "createComputations1to4",
       "samplesMs": [
-        26.316749999999956,
-        23.778332999999748,
-        26.304208000000017
+        24.50220900000022,
+        22.994791000000077,
+        26.189166999999998
       ],
       "suite": "s",
-      "timeMs": 23.7783
+      "timeMs": 22.9948
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "createComputations1to8",
       "samplesMs": [
-        18.104917000000114,
-        17.80437499999971,
-        19.494125000000167
+        18.388582999999926,
+        18.482582999999977,
+        19.464834000000337
       ],
       "suite": "s",
-      "timeMs": 17.8044
+      "timeMs": 18.3886
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "createComputations1to1000",
       "samplesMs": [
-        16.872875000000022,
-        17.770834000000377,
-        16.7234169999997
+        16.567000000000007,
+        16.499832999999853,
+        16.93000000000029
       ],
       "suite": "s",
-      "timeMs": 16.7234
+      "timeMs": 16.4998
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "updateComputations1to1",
       "samplesMs": [
-        28.85575000000017,
-        28.65029199999981,
-        34.110625000000255
+        27.384750000000167,
+        28.340584000000035,
+        32.55554099999972
       ],
       "suite": "s",
-      "timeMs": 28.6503
+      "timeMs": 27.3848
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "updateComputations2to1",
       "samplesMs": [
-        17.369040999999925,
-        17.967583000000104,
-        19.963709000000108
+        16.74541700000009,
+        17.741166999999678,
+        19.538542000000234
       ],
       "suite": "s",
-      "timeMs": 17.369
+      "timeMs": 16.7454
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "updateComputations4to1",
       "samplesMs": [
-        10.684250000000247,
-        10.388500000000022,
-        10.817375000000084
+        10.386042000000089,
+        10.357375000000047,
+        10.739875000000211
       ],
       "suite": "s",
-      "timeMs": 10.3885
+      "timeMs": 10.3574
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "updateComputations1000to1",
       "samplesMs": [
-        6.717250000000149,
-        6.76424999999972,
-        6.418499999999767
+        6.367709000000104,
+        6.5779999999999745,
+        6.526959000000261
       ],
       "suite": "s",
-      "timeMs": 6.4185
+      "timeMs": 6.3677
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "updateComputations1to2",
       "samplesMs": [
-        24.29062500000009,
-        24.160499999999956,
-        24.118625000000065
+        23.849500000000262,
+        24.040250000000015,
+        24.26391599999988
       ],
       "suite": "s",
-      "timeMs": 24.1186
+      "timeMs": 23.8495
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "updateComputations1to4",
       "samplesMs": [
-        23.30829100000028,
-        22.75695799999994,
-        23.289832999999817
+        22.865208000000166,
+        23.008167000000412,
+        23.01933400000007
       ],
       "suite": "s",
-      "timeMs": 22.757
+      "timeMs": 22.8652
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "updateComputations1to1000",
       "samplesMs": [
-        23.13312500000029,
-        23.65995900000007,
-        22.885291000000052
+        22.49474999999984,
+        23.064957999999933,
+        22.857708000000002
       ],
       "suite": "s",
-      "timeMs": 22.8853
+      "timeMs": 22.4947
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "10x5 - 2 sources - read 20% (simple component)",
       "samplesMs": [
-        323.01275000000004,
-        342.50141600000006,
-        338.15145900000016
+        323.99158399999993,
+        335.7598750000001,
+        330.718167
       ],
       "suite": "dynamic",
-      "timeMs": 323.0128
+      "timeMs": 323.9916
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
       "samplesMs": [
-        235.3694170000001,
-        255.6411250000001,
-        226.2624579999997
+        254.42937499999994,
+        228.74679200000014,
+        221.7777500000002
       ],
       "suite": "dynamic",
-      "timeMs": 226.2625
+      "timeMs": 221.7778
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "1000x12 - 4 sources - dynamic (large web app)",
       "samplesMs": [
-        466.18854199999987,
-        459.1244999999999,
-        467.9685000000004
+        437.79133299999967,
+        431.3599589999999,
+        431.9102499999999
       ],
       "suite": "dynamic",
-      "timeMs": 459.1245
+      "timeMs": 431.36
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "1000x5 - 25 sources (wide dense)",
       "samplesMs": [
-        523.5982090000007,
-        509.5297500000006,
-        528.7331250000007
+        516.8731670000006,
+        519.1850840000006,
+        512.7664159999995
       ],
       "suite": "dynamic",
-      "timeMs": 509.5298
+      "timeMs": 512.7664
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "5x500 - 3 sources (deep)",
       "samplesMs": [
-        198.76633399999992,
-        192.06045900000026,
-        191.4042499999996
+        196.7279580000004,
+        189.20666600000004,
+        197.28387500000008
       ],
       "suite": "dynamic",
-      "timeMs": 191.4042
+      "timeMs": 189.2067
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "cellx10",
       "samplesMs": [
-        0.09429199999999582,
-        0.06779099999999971,
-        0.07095799999999741
+        0.10004200000000196,
+        0.06287499999999824,
+        0.07066700000000026
       ],
       "suite": "cellx",
-      "timeMs": 0.0678
+      "timeMs": 0.0629
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "cellx20",
       "samplesMs": [
-        0.07737500000000352,
-        0.06212500000000176,
-        0.06704100000000324
+        0.08491700000000435,
+        0.06191700000000111,
+        0.06241699999999639
       ],
       "suite": "cellx",
-      "timeMs": 0.0621
+      "timeMs": 0.0619
     },
     {
       "framework": "@amadeus-it-group/tansu",
       "test": "cellx30",
       "samplesMs": [
-        0.0628330000000048,
-        0.1599159999999955,
-        0.04899999999999238
+        0.06241699999999639,
+        0.061166000000000054,
+        0.06674999999999898
       ],
       "suite": "cellx",
-      "timeMs": 0.049
+      "timeMs": 0.0612
     },
     {
       "framework": "@tldraw/state",
       "test": "avoidablePropagation",
       "samplesMs": [
-        283.398166,
-        287.520125,
-        276.790791
+        271.16304099999996,
+        273.518917,
+        268.580292
       ],
       "suite": "kairo",
-      "timeMs": 276.7908
+      "timeMs": 268.5803
     },
     {
       "framework": "@tldraw/state",
       "test": "broadPropagation",
       "samplesMs": [
-        743.881542,
-        718.0169999999998,
-        793.4659580000002
+        741.147583,
+        741.6014169999999,
+        740.1566250000001
       ],
       "suite": "kairo",
-      "timeMs": 718.017
+      "timeMs": 740.1566
     },
     {
       "framework": "@tldraw/state",
       "test": "deepPropagation",
       "samplesMs": [
-        261.21762499999977,
-        255.80262500000026,
-        261.23979099999997
+        226.50141600000006,
+        224.78245900000002,
+        228.4494169999998
       ],
       "suite": "kairo",
-      "timeMs": 255.8026
+      "timeMs": 224.7825
     },
     {
       "framework": "@tldraw/state",
       "test": "diamond",
       "samplesMs": [
-        401.7249579999998,
-        431.1346249999997,
-        390.01454100000046
+        351.7267499999998,
+        353.9545420000004,
+        353.4149580000003
       ],
       "suite": "kairo",
-      "timeMs": 390.0145
+      "timeMs": 351.7267
     },
     {
       "framework": "@tldraw/state",
       "test": "mux",
       "samplesMs": [
-        522.289417,
-        515.7531250000002,
-        520.4060829999999
+        510.7803329999997,
+        504.8462499999996,
+        497.26324999999997
       ],
       "suite": "kairo",
-      "timeMs": 515.7531
+      "timeMs": 497.2632
     },
     {
       "framework": "@tldraw/state",
       "test": "repeatedObservers",
       "samplesMs": [
-        49.518457999999555,
-        74.24691600000006,
-        52.898291999999856
+        45.207540999999765,
+        48.12537500000053,
+        47.812582999999904
       ],
       "suite": "kairo",
-      "timeMs": 49.5185
+      "timeMs": 45.2075
     },
     {
       "framework": "@tldraw/state",
       "test": "triangle",
       "samplesMs": [
-        170.08379100000002,
-        170.73008299999947,
-        166.03495899999962
+        154.5710420000005,
+        154.41591599999992,
+        151.9502910000001
       ],
       "suite": "kairo",
-      "timeMs": 166.035
+      "timeMs": 151.9503
     },
     {
       "framework": "@tldraw/state",
       "test": "unstable",
       "samplesMs": [
-        92.6449590000002,
-        75.90095800000017,
-        75.63200000000052
+        72.72433300000012,
+        75.11895800000002,
+        75.24974999999995
       ],
       "suite": "kairo",
-      "timeMs": 75.632
+      "timeMs": 72.7243
     },
     {
       "framework": "@tldraw/state",
       "test": "molBench",
       "samplesMs": [
-        318.447667,
-        318.57025,
-        318.70841600000006
+        323.87820899999997,
+        317.73320799999993,
+        321.60245799999996
       ],
       "suite": "mol",
-      "timeMs": 318.4477
+      "timeMs": 317.7332
     },
     {
       "framework": "@tldraw/state",
       "test": "createDataSignals",
       "samplesMs": [
-        7.3538329999999945,
-        6.220541999999995,
-        6.151332999999994
+        7.2981670000000065,
+        6.157166000000004,
+        6.128208999999998
       ],
       "suite": "s",
-      "timeMs": 6.1513
+      "timeMs": 6.1282
     },
     {
       "framework": "@tldraw/state",
       "test": "createComputations0to1",
       "samplesMs": [
-        8.521583000000007,
-        7.174499999999995,
-        5.734875000000002
+        8.524500000000003,
+        6.903125000000003,
+        5.983417000000003
       ],
       "suite": "s",
-      "timeMs": 5.7349
+      "timeMs": 5.9834
     },
     {
       "framework": "@tldraw/state",
       "test": "createComputations1to1",
       "samplesMs": [
-        15.406083999999993,
-        15.89533400000002,
-        16.486917000000005
+        15.517458000000005,
+        16.221666000000027,
+        16.172292
       ],
       "suite": "s",
-      "timeMs": 15.4061
+      "timeMs": 15.5175
     },
     {
       "framework": "@tldraw/state",
       "test": "createComputations2to1",
       "samplesMs": [
-        10.177791000000013,
-        13.891707999999994,
-        9.890166999999991
+        10.053166000000004,
+        13.778166999999996,
+        9.720209000000011
       ],
       "suite": "s",
-      "timeMs": 9.8902
+      "timeMs": 9.7202
     },
     {
       "framework": "@tldraw/state",
       "test": "createComputations4to1",
       "samplesMs": [
-        9.910874999999976,
-        11.277292000000045,
-        13.445375000000013
+        10.105416000000048,
+        9.999458000000004,
+        8.207667000000015
       ],
       "suite": "s",
-      "timeMs": 9.9109
+      "timeMs": 8.2077
     },
     {
       "framework": "@tldraw/state",
       "test": "createComputations1000to1",
       "samplesMs": [
-        11.05054100000001,
-        12.413834000000008,
-        11.171207999999979
+        10.636500000000012,
+        10.415625000000034,
+        10.577791999999988
       ],
       "suite": "s",
-      "timeMs": 11.0505
+      "timeMs": 10.4156
     },
     {
       "framework": "@tldraw/state",
       "test": "createComputations1to2",
       "samplesMs": [
-        17.080917,
-        14.553291000000002,
-        14.575125000000014
+        14.604333999999994,
+        14.14304199999998,
+        14.316791999999964
       ],
       "suite": "s",
-      "timeMs": 14.5533
+      "timeMs": 14.143
     },
     {
       "framework": "@tldraw/state",
       "test": "createComputations1to4",
       "samplesMs": [
-        15.565583000000004,
-        12.963374999999985,
-        13.83645899999999
+        14.379999999999995,
+        13.252541999999949,
+        13.661749999999984
       ],
       "suite": "s",
-      "timeMs": 12.9634
+      "timeMs": 13.2525
     },
     {
       "framework": "@tldraw/state",
       "test": "createComputations1to8",
       "samplesMs": [
-        14.362124999999992,
-        13.879084000000034,
-        14.883583000000044
+        12.627999999999986,
+        12.573583999999983,
+        13.711583000000019
       ],
       "suite": "s",
-      "timeMs": 13.8791
+      "timeMs": 12.5736
     },
     {
       "framework": "@tldraw/state",
       "test": "createComputations1to1000",
       "samplesMs": [
-        12.432665999999926,
-        11.164417000000071,
-        12.133249999999975
+        11.297249999999963,
+        10.674417000000062,
+        11.513541999999916
       ],
       "suite": "s",
-      "timeMs": 11.1644
+      "timeMs": 10.6744
     },
     {
       "framework": "@tldraw/state",
       "test": "updateComputations1to1",
       "samplesMs": [
-        53.32108400000004,
-        53.54141600000003,
-        51.383916
+        50.21424999999999,
+        51.84850000000006,
+        50.39933399999995
       ],
       "suite": "s",
-      "timeMs": 51.3839
+      "timeMs": 50.2142
     },
     {
       "framework": "@tldraw/state",
       "test": "updateComputations2to1",
       "samplesMs": [
-        36.72716600000001,
-        33.799666,
-        34.23566699999992
+        34.12112499999989,
+        31.715125000000057,
+        33.68766700000003
       ],
       "suite": "s",
-      "timeMs": 33.7997
+      "timeMs": 31.7151
     },
     {
       "framework": "@tldraw/state",
       "test": "updateComputations4to1",
       "samplesMs": [
-        23.452250000000163,
-        24.699333000000024,
-        23.990374999999858
+        22.743333000000007,
+        24.189916999999923,
+        23.74249999999995
       ],
       "suite": "s",
-      "timeMs": 23.4523
+      "timeMs": 22.7433
     },
     {
       "framework": "@tldraw/state",
       "test": "updateComputations1000to1",
       "samplesMs": [
-        20.629791999999952,
-        19.78229199999987,
-        18.876375000000053
+        20.409999999999854,
+        19.217415999999957,
+        18.599709000000075
       ],
       "suite": "s",
-      "timeMs": 18.8764
+      "timeMs": 18.5997
     },
     {
       "framework": "@tldraw/state",
       "test": "updateComputations1to2",
       "samplesMs": [
-        45.70120799999995,
-        43.641832999999906,
-        45.265125000000126
+        44.62562500000013,
+        42.241665999999896,
+        43.019874999999956
       ],
       "suite": "s",
-      "timeMs": 43.6418
+      "timeMs": 42.2417
     },
     {
       "framework": "@tldraw/state",
       "test": "updateComputations1to4",
       "samplesMs": [
-        36.577,
-        38.80137500000001,
-        40.37804200000005
+        35.594499999999925,
+        37.555250000000115,
+        38.778125000000045
       ],
       "suite": "s",
-      "timeMs": 36.577
+      "timeMs": 35.5945
     },
     {
       "framework": "@tldraw/state",
       "test": "updateComputations1to1000",
       "samplesMs": [
-        35.7253340000002,
-        34.25416600000017,
-        32.45916699999998
+        33.57100000000014,
+        33.18554100000006,
+        31.436999999999898
       ],
       "suite": "s",
-      "timeMs": 32.4592
+      "timeMs": 31.437
     },
     {
       "framework": "@tldraw/state",
       "test": "10x5 - 2 sources - read 20% (simple component)",
       "samplesMs": [
-        600.0773749999998,
-        571.057041,
-        573.721583
+        561.7780839999999,
+        563.489458,
+        560.9970409999999
       ],
       "suite": "dynamic",
-      "timeMs": 571.057
+      "timeMs": 560.997
     },
     {
       "framework": "@tldraw/state",
       "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
       "samplesMs": [
-        394.987208,
-        365.2957080000001,
-        383.60466700000006
+        364.4391660000001,
+        359.47133399999984,
+        366.2838750000001
       ],
       "suite": "dynamic",
-      "timeMs": 365.2957
+      "timeMs": 359.4713
     },
     {
       "framework": "@tldraw/state",
       "test": "1000x12 - 4 sources - dynamic (large web app)",
       "samplesMs": [
-        3389.140958000001,
-        3606.2770409999994,
-        3412.894875
+        3372.945375000001,
+        3268.2727079999986,
+        3049.6612080000014
       ],
       "suite": "dynamic",
-      "timeMs": 3389.141
+      "timeMs": 3049.6612
     },
     {
       "framework": "@tldraw/state",
       "test": "1000x5 - 25 sources (wide dense)",
       "samplesMs": [
-        3196.0982500000027,
-        3182.4582499999997,
-        3143.9990840000028
+        2875.7133329999997,
+        2833.2583750000013,
+        2814.881125
       ],
       "suite": "dynamic",
-      "timeMs": 3143.9991
+      "timeMs": 2814.8811
     },
     {
       "framework": "@tldraw/state",
       "test": "5x500 - 3 sources (deep)",
       "samplesMs": [
-        259.3687919999975,
-        251.49916700000176,
-        246.87704200000007
+        247.098833,
+        251.24233399999866,
+        251.04762499999924
       ],
       "suite": "dynamic",
-      "timeMs": 246.877
+      "timeMs": 247.0988
     },
     {
       "framework": "@tldraw/state",
       "test": "cellx10",
       "samplesMs": [
-        0.08054200000000122,
-        0.09158399999999745,
-        0.08270800000000378
+        0.08424999999999727,
+        0.09233400000000103,
+        0.08216699999999832
       ],
       "suite": "cellx",
-      "timeMs": 0.0805
+      "timeMs": 0.0822
     },
     {
       "framework": "@tldraw/state",
       "test": "cellx20",
       "samplesMs": [
-        0.11345800000000139,
-        0.10699999999999932,
-        0.07900000000000063
+        0.10875000000000057,
+        0.11524999999999608,
+        0.0707090000000008
       ],
       "suite": "cellx",
-      "timeMs": 0.079
+      "timeMs": 0.0707
     },
     {
       "framework": "@tldraw/state",
       "test": "cellx30",
       "samplesMs": [
-        0.07887499999999648,
-        0.06408300000000366,
-        0.17729200000000134
+        0.07412500000000222,
+        0.0660000000000025,
+        0.1923749999999984
       ],
       "suite": "cellx",
-      "timeMs": 0.0641
+      "timeMs": 0.066
     },
     {
       "framework": "uSignal",
       "test": "avoidablePropagation",
       "samplesMs": [
-        369.236375,
-        359.94275,
-        384.6418339999999
+        373.58358400000003,
+        369.51170900000005,
+        361.01862500000004
       ],
       "suite": "kairo",
-      "timeMs": 359.9427
+      "timeMs": 361.0186
     },
     {
       "framework": "uSignal",
       "test": "broadPropagation",
       "samplesMs": [
-        537.7463329999998,
-        516.844542,
-        493.5717089999998
+        473.6402499999999,
+        476.0785000000001,
+        474.64583300000004
       ],
       "suite": "kairo",
-      "timeMs": 493.5717
+      "timeMs": 473.6402
     },
     {
       "framework": "uSignal",
       "test": "deepPropagation",
       "samplesMs": [
-        167.50404100000014,
-        161.6644170000004,
-        158.1047920000001
+        164.16866700000037,
+        161.46083399999998,
+        162.42116699999997
       ],
       "suite": "kairo",
-      "timeMs": 158.1048
+      "timeMs": 161.4608
     },
     {
       "framework": "uSignal",
       "test": "diamond",
       "samplesMs": [
-        267.81595800000014,
-        284.23025000000007,
-        269.93766600000026
+        263.20066700000007,
+        259.266083,
+        260.195334
       ],
       "suite": "kairo",
-      "timeMs": 267.816
+      "timeMs": 259.2661
     },
     {
       "framework": "uSignal",
       "test": "mux",
       "samplesMs": [
-        539.786333,
-        513.7349159999994,
-        510.9006250000002
+        491.55483300000014,
+        491.39166699999987,
+        491.28608299999996
       ],
       "suite": "kairo",
-      "timeMs": 510.9006
+      "timeMs": 491.2861
     },
     {
       "framework": "uSignal",
       "test": "repeatedObservers",
       "samplesMs": [
-        42.24041699999998,
-        39.71141700000044,
-        40.31779199999983
+        40.747707999999875,
+        40.28279199999997,
+        39.39216699999997
       ],
       "suite": "kairo",
-      "timeMs": 39.7114
+      "timeMs": 39.3922
     },
     {
       "framework": "uSignal",
       "test": "triangle",
       "samplesMs": [
-        107.70216699999946,
-        100.36070800000016,
-        102.25004200000058
+        107.07324999999946,
+        101.25329199999942,
+        100.81195800000023
       ],
       "suite": "kairo",
-      "timeMs": 100.3607
+      "timeMs": 100.812
     },
     {
       "framework": "uSignal",
       "test": "unstable",
       "samplesMs": [
-        57.009250000000065,
-        57.17674999999963,
-        57.17274999999972
+        55.253917,
+        53.69054099999994,
+        54.20670799999971
       ],
       "suite": "kairo",
-      "timeMs": 57.0093
+      "timeMs": 53.6905
     },
     {
       "framework": "uSignal",
       "test": "molBench",
       "samplesMs": [
-        473.653875,
-        435.15883299999996,
-        428.689667
+        426.64329200000003,
+        433.26466700000003,
+        429.7082919999999
       ],
       "suite": "mol",
-      "timeMs": 428.6897
+      "timeMs": 426.6433
     },
     {
       "framework": "uSignal",
       "test": "createDataSignals",
       "samplesMs": [
-        9.915834000000004,
-        7.750208999999998,
-        7.454083000000011
+        10.016708000000008,
+        7.276540999999995,
+        7.5924169999999975
       ],
       "suite": "s",
-      "timeMs": 7.4541
+      "timeMs": 7.2765
     },
     {
       "framework": "uSignal",
       "test": "createComputations0to1",
       "samplesMs": [
-        7.298457999999997,
-        6.439791999999997,
-        5.489082999999994
+        7.139041999999989,
+        6.394750000000002,
+        5.542000000000002
       ],
       "suite": "s",
-      "timeMs": 5.4891
+      "timeMs": 5.542
     },
     {
       "framework": "uSignal",
       "test": "createComputations1to1",
       "samplesMs": [
-        39.105875,
-        37.45333400000001,
-        38.733457999999985
+        38.370457999999985,
+        37.243875,
+        37.17591699999997
       ],
       "suite": "s",
-      "timeMs": 37.4533
+      "timeMs": 37.1759
     },
     {
       "framework": "uSignal",
       "test": "createComputations2to1",
       "samplesMs": [
-        19.70029199999999,
-        23.450375000000008,
-        17.37429199999997
+        19.25275000000005,
+        24.13070799999997,
+        17.09920900000003
       ],
       "suite": "s",
-      "timeMs": 17.3743
+      "timeMs": 17.0992
     },
     {
       "framework": "uSignal",
       "test": "createComputations4to1",
       "samplesMs": [
-        20.295583000000022,
-        16.12404200000003,
-        18.347583999999983
+        20.86125000000004,
+        16.343542000000014,
+        18.869875000000036
       ],
       "suite": "s",
-      "timeMs": 16.124
+      "timeMs": 16.3435
     },
     {
       "framework": "uSignal",
       "test": "createComputations1000to1",
       "samplesMs": [
-        9.141375000000039,
-        9.229250000000036,
-        9.007542000000058
+        9.34054100000003,
+        9.421917000000064,
+        9.532083000000057
       ],
       "suite": "s",
-      "timeMs": 9.0075
+      "timeMs": 9.3405
     },
     {
       "framework": "uSignal",
       "test": "createComputations1to2",
       "samplesMs": [
-        24.375790999999936,
-        28.45279199999993,
-        27.043750000000045
+        23.698332999999934,
+        23.770167000000015,
+        26.299041999999986
       ],
       "suite": "s",
-      "timeMs": 24.3758
+      "timeMs": 23.6983
     },
     {
       "framework": "uSignal",
       "test": "createComputations1to4",
       "samplesMs": [
-        21.236832999999933,
-        19.460790999999972,
-        23.79600000000005
+        22.692083000000025,
+        19.86587499999996,
+        21.092083000000002
       ],
       "suite": "s",
-      "timeMs": 19.4608
+      "timeMs": 19.8659
     },
     {
       "framework": "uSignal",
       "test": "createComputations1to8",
       "samplesMs": [
-        17.02329199999997,
-        16.133249999999975,
-        17.224666999999954
+        17.127749999999992,
+        16.225000000000023,
+        17.680834000000004
       ],
       "suite": "s",
-      "timeMs": 16.1332
+      "timeMs": 16.225
     },
     {
       "framework": "uSignal",
       "test": "createComputations1to1000",
       "samplesMs": [
-        17.848541999999952,
-        14.30195900000001,
-        16.554958000000056
+        17.574999999999932,
+        14.968291000000022,
+        16.805124999999975
       ],
       "suite": "s",
-      "timeMs": 14.302
+      "timeMs": 14.9683
     },
     {
       "framework": "uSignal",
       "test": "updateComputations1to1",
       "samplesMs": [
-        28.511082999999985,
-        28.826874999999973,
-        28.12345900000014
+        27.991708000000017,
+        29.71970799999997,
+        28.47683399999994
       ],
       "suite": "s",
-      "timeMs": 28.1235
+      "timeMs": 27.9917
     },
     {
       "framework": "uSignal",
       "test": "updateComputations2to1",
       "samplesMs": [
-        23.119333000000097,
-        19.713375000000042,
-        19.6831659999998
+        21.224958000000015,
+        18.204124999999976,
+        17.949374999999918
       ],
       "suite": "s",
-      "timeMs": 19.6832
+      "timeMs": 17.9494
     },
     {
       "framework": "uSignal",
       "test": "updateComputations4to1",
       "samplesMs": [
-        12.712541999999985,
-        11.94341600000007,
-        12.516333000000031
+        11.848124999999982,
+        11.610415999999987,
+        11.958084000000099
       ],
       "suite": "s",
-      "timeMs": 11.9434
+      "timeMs": 11.6104
     },
     {
       "framework": "uSignal",
       "test": "updateComputations1000to1",
       "samplesMs": [
-        10.022666999999956,
-        10.127375000000029,
-        9.955749999999853
+        10.230041999999912,
+        10.051208000000088,
+        10.174083999999993
       ],
       "suite": "s",
-      "timeMs": 9.9557
+      "timeMs": 10.0512
     },
     {
       "framework": "uSignal",
       "test": "updateComputations1to2",
       "samplesMs": [
-        25.635082999999895,
-        26.84016600000018,
-        27.884250000000065
+        25.525957999999946,
+        24.67816599999992,
+        25.317583000000013
       ],
       "suite": "s",
-      "timeMs": 25.6351
+      "timeMs": 24.6782
     },
     {
       "framework": "uSignal",
       "test": "updateComputations1to4",
       "samplesMs": [
-        23.2037499999999,
-        23.277458000000024,
-        25.28404099999989
+        22.93983400000002,
+        22.152999999999793,
+        22.025333000000046
       ],
       "suite": "s",
-      "timeMs": 23.2037
+      "timeMs": 22.0253
     },
     {
       "framework": "uSignal",
       "test": "updateComputations1to1000",
       "samplesMs": [
-        29.238292,
-        29.015583000000106,
-        29.391417000000047
+        28.821957999999995,
+        28.908374999999978,
+        28.30954100000008
       ],
       "suite": "s",
-      "timeMs": 29.0156
+      "timeMs": 28.3095
     },
     {
       "framework": "uSignal",
       "test": "10x5 - 2 sources - read 20% (simple component)",
       "samplesMs": [
-        329.93616699999995,
-        342.00299999999993,
-        342.044167
+        332.222625,
+        344.1328329999999,
+        357.11699999999996
       ],
       "suite": "dynamic",
-      "timeMs": 329.9362
+      "timeMs": 332.2226
     },
     {
       "framework": "uSignal",
       "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
       "samplesMs": [
-        310.99466699999994,
-        320.2475419999996,
-        306.2685839999999
+        314.2961670000002,
+        329.2984999999999,
+        319.84608300000036
       ],
       "suite": "dynamic",
-      "timeMs": 306.2686
+      "timeMs": 314.2962
     },
     {
       "framework": "uSignal",
       "test": "1000x12 - 4 sources - dynamic (large web app)",
       "samplesMs": [
-        385.7091660000001,
-        382.80887500000017,
-        446.2221249999998
+        388.8285000000001,
+        388.2469170000004,
+        387.6324169999998
       ],
       "suite": "dynamic",
-      "timeMs": 382.8089
+      "timeMs": 387.6324
     },
     {
       "framework": "uSignal",
       "test": "1000x5 - 25 sources (wide dense)",
       "samplesMs": [
-        974.342834,
-        908.7637910000003,
-        879.0259999999998
+        867.6100829999996,
+        871.202542,
+        882.5568330000006
       ],
       "suite": "dynamic",
-      "timeMs": 879.026
+      "timeMs": 867.6101
     },
     {
       "framework": "uSignal",
       "test": "5x500 - 3 sources (deep)",
       "samplesMs": [
-        224.74675000000025,
-        222.86612500000047,
-        224.23762499999975
+        213.36041599999953,
+        214.32037500000115,
+        214.31158400000095
       ],
       "suite": "dynamic",
-      "timeMs": 222.8661
+      "timeMs": 213.3604
     },
     {
       "framework": "uSignal",
       "test": "cellx10",
       "samplesMs": [
-        0.05075000000000074,
-        0.04341699999999804,
-        0.04262499999999392
+        0.050625000000003695,
+        0.046333000000004176,
+        0.04745799999999889
       ],
       "suite": "cellx",
-      "timeMs": 0.0426
+      "timeMs": 0.0463
     },
     {
       "framework": "uSignal",
       "test": "cellx20",
       "samplesMs": [
-        0.07004099999999625,
-        0.07541700000000162,
-        0.03466699999999889
+        0.07254100000000108,
+        0.06583400000000239,
+        0.03379200000000537
       ],
       "suite": "cellx",
-      "timeMs": 0.0347
+      "timeMs": 0.0338
     },
     {
       "framework": "uSignal",
       "test": "cellx30",
       "samplesMs": [
-        0.11862500000000153,
-        0.12966600000000028,
-        0.11699999999999733
+        0.04762500000000358,
+        0.11070800000000247,
+        0.11429199999999895
       ],
       "suite": "cellx",
-      "timeMs": 0.117
+      "timeMs": 0.0476
     },
     {
       "framework": "@vue/reactivity",
       "test": "avoidablePropagation",
       "samplesMs": [
-        179.351417,
-        174.611,
-        172.712
+        179.07862500000002,
+        173.13662499999998,
+        173.01716600000003
       ],
       "suite": "kairo",
-      "timeMs": 172.712
+      "timeMs": 173.0172
     },
     {
       "framework": "@vue/reactivity",
       "test": "broadPropagation",
       "samplesMs": [
-        352.3697910000001,
-        347.072416,
-        346.6405
+        348.31779100000006,
+        345.8499159999999,
+        343.59733299999994
       ],
       "suite": "kairo",
-      "timeMs": 346.6405
+      "timeMs": 343.5973
     },
     {
       "framework": "@vue/reactivity",
       "test": "deepPropagation",
       "samplesMs": [
-        108.99966599999993,
-        109.4937910000001,
-        109.74470799999995
+        108.96616699999981,
+        109.48062499999992,
+        109.55979100000013
       ],
       "suite": "kairo",
-      "timeMs": 108.9997
+      "timeMs": 108.9662
     },
     {
       "framework": "@vue/reactivity",
       "test": "diamond",
       "samplesMs": [
-        179.14554199999998,
-        178.11987499999987,
-        177.02337500000021
+        179.52091599999994,
+        176.64300000000003,
+        175.1611670000002
       ],
       "suite": "kairo",
-      "timeMs": 177.0234
+      "timeMs": 175.1612
     },
     {
       "framework": "@vue/reactivity",
       "test": "mux",
       "samplesMs": [
-        346.09175000000005,
-        343.2591660000003,
-        335.65454199999976
+        358.900083,
+        359.75254099999984,
+        349.65999999999985
       ],
       "suite": "kairo",
-      "timeMs": 335.6545
+      "timeMs": 349.66
     },
     {
       "framework": "@vue/reactivity",
       "test": "repeatedObservers",
       "samplesMs": [
-        21.404291999999714,
-        20.441542000000027,
-        20.647416999999678
+        21.511584000000312,
+        21.08837500000027,
+        20.781208000000333
       ],
       "suite": "kairo",
-      "timeMs": 20.4415
+      "timeMs": 20.7812
     },
     {
       "framework": "@vue/reactivity",
       "test": "triangle",
       "samplesMs": [
-        67.63308299999971,
-        68.2414590000003,
-        68.49483400000008
+        66.46341700000039,
+        62.026708999999755,
+        62.85237499999994
       ],
       "suite": "kairo",
-      "timeMs": 67.6331
+      "timeMs": 62.0267
     },
     {
       "framework": "@vue/reactivity",
       "test": "unstable",
       "samplesMs": [
-        47.43858299999965,
-        45.3650419999999,
-        45.781790999999885
+        42.675666999999976,
+        41.816499999999905,
+        41.60466699999961
       ],
       "suite": "kairo",
-      "timeMs": 45.365
+      "timeMs": 41.6047
     },
     {
       "framework": "@vue/reactivity",
       "test": "molBench",
       "samplesMs": [
-        311.96129099999996,
-        341.5942079999999,
-        316.0381249999999
+        310.217375,
+        305.43091699999997,
+        300.934625
       ],
       "suite": "mol",
-      "timeMs": 311.9613
+      "timeMs": 300.9346
     },
     {
       "framework": "@vue/reactivity",
       "test": "createDataSignals",
       "samplesMs": [
-        5.515292000000002,
-        6.691374999999994,
-        6.923874999999995
+        5.563207999999996,
+        6.5319590000000005,
+        6.089874999999992
       ],
       "suite": "s",
-      "timeMs": 5.5153
+      "timeMs": 5.5632
     },
     {
       "framework": "@vue/reactivity",
       "test": "createComputations0to1",
       "samplesMs": [
-        6.760292000000007,
-        5.476208,
-        5.022374999999997
+        6.0689160000000015,
+        5.557291000000006,
+        4.488875000000007
       ],
       "suite": "s",
-      "timeMs": 5.0224
+      "timeMs": 4.4889
     },
     {
       "framework": "@vue/reactivity",
       "test": "createComputations1to1",
       "samplesMs": [
-        18.243499999999983,
-        17.953082999999992,
-        19.396917000000002
+        13.745542,
+        13.785041000000007,
+        12.941665999999998
       ],
       "suite": "s",
-      "timeMs": 17.9531
+      "timeMs": 12.9417
     },
     {
       "framework": "@vue/reactivity",
       "test": "createComputations2to1",
       "samplesMs": [
-        10.083708000000001,
-        11.781959,
-        11.522750000000002
+        8.346834000000001,
+        12.266667000000012,
+        9.981250000000017
       ],
       "suite": "s",
-      "timeMs": 10.0837
+      "timeMs": 8.3468
     },
     {
       "framework": "@vue/reactivity",
       "test": "createComputations4to1",
       "samplesMs": [
-        11.045874999999967,
-        8.295624999999973,
-        11.417332999999985
+        10.271791999999976,
+        10.158958000000041,
+        7.864499999999964
       ],
       "suite": "s",
-      "timeMs": 8.2956
+      "timeMs": 7.8645
     },
     {
       "framework": "@vue/reactivity",
       "test": "createComputations1000to1",
       "samplesMs": [
-        8.617834000000016,
-        15.252207999999996,
-        10.630958000000021
+        8.238750000000039,
+        9.923125000000027,
+        8.373958000000016
       ],
       "suite": "s",
-      "timeMs": 8.6178
+      "timeMs": 8.2388
     },
     {
       "framework": "@vue/reactivity",
       "test": "createComputations1to2",
       "samplesMs": [
-        13.240499999999997,
-        11.899999999999977,
-        12.61379199999999
+        12.448541999999975,
+        10.949624999999969,
+        12.398833000000025
       ],
       "suite": "s",
-      "timeMs": 11.9
+      "timeMs": 10.9496
     },
     {
       "framework": "@vue/reactivity",
       "test": "createComputations1to4",
       "samplesMs": [
-        11.980834000000016,
-        10.745541000000003,
-        12.185000000000002
+        11.189874999999972,
+        6.792291999999975,
+        10.314708999999993
       ],
       "suite": "s",
-      "timeMs": 10.7455
+      "timeMs": 6.7923
     },
     {
       "framework": "@vue/reactivity",
       "test": "createComputations1to8",
       "samplesMs": [
-        10.669167000000016,
-        6.313874999999939,
-        9.175000000000068
+        6.297082999999986,
+        9.637749999999983,
+        10.494332999999983
       ],
       "suite": "s",
-      "timeMs": 6.3139
+      "timeMs": 6.2971
     },
     {
       "framework": "@vue/reactivity",
       "test": "createComputations1to1000",
       "samplesMs": [
-        4.702374999999961,
-        8.11729200000002,
-        6.100083000000041
+        8.397041999999999,
+        9.037250000000029,
+        4.661374999999907
       ],
       "suite": "s",
-      "timeMs": 4.7024
+      "timeMs": 4.6614
     },
     {
       "framework": "@vue/reactivity",
       "test": "updateComputations1to1",
       "samplesMs": [
-        20.556917,
-        20.757167000000095,
-        19.11370899999997
+        18.128082999999947,
+        19.348375000000033,
+        18.277083999999945
       ],
       "suite": "s",
-      "timeMs": 19.1137
+      "timeMs": 18.1281
     },
     {
       "framework": "@vue/reactivity",
       "test": "updateComputations2to1",
       "samplesMs": [
-        14.791375000000016,
-        11.642209000000094,
-        11.662167000000068
+        13.639542000000006,
+        10.31883300000004,
+        10.302250000000072
       ],
       "suite": "s",
-      "timeMs": 11.6422
+      "timeMs": 10.3023
     },
     {
       "framework": "@vue/reactivity",
       "test": "updateComputations4to1",
       "samplesMs": [
-        8.339791999999989,
-        8.280999999999949,
-        8.112457999999947
+        7.4867080000000215,
+        7.534834000000046,
+        7.492750000000001
       ],
       "suite": "s",
-      "timeMs": 8.1125
+      "timeMs": 7.4867
     },
     {
       "framework": "@vue/reactivity",
       "test": "updateComputations1000to1",
       "samplesMs": [
-        6.719667000000072,
-        6.468583000000081,
-        6.311958000000004
+        6.143999999999892,
+        5.460708000000068,
+        5.504292000000078
       ],
       "suite": "s",
-      "timeMs": 6.312
+      "timeMs": 5.4607
     },
     {
       "framework": "@vue/reactivity",
       "test": "updateComputations1to2",
       "samplesMs": [
-        17.258291999999983,
-        16.2718339999999,
-        17.50041699999997
+        13.599124999999958,
+        13.622834000000012,
+        13.569124999999985
       ],
       "suite": "s",
-      "timeMs": 16.2718
+      "timeMs": 13.5691
     },
     {
       "framework": "@vue/reactivity",
       "test": "updateComputations1to4",
       "samplesMs": [
-        16.013500000000022,
-        16.503832999999986,
-        16.714833999999996
+        12.83670799999993,
+        12.583792000000017,
+        12.75420900000006
       ],
       "suite": "s",
-      "timeMs": 16.0135
+      "timeMs": 12.5838
     },
     {
       "framework": "@vue/reactivity",
       "test": "updateComputations1to1000",
       "samplesMs": [
-        16.339375000000018,
-        15.770459000000074,
-        16.762333000000126
+        13.211957999999981,
+        12.007458000000042,
+        12.353207999999995
       ],
       "suite": "s",
-      "timeMs": 15.7705
+      "timeMs": 12.0075
     },
     {
       "framework": "@vue/reactivity",
       "test": "10x5 - 2 sources - read 20% (simple component)",
       "samplesMs": [
-        276.921208,
-        269.85970800000007,
-        269.0039159999999
+        269.094,
+        261.673416,
+        264.58691699999997
       ],
       "suite": "dynamic",
-      "timeMs": 269.0039
+      "timeMs": 261.6734
     },
     {
       "framework": "@vue/reactivity",
       "test": "10x10 - 6 sources - dynamic - read 20% (dynamic component)",
       "samplesMs": [
-        200.84579199999985,
-        232.41195800000014,
-        219.48625000000015
+        203.97779100000002,
+        205.99979199999984,
+        193.886125
       ],
       "suite": "dynamic",
-      "timeMs": 200.8458
+      "timeMs": 193.8861
     },
     {
       "framework": "@vue/reactivity",
       "test": "1000x12 - 4 sources - dynamic (large web app)",
       "samplesMs": [
-        364.728208,
-        370.578125,
-        390.63091600000007
+        360.7532500000002,
+        373.4540000000002,
+        377.21775000000025
       ],
       "suite": "dynamic",
-      "timeMs": 364.7282
+      "timeMs": 360.7533
     },
     {
       "framework": "@vue/reactivity",
       "test": "1000x5 - 25 sources (wide dense)",
       "samplesMs": [
-        585.606084,
-        623.0670840000002,
-        570.6137090000002
+        557.9186250000002,
+        621.6807499999995,
+        554.4959590000008
       ],
       "suite": "dynamic",
-      "timeMs": 570.6137
+      "timeMs": 554.496
     },
     {
       "framework": "@vue/reactivity",
       "test": "5x500 - 3 sources (deep)",
       "samplesMs": [
-        178.39199999999983,
-        178.02174999999988,
-        172.26266699999996
+        182.9527909999997,
+        183.91320799999994,
+        181.73916699999972
       ],
       "suite": "dynamic",
-      "timeMs": 172.2627
+      "timeMs": 181.7392
     },
     {
       "framework": "@vue/reactivity",
       "test": "cellx10",
       "samplesMs": [
-        0.06637500000000074,
-        0.06987499999999613,
-        0.06745899999999949
+        0.06791600000000386,
+        0.06995899999999722,
+        0.06816599999999795
       ],
       "suite": "cellx",
-      "timeMs": 0.0664
+      "timeMs": 0.0679
     },
     {
       "framework": "@vue/reactivity",
       "test": "cellx20",
       "samplesMs": [
-        0.10979200000000588,
-        0.07350000000000279,
-        0.067541999999996
+        0.10412499999999625,
+        0.07562500000000227,
+        0.07629200000000225
       ],
       "suite": "cellx",
-      "timeMs": 0.0675
+      "timeMs": 0.0756
     },
     {
       "framework": "@vue/reactivity",
       "test": "cellx30",
       "samplesMs": [
-        0.0657499999999942,
-        0.05487500000000267,
-        0.05237499999999784
+        0.051625000000001364,
+        0.04545800000000355,
+        0.15270800000000406
       ],
       "suite": "cellx",
-      "timeMs": 0.0524
+      "timeMs": 0.0455
     }
   ],
   "failures": []
