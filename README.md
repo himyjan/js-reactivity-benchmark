@@ -2,6 +2,10 @@
 
 Correctness-checked benchmarks of JavaScript signal and computed-value engines. This measures reactive graph work in Node.js, not DOM rendering or complete application performance.
 
+![Latest benchmark results](docs/latest-benchmark.svg)
+
+The chart ranks engines by arithmetic mean time across every measurement in `results/latest.json`. Bars use a green-to-red interpolation from fastest to slowest. Regenerate it with `pnpm chart` after a benchmark run.
+
 ## Run
 
 Use Node.js 24 LTS (Node >=22.12 is supported) and the pnpm version declared in `package.json`.

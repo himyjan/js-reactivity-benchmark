@@ -7,7 +7,8 @@
     "typecheck": "tsc --noEmit",
     "build": "vite build",
     "run": "node --expose-gc dist/index.js",
-    "bench": "pnpm build && pnpm run run",
+    "bench": "pnpm build && pnpm run run && pnpm chart",
+    "chart": "node scripts/generate-chart.mjs",
     "format": "prettier --write .",
     "check": "pnpm typecheck && pnpm test && pnpm build && pnpm test:cli",
     "test:cli": "node scripts/check-cli.mjs"
